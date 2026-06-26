@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Conseil & Performance — Intégrateur Odoo & Conseil ERP pour PME</title>
+  <meta name="description" content="Smart Conseil & Performance accompagne les PME dans la structuration de leurs processus et l'intégration Odoo. Pilotage, efficacité, performance — basé à Albi, Occitanie.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://smartcp.fr/">
+  <meta property="og:title" content="Smart Conseil & Performance — Conseil ERP & Intégration Odoo PME">
+  <meta property="og:description" content="Libérez le potentiel numérique de votre PME avec un partenaire métier qui comprend vos enjeux avant de parler technologie.">
+  <meta property="og:url" content="https://smartcp.fr/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Brand colors extracted from logo */
+      --teal:     #1DBCD0;
+      --teal-dk:  #179aaa;
+      --dark:     #373643;
+      --navy:     #0F1F3D;
+      --ink:      #1e2535;
+      --accent:   #1DBCD0;
+      --light:    #F4F7F9;
+      --white:    #FFFFFF;
+      --muted:    #8A96A8;
+      --border:   #DDE3EA;
+      --text:     #2C3645;
+      --font-display: 'Plus Jakarta Sans', sans-serif;
+      --font-body:    'Inter', sans-serif;
+      --radius: 4px;
+      --max:    1140px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      font-size: 16px; line-height: 1.7;
+      color: var(--text); background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
+
+    /* ===== NAV ===== */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(55,54,67,0.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(29,188,208,0.2);
+    }
+    .nav-inner {
+      max-width: var(--max); margin: 0 auto; padding: 0 32px;
+      height: 68px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo img {
+      height: 38px; width: auto;
+      background: #fff;
+      border-radius: 4px;
+      padding: 3px 8px;
+    }
+    .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+    .nav-links a {
+      font-size: 0.78rem; font-weight: 500;
+      color: rgba(255,255,255,0.7);
+      letter-spacing: 0.07em; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--teal); }
+    .nav-cta {
+      background: var(--teal) !important;
+      color: #fff !important;
+      padding: 9px 22px !important;
+      border-radius: var(--radius);
+      font-weight: 600 !important;
+      transition: opacity 0.2s !important;
+    }
+    .nav-cta:hover { opacity: 0.85 !important; color: #fff !important; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--white); }
+
+    /* ===== HERO ===== */
+    #hero {
+      min-height: 100vh; background: var(--dark);
+      display: flex; align-items: center;
+      position: relative; overflow: hidden; padding-top: 68px;
+    }
+    .hero-grid-bg {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(29,188,208,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(29,188,208,0.05) 1px, transparent 1px);
+      background-size: 56px 56px;
+    }
+    .hero-glow {
+      position: absolute; top: -150px; right: -150px;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(29,188,208,0.1) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative; z-index: 2;
+      display: grid; grid-template-columns: 1fr 390px;
+      gap: 72px; align-items: center;
+      padding: 72px 32px;
+      max-width: var(--max); margin: 0 auto; width: 100%;
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 12px;
+      font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.13em; text-transform: uppercase;
+      color: var(--teal); margin-bottom: 28px;
+    }
+    .hero-eyebrow::before { content:''; display:block; width:32px; height:1px; background:var(--teal); }
+    h1.hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.9rem);
+      font-weight: 800; line-height: 1.1;
+      color: var(--white); margin-bottom: 28px;
+    }
+    h1.hero-title em { font-style: normal; color: var(--teal); }
+    .hero-subtitle {
+      font-size: 1.05rem; color: rgba(255,255,255,0.6);
+      max-width: 520px; margin-bottom: 44px;
+      line-height: 1.8; font-weight: 300;
+    }
+    .hero-actions { display: flex; gap: 20px; flex-wrap: wrap; align-items: center; }
+    .btn-primary {
+      background: var(--teal); color: #fff;
+      padding: 14px 32px; border-radius: var(--radius);
+      font-weight: 700; font-size: 0.88rem; letter-spacing: 0.04em;
+      display: inline-block; transition: opacity 0.2s, transform 0.2s;
+      border: none; cursor: pointer;
+    }
+    .btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+    .btn-ghost {
+      color: rgba(255,255,255,0.65); padding: 14px 0;
+      font-size: 0.88rem; font-weight: 500;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .btn-ghost:hover { color: var(--teal); border-color: var(--teal); }
+
+    /* Hero photo card */
+    .hero-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(29,188,208,0.2);
+      border-radius: 6px; overflow: hidden;
+    }
+    .hero-card-photo {
+      width: 100%; aspect-ratio: 4/5;
+      object-fit: cover; object-position: center top;
+    }
+    .hero-card-footer {
+      padding: 20px 24px;
+      border-top: 1px solid rgba(29,188,208,0.15);
+    }
+    .hero-card-name {
+      font-family: var(--font-display); font-size: 1.05rem;
+      font-weight: 700; color: var(--white);
+    }
+    .hero-card-role { font-size: 0.78rem; color: var(--teal); margin-top: 3px; font-weight: 500; }
+
+    /* Stats */
+    .hero-stats {
+      display: flex; gap: 40px;
+      margin-top: 52px; padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .stat-number {
+      font-family: var(--font-display); font-size: 1.75rem;
+      font-weight: 800; color: var(--teal); line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.7rem; color: rgba(255,255,255,0.4);
+      text-transform: uppercase; letter-spacing: 0.09em; margin-top: 5px;
+    }
+
+    /* ===== SECTIONS BASE ===== */
+    section { padding: 96px 0; }
+    .section-eyebrow {
+      font-size: 0.7rem; font-weight: 600;
+      letter-spacing: 0.13em; text-transform: uppercase;
+      color: var(--teal); margin-bottom: 14px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .section-eyebrow::before { content:''; display:block; width:24px; height:1px; background:var(--teal); }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 800; color: var(--ink); line-height: 1.2; margin-bottom: 18px;
+    }
+    .section-lead { font-size: 1rem; color: #5d6b7d; max-width: 600px; line-height: 1.8; }
+    .divider { width: 36px; height: 3px; background: var(--teal); margin: 18px 0 36px; border-radius: 2px; }
+
+    /* ===== PROBLÈMES ===== */
+    #problemes { background: var(--light); }
+    .problemes-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 44px 60px; margin-top: 56px;
+    }
+    .problem-item { display: flex; gap: 20px; }
+    .problem-icon {
+      flex-shrink: 0; width: 46px; height: 46px;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 4px; display: flex; align-items: center;
+      justify-content: center; font-size: 1.3rem;
+    }
+    .problem-title { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .problem-text { font-size: 0.88rem; color: #6a7585; line-height: 1.68; }
+
+    /* ===== MÉTHODE ===== */
+    #methode { background: var(--white); }
+    .methode-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; margin-top: 56px; }
+    .methode-step { display: flex; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--border); }
+    .methode-step:first-child { padding-top: 0; }
+    .step-num {
+      font-family: var(--font-display); font-size: 2.6rem;
+      font-weight: 800; color: rgba(29,188,208,0.15);
+      line-height: 1; flex-shrink: 0; width: 52px; transition: color 0.3s;
+    }
+    .methode-step:hover .step-num { color: var(--teal); }
+    .step-title { font-family: var(--font-display); font-size: 1.12rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .step-text { font-size: 0.88rem; color: #6a7585; line-height: 1.68; }
+    .methode-right { background: var(--dark); border-radius: 6px; padding: 40px; position: sticky; top: 88px; }
+    .methode-right-title { font-family: var(--font-display); font-size: 1.35rem; font-weight: 800; color: var(--white); margin-bottom: 6px; }
+    .methode-right-sub { font-size: 0.86rem; color: rgba(255,255,255,0.45); margin-bottom: 28px; }
+    .odoo-module { display: flex; align-items: center; gap: 12px; padding: 11px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .odoo-module:last-of-type { border-bottom: none; margin-bottom: 0; }
+    .odoo-dot { width: 6px; height: 6px; background: var(--teal); border-radius: 50%; flex-shrink: 0; }
+    .odoo-module-name { font-size: 0.87rem; color: rgba(255,255,255,0.75); font-weight: 500; }
+    .odoo-badge {
+      margin-top: 24px; padding: 13px 16px;
+      background: rgba(29,188,208,0.1);
+      border: 1px solid rgba(29,188,208,0.25);
+      border-radius: 4px; font-size: 0.77rem;
+      color: var(--teal); font-weight: 600; text-align: center; letter-spacing: 0.03em;
+    }
+
+    /* ===== PRESTATIONS ===== */
+    #prestations { background: var(--light); }
+    .prestations-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 56px; }
+    .prestation-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 5px; padding: 32px 28px;
+      transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+    }
+    .prestation-card:hover {
+      border-color: var(--teal);
+      box-shadow: 0 8px 32px rgba(29,188,208,0.1);
+      transform: translateY(-3px);
+    }
+    .prestation-icon { font-size: 1.7rem; margin-bottom: 18px; }
+    .prestation-title { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 10px; }
+    .prestation-text { font-size: 0.86rem; color: #6a7585; line-height: 1.65; }
+    .prestation-link { display: inline-block; margin-top: 18px; font-size: 0.78rem; font-weight: 600; color: var(--teal); letter-spacing: 0.04em; }
+
+    /* ===== POUR QUI ===== */
+    #pourqui { background: var(--white); }
+    .pourqui-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; margin-top: 56px; }
+    .pourqui-intro { font-size: 0.97rem; color: #5d6b7d; line-height: 1.85; margin-bottom: 28px; }
+    .pourqui-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    .pourqui-list li { display: flex; align-items: flex-start; gap: 14px; font-size: 0.93rem; color: var(--text); line-height: 1.65; }
+    .pourqui-list li::before { content:'→'; color: var(--teal); font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+    .secteurs-box { background: var(--light); border-radius: 6px; padding: 36px; }
+    .secteurs-label { font-size: 0.69rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; }
+    .secteur-tag {
+      display: inline-block; padding: 6px 14px;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 20px; font-size: 0.8rem; font-weight: 500;
+      color: var(--ink); margin: 4px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .secteur-tag:hover { border-color: var(--teal); color: var(--teal); }
+    .zone-note { margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--border); }
+    .zone-note p { font-size: 0.86rem; color: #6a7585; line-height: 1.65; }
+
+    /* ===== ALEXANDRE ===== */
+    #alexandre { background: var(--dark); }
+    .alexandre-inner { display: grid; grid-template-columns: 380px 1fr; gap: 80px; align-items: center; }
+    .alexandre-photo-wrap { position: relative; }
+    .alexandre-photo { width: 100%; border-radius: 5px; object-fit: cover; aspect-ratio: 4/5; object-position: center top; }
+    .alexandre-accent-line {
+      position: absolute; bottom: -14px; right: -14px;
+      width: 78%; height: 78%;
+      border: 2px solid rgba(29,188,208,0.3); border-radius: 5px; pointer-events: none;
+    }
+    #alexandre .section-eyebrow { color: var(--teal); }
+    #alexandre .section-eyebrow::before { background: var(--teal); }
+    .alexandre-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      font-weight: 800; color: var(--white); line-height: 1.2; margin-bottom: 24px;
+    }
+    .alexandre-text { font-size: 0.96rem; color: rgba(255,255,255,0.62); line-height: 1.82; margin-bottom: 14px; }
+    .alexandre-values { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+    .value-chip { padding: 7px 16px; border: 1px solid rgba(29,188,208,0.35); border-radius: 20px; font-size: 0.79rem; font-weight: 500; color: var(--teal); }
+
+    /* ===== TÉMOIGNAGES ===== */
+    #temoignages { background: var(--light); }
+    .temoignages-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 56px; }
+    .temoignage-card { background: var(--white); border: 1px solid var(--border); border-radius: 5px; padding: 32px 28px; }
+    .temoignage-quote { font-size: 3rem; line-height: 1; color: var(--teal); opacity: 0.35; font-family: Georgia, serif; margin-bottom: 14px; }
+    .temoignage-text { font-size: 0.92rem; color: var(--text); line-height: 1.75; font-style: italic; margin-bottom: 24px; }
+    .temoignage-author { font-size: 0.79rem; font-weight: 600; color: var(--ink); }
+    .temoignage-role { font-size: 0.74rem; color: var(--muted); margin-top: 2px; }
+    .temoignage-context {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--teal);
+      margin-bottom: 16px; padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .temoignage-result {
+      font-size: 0.8rem; font-weight: 600; color: var(--ink);
+      padding: 10px 14px;
+      background: var(--light);
+      border-radius: 3px;
+      border-left: 3px solid var(--teal);
+      margin-top: 4px;
+    }
+
+    /* ===== CONTACT ===== */
+    #contact { background: var(--white); }
+    .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .contact-info-title { font-family: var(--font-display); font-size: 1.55rem; font-weight: 800; color: var(--ink); margin-bottom: 16px; line-height: 1.28; }
+    .contact-lead { font-size: 0.96rem; color: #5d6b7d; line-height: 1.8; margin-bottom: 36px; }
+    .contact-detail { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 14px; }
+    .contact-detail-icon { font-size: 1rem; margin-top: 2px; }
+    .contact-detail-text { font-size: 0.9rem; color: var(--text); line-height: 1.5; }
+    .contact-detail-text a { color: var(--teal); font-weight: 500; }
+
+    /* ===== GOOGLE FORM EMBED ===== */
+    .gform-wrap {
+      background: var(--light); border: 1px solid var(--border);
+      border-radius: 6px; overflow: hidden;
+      position: relative;
+    }
+    .gform-wrap iframe {
+      width: 100%; border: none;
+      min-height: 640px; display: block;
+    }
+    .gform-note {
+      padding: 12px 20px;
+      background: rgba(29,188,208,0.06);
+      border-top: 1px solid var(--border);
+      font-size: 0.74rem; color: var(--muted);
+    }
+    .gform-note a { color: var(--teal); }
+
+    /* ===== FOOTER ===== */
+    footer { background: var(--dark); border-top: 1px solid rgba(29,188,208,0.15); padding: 48px 0 28px; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; flex-wrap: wrap; }
+    .footer-logo img { height: 34px; background: #fff; border-radius: 3px; padding: 2px 7px; margin-bottom: 12px; }
+    .footer-tagline { font-size: 0.8rem; color: rgba(255,255,255,0.38); line-height: 1.65; }
+    .footer-links-col { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col-title { font-size: 0.69rem; font-weight: 600; color: rgba(255,255,255,0.3); letter-spacing: 0.11em; text-transform: uppercase; margin-bottom: 8px; }
+    .footer-link { font-size: 0.81rem; color: rgba(255,255,255,0.52); transition: color 0.2s; cursor: pointer; }
+    .footer-link:hover { color: var(--teal); }
+    .footer-bottom {
+      margin-top: 40px; padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+    }
+    .footer-copy { font-size: 0.74rem; color: rgba(255,255,255,0.28); }
+    .footer-legal { display: flex; gap: 20px; }
+    .footer-legal a { font-size: 0.74rem; color: rgba(255,255,255,0.3); transition: color 0.2s; }
+    .footer-legal a:hover { color: var(--teal); }
+
+    /* ===== MENTIONS LÉGALES ===== */
+    #mentions { background: var(--light); display: none; }
+    #mentions.active { display: block; }
+    .mentions-content { max-width: 760px; margin: 0 auto; }
+    .mentions-content h2 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--ink); margin: 28px 0 8px; }
+    .mentions-content p { font-size: 0.88rem; color: #5a6778; line-height: 1.8; }
+
+    /* ===== ANIMATIONS ===== */
+    .fade-up { opacity: 0; transform: translateY(22px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) { .fade-up { transition: none; } }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 960px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .nav-links.open {
+        display: flex; flex-direction: column; gap: 0;
+        position: fixed; top: 68px; left: 0; right: 0;
+        background: var(--dark); padding: 12px 32px 20px;
+        border-bottom: 1px solid rgba(29,188,208,0.15);
+      }
+      .nav-links.open li { border-bottom: 1px solid rgba(255,255,255,0.06); }
+      .nav-links.open a { display: block; padding: 12px 0; }
+      .hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 56px 20px; }
+      .hero-card { max-width: 300px; }
+      .hero-stats { flex-wrap: wrap; gap: 24px; }
+      .problemes-grid { grid-template-columns: 1fr; gap: 28px; }
+      .methode-layout { grid-template-columns: 1fr; gap: 40px; }
+      .methode-right { position: static; }
+      .prestations-grid { grid-template-columns: 1fr; }
+      .pourqui-inner { grid-template-columns: 1fr; gap: 40px; }
+      .alexandre-inner { grid-template-columns: 1fr; }
+      .alexandre-photo-wrap { max-width: 280px; }
+      .temoignages-grid { grid-template-columns: 1fr; }
+      .contact-inner { grid-template-columns: 1fr; gap: 48px; }
+      .footer-inner { flex-direction: column; gap: 28px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 600px) {
+      .container { padding: 0 20px; }
+      section { padding: 64px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img src="logo-smart-cp.png" alt="Smart Conseil & Performance" height="38">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#problemes">Pourquoi</a></li>
+      <li><a href="#methode">Méthode</a></li>
+      <li><a href="#prestations">Prestations</a></li>
+      <li><a href="#alexandre">Alexandre</a></li>
+      <li><a href="#temoignages">Références</a></li>
+      <li><a href="#contact" class="nav-cta">Échangeons</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Conseil ERP &amp; Intégration Odoo — Occitanie</div>
+      <h1 class="hero-title">
+        Vos processus,<br>
+        enfin au service<br>
+        de votre <em>performance.</em>
+      </h1>
+      <p class="hero-subtitle">
+        Smart Conseil &amp; Performance accompagne les dirigeants de PME qui veulent
+        sortir des rustines Excel, retrouver de la visibilité sur leur activité
+        et structurer leur croissance autour d'un seul outil cohérent.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Prendre rendez-vous</a>
+        <a href="#methode" class="btn-ghost">Découvrir la méthode →</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-number">Odoo</div>
+          <div class="stat-label">Partenaire certifié</div>
+        </div>
+        <div>
+          <div class="stat-number">PME</div>
+          <div class="stat-label">3 à 250 collaborateurs</div>
+        </div>
+        <div>
+          <div class="stat-number">Terrain</div>
+          <div class="stat-label">Approche opérationnelle</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <img class="hero-card-photo" src="alexandre-brihiez.jpg" alt="Alexandre Brihiez — Fondateur Smart Conseil &amp; Performance">
+      <div class="hero-card-footer">
+        <div class="hero-card-name">Alexandre Brihiez</div>
+        <div class="hero-card-role">Ingénieur d'affaires · Entrepreneur · Fondateur</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLÈMES -->
+<section id="problemes">
+  <div class="container">
+    <div class="section-eyebrow">Pourquoi agir maintenant</div>
+    <h2 class="section-title">Les signaux qui freinent votre entreprise</h2>
+    <div class="divider"></div>
+    <p class="section-lead">Ils sont souvent invisibles de l'extérieur, mais vous les vivez au quotidien. Ces frictions coûtent du temps, de l'argent et de l'énergie à vos équipes.</p>
+    <div class="problemes-grid">
+      <div class="problem-item fade-up">
+        <div class="problem-icon">🗂️</div>
+        <div>
+          <div class="problem-title">L'effet silo</div>
+          <p class="problem-text">Chaque service travaille dans sa bulle, avec ses propres outils. L'information circule mal, les décisions se prennent dans le flou.</p>
+        </div>
+      </div>
+      <div class="problem-item fade-up">
+        <div class="problem-icon">📊</div>
+        <div>
+          <div class="problem-title">Manque de pilotage</div>
+          <p class="problem-text">Pas de tableau de bord fiable, pas de vision en temps réel sur la rentabilité, les flux ou les priorités. On réagit plutôt qu'on anticipe.</p>
+        </div>
+      </div>
+      <div class="problem-item fade-up">
+        <div class="problem-icon">🔗</div>
+        <div>
+          <div class="problem-title">Double saisie &amp; erreurs</div>
+          <p class="problem-text">Des données ressaisies manuellement d'un outil à l'autre. Des erreurs qui se propagent. Du temps gaspillé sur des tâches sans valeur ajoutée.</p>
+        </div>
+      </div>
+      <div class="problem-item fade-up">
+        <div class="problem-icon">⚙️</div>
+        <div>
+          <div class="problem-title">Des outils du passé</div>
+          <p class="problem-text">Logiciels vieillissants, Excel comme système de gestion, faible interopérabilité. La technologie freine l'entreprise au lieu de l'accélérer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTHODE -->
+<section id="methode">
+  <div class="container">
+    <div class="section-eyebrow">La méthode Smart CP</div>
+    <h2 class="section-title">Comprendre, structurer, impacter.</h2>
+    <div class="divider"></div>
+    <p class="section-lead">Pas de solution standard imposée. Chaque mission commence par une compréhension fine de votre métier, de vos flux et de vos irritants réels.</p>
+    <div class="methode-layout">
+      <div>
+        <div class="methode-step fade-up">
+          <div class="step-num">01</div>
+          <div>
+            <div class="step-title">Comprendre</div>
+            <p class="step-text">Analyse des flux, des processus, des dépendances entre services. Cartographie des irritants et des priorités réelles. On écoute avant de proposer.</p>
+          </div>
+        </div>
+        <div class="methode-step fade-up">
+          <div class="step-num">02</div>
+          <div>
+            <div class="step-title">Structurer</div>
+            <p class="step-text">Mise en place des bons outils et des bons processus, avec un socle technologique cohérent. Un besoin, une application, une plateforme.</p>
+          </div>
+        </div>
+        <div class="methode-step fade-up">
+          <div class="step-num">03</div>
+          <div>
+            <div class="step-title">Impacter</div>
+            <p class="step-text">Résultats mesurables : gain de visibilité, amélioration de l'efficacité opérationnelle, meilleure rentabilité. L'impact se voit, il ne se promet pas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="methode-right fade-up">
+        <div class="methode-right-title">Le socle technologique :</div>
+        <div class="methode-right-sub">Un seul outil qui couvre l'ensemble de vos besoins</div>
+        <div class="odoo-module"><div class="odoo-dot"></div><span class="odoo-module-name">Ventes &amp; CRM</span></div>
+        <div class="odoo-module"><div class="odoo-dot"></div><span class="odoo-module-name">Achats &amp; Stocks</span></div>
+        <div class="odoo-module"><div class="odoo-dot"></div><span class="odoo-module-name">Production &amp; Planning</span></div>
+        <div class="odoo-module"><div class="odoo-dot"></div><span class="odoo-module-name">Comptabilité &amp; Finance</span></div>
+        <div class="odoo-module"><div class="odoo-dot"></div><span class="odoo-module-name">Ressources humaines</span></div>
+        <div class="odoo-module"><div class="odoo-dot"></div><span class="odoo-module-name">Tableaux de bord &amp; Reporting</span></div>
+        <div class="odoo-module"><div class="odoo-dot"></div><span class="odoo-module-name">E-commerce &amp; Site web</span></div>
+        <div class="odoo-badge">⚡ Certification Odoo Ready en cours d'obtention</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESTATIONS -->
+<section id="prestations">
+  <div class="container">
+    <div class="section-eyebrow">Ce que je fais concrètement</div>
+    <h2 class="section-title">Mes prestations</h2>
+    <div class="divider"></div>
+    <p class="section-lead">Des missions structurées pour avancer rapidement, sans projet-fleuve ni sur-dimensionnement.</p>
+    <div class="prestations-grid">
+      <div class="prestation-card fade-up">
+        <div class="prestation-icon">🔍</div>
+        <div class="prestation-title">Audit &amp; Diagnostic</div>
+        <p class="prestation-text">Une analyse rapide et structurée de vos processus, outils et points de friction. Vous repartez avec une cartographie claire et des recommandations actionnables.</p>
+        <a href="#contact" class="prestation-link">Demander un audit →</a>
+      </div>
+      <div class="prestation-card fade-up">
+        <div class="prestation-icon">🔧</div>
+        <div class="prestation-title">Intégration Odoo</div>
+        <p class="prestation-text">De la configuration des modules à la reprise de données, en passant par la formation de vos équipes. Une intégration pensée pour durer, pas pour cocher des cases.</p>
+        <a href="#contact" class="prestation-link">En savoir plus →</a>
+      </div>
+      <div class="prestation-card fade-up">
+        <div class="prestation-icon">🗺️</div>
+        <div class="prestation-title">Conseil &amp; Transformation</div>
+        <p class="prestation-text">Accompagnement dans la refonte de vos processus, le choix de vos outils et la conduite du changement. Un partenaire qui reste jusqu'à ce que ça marche vraiment.</p>
+        <a href="#contact" class="prestation-link">Échangeons →</a>
+      </div>
+      <div class="prestation-card fade-up">
+        <div class="prestation-icon">📐</div>
+        <div class="prestation-title">Cadrage de projet</div>
+        <p class="prestation-text">Définition du périmètre, planning, budget, risques. Un cadrage rigoureux pour que votre projet ERP démarre sur des bases solides et tienne ses délais.</p>
+        <a href="#contact" class="prestation-link">Cadrer mon projet →</a>
+      </div>
+      <div class="prestation-card fade-up">
+        <div class="prestation-icon">🎓</div>
+        <div class="prestation-title">Formation &amp; Montée en compétences</div>
+        <p class="prestation-text">Formation de vos utilisateurs clés, documentation métier, accompagnement post-déploiement. L'outil ne sert à rien si les équipes ne s'en emparent pas.</p>
+        <a href="#contact" class="prestation-link">Former mes équipes →</a>
+      </div>
+      <div class="prestation-card fade-up">
+        <div class="prestation-icon">📈</div>
+        <div class="prestation-title">Optimisation continue</div>
+        <p class="prestation-text">Suivi post-déploiement, itérations, amélioration des tableaux de bord et des automatisations. Votre ERP doit évoluer avec votre entreprise.</p>
+        <a href="#contact" class="prestation-link">Optimiser mon Odoo →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POUR QUI -->
+<section id="pourqui">
+  <div class="container">
+    <div class="section-eyebrow">Mes clients</div>
+    <h2 class="section-title">Pour quelles entreprises ?</h2>
+    <div class="divider"></div>
+    <div class="pourqui-inner">
+      <div>
+        <p class="pourqui-intro">Je travaille avec des dirigeants de PME qui ont compris que la prochaine étape de leur croissance passe par une meilleure organisation interne. Pas forcément des experts du digital — souvent des entrepreneurs qui ont besoin d'un partenaire de confiance qui parle leur langue.</p>
+        <ul class="pourqui-list">
+          <li>Vous avez entre 3 et 250 collaborateurs et vous sentez que votre organisation ne suit plus votre croissance.</li>
+          <li>Vous utilisez plusieurs outils déconnectés et perdez du temps à faire circuler l'information manuellement.</li>
+          <li>Vous voulez du pilotage en temps réel, pas des rapports Excel consolidés à la main.</li>
+          <li>Vous avez un projet ERP en tête mais vous ne savez pas par où commencer.</li>
+          <li>Vous avez eu une expérience ERP décevante et voulez éviter de reproduire les mêmes erreurs.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="secteurs-box">
+          <div class="secteurs-label">Secteurs d'activité</div>
+          <div>
+            <span class="secteur-tag">Négoce &amp; Distribution</span>
+            <span class="secteur-tag">Industrie</span>
+            <span class="secteur-tag">Fabrication</span>
+            <span class="secteur-tag">Services B2B</span>
+            <span class="secteur-tag">Agroalimentaire</span>
+            <span class="secteur-tag">Logistique</span>
+            <span class="secteur-tag">Commerce de gros</span>
+            <span class="secteur-tag">Artisanat industriel</span>
+          </div>
+          <div class="zone-note">
+            <div class="secteurs-label">Zone d'intervention</div>
+            <p>Principalement Occitanie (Tarn, Hérault, Haute-Garonne, Aveyron…) avec des missions ponctuelles sur l'ensemble du territoire.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ALEXANDRE -->
+<section id="alexandre">
+  <div class="container">
+    <div class="alexandre-inner">
+      <div class="fade-up" style="display:flex;flex-direction:column;gap:20px;">
+        <div style="background:rgba(29,188,208,0.08);border:1px solid rgba(29,188,208,0.2);border-radius:6px;padding:32px;">
+          <div style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:20px;">Parcours</div>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+              <div style="width:8px;height:8px;background:var(--teal);border-radius:50%;flex-shrink:0;margin-top:6px;"></div>
+              <div>
+                <div style="font-family:var(--font-display);font-size:0.92rem;font-weight:700;color:var(--white);">Ingénieur d'affaires</div>
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.4);margin-top:2px;">Depuis 2006 · ERP, conseil, transformation</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+              <div style="width:8px;height:8px;background:var(--teal);border-radius:50%;flex-shrink:0;margin-top:6px;"></div>
+              <div>
+                <div style="font-family:var(--font-display);font-size:0.92rem;font-weight:700;color:var(--white);">Entrepreneur</div>
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.4);margin-top:2px;">Depuis 2011 · Direction de projets, développement</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start;">
+              <div style="width:8px;height:8px;background:var(--teal);border-radius:50%;flex-shrink:0;margin-top:6px;"></div>
+              <div>
+                <div style="font-family:var(--font-display);font-size:0.92rem;font-weight:700;color:var(--white);">Fondateur Smart CP</div>
+                <div style="font-size:0.8rem;color:rgba(255,255,255,0.4);margin-top:2px;">Albi · Occitanie · PME 3–250 collaborateurs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background:rgba(29,188,208,0.08);border:1px solid rgba(29,188,208,0.2);border-radius:6px;padding:24px 32px;">
+          <div style="font-size:0.7rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:16px;">Spécialisation</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <span style="padding:5px 12px;background:rgba(29,188,208,0.12);border:1px solid rgba(29,188,208,0.25);border-radius:20px;font-size:0.78rem;color:var(--teal);font-weight:500;">Odoo ERP</span>
+            <span style="padding:5px 12px;background:rgba(29,188,208,0.12);border:1px solid rgba(29,188,208,0.25);border-radius:20px;font-size:0.78rem;color:var(--teal);font-weight:500;">Négoce</span>
+            <span style="padding:5px 12px;background:rgba(29,188,208,0.12);border:1px solid rgba(29,188,208,0.25);border-radius:20px;font-size:0.78rem;color:var(--teal);font-weight:500;">Industrie</span>
+            <span style="padding:5px 12px;background:rgba(29,188,208,0.12);border:1px solid rgba(29,188,208,0.25);border-radius:20px;font-size:0.78rem;color:var(--teal);font-weight:500;">Services B2B</span>
+            <span style="padding:5px 12px;background:rgba(29,188,208,0.12);border:1px solid rgba(29,188,208,0.25);border-radius:20px;font-size:0.78rem;color:var(--teal);font-weight:500;">Conduite du changement</span>
+            <span style="padding:5px 12px;background:rgba(29,188,208,0.12);border:1px solid rgba(29,188,208,0.25);border-radius:20px;font-size:0.78rem;color:var(--teal);font-weight:500;">Occitanie</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section-eyebrow">Qui je suis</div>
+        <h2 class="alexandre-title">Ingénieur d'affaires,<br>entrepreneur —<br>et partenaire de<br>vos projets.</h2>
+        <p class="alexandre-text">Je m'appelle Alexandre Brihiez. J'ai fondé Smart Conseil &amp; Performance avec une conviction simple : les PME méritent un partenaire qui comprend leur réalité avant de proposer une solution technologique.</p>
+        <p class="alexandre-text">Ma différence ? Je ne suis pas consultant par défaut. Je suis entrepreneur, impliqué, orienté résultats. Quand je rentre dans votre entreprise, je regarde vos process, je parle à vos équipes, je comprends vos contraintes avant de toucher au moindre paramètre.</p>
+        <p class="alexandre-text">Odoo est mon outil de référence parce qu'il s'adapte — et parce qu'un dirigeant de PME n'a pas le temps de gérer dix logiciels différents. Mais l'outil ne suffit pas. Ce qui compte, c'est la cohérence entre vos processus, vos équipes et votre ambition.</p>
+        <div class="alexandre-values">
+          <span class="value-chip">Orienté résultats</span>
+          <span class="value-chip">Approche terrain</span>
+          <span class="value-chip">Exigence opérationnelle</span>
+          <span class="value-chip">Partenaire de long terme</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TÉMOIGNAGES -->
+<section id="temoignages">
+  <div class="container">
+    <div class="section-eyebrow">Ils en parlent mieux que moi</div>
+    <h2 class="section-title">Ils me font confiance</h2>
+    <div class="divider"></div>
+    <div class="temoignages-grid">
+      <div class="temoignage-card fade-up">
+        <div class="temoignage-context">Intégration Odoo · Négoce · 35 collaborateurs</div>
+        <p class="temoignage-text">Ce qui nous a convaincus, c'est qu'Alexandre avait compris nos flux métier avant même de parler outil. On a eu l'impression d'avoir un directeur des opérations en face de nous, pas un commercial.</p>
+        <div class="temoignage-result">Résultat : suppression de 3 fichiers Excel, pilotage en temps réel</div>
+      </div>
+      <div class="temoignage-card fade-up">
+        <div class="temoignage-context">Transformation digitale · Industrie · 80 collaborateurs</div>
+        <p class="temoignage-text">On avait déjà raté un projet ERP. Alexandre a commencé par auditer ce qui avait échoué. C'est ça qui a tout changé — il ne repart pas de zéro, il repart de la réalité.</p>
+        <div class="temoignage-result">Résultat : déploiement en 4 mois, adoption équipe à 90%</div>
+      </div>
+      <div class="temoignage-card fade-up">
+        <div class="temoignage-context">Déploiement CRM + Achats · Services B2B · 18 collaborateurs</div>
+        <p class="temoignage-text">Très bon contact, réactif, jamais dans le jargon. Il explique les choses simplement et revient vers vous sans qu'on ait besoin de relancer. C'est rare dans ce métier.</p>
+        <div class="temoignage-result">Résultat : centralisation des données clients, gain de 6h/semaine</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div>
+        <div class="section-eyebrow">Parlons de votre projet</div>
+        <h2 class="contact-info-title">Un premier échange ne coûte rien.<br>Repartir avec des pistes, si.</h2>
+        <p class="contact-lead">Que vous soyez au stade de la réflexion ou en phase de choix, je prends le temps d'écouter votre situation avant de proposer quoi que ce soit. Aucune obligation, aucun argumentaire de vente.</p>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">📧</span>
+          <div class="contact-detail-text"><a href="mailto:alexandre@smartcp.fr">alexandre@smartcp.fr</a></div>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">📍</span>
+          <div class="contact-detail-text">1 rue Louis Vicat, Bâtiment 1<br>81000 Albi</div>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">🗺️</span>
+          <div class="contact-detail-text">Occitanie &amp; déplacements France entière</div>
+        </div>
+        <div style="margin-top:32px;padding:20px;background:var(--light);border-radius:5px;border:1px solid var(--border);">
+          <p style="font-size:0.8rem;color:var(--muted);line-height:1.65;">
+            <strong style="color:var(--ink);">🔒 Vos données restent dans votre écosystème Google.</strong><br>
+            Le formulaire ci-contre utilise Google Forms, inclus dans votre abonnement Google Workspace. Les réponses arrivent directement dans votre Google Sheets et votre Gmail.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="gform-wrap">
+          <div style="padding:28px 28px 20px;">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+              <div style="width:40px;height:40px;background:rgba(29,188,208,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1DBCD0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <div>
+                <div style="font-family:var(--font-display);font-size:1rem;font-weight:700;color:var(--ink);">Réservez un créneau directement</div>
+                <div style="font-size:0.8rem;color:var(--muted);margin-top:2px;">Agenda Google — synchronisé en temps réel</div>
+              </div>
+            </div>
+            <p style="font-size:0.88rem;color:#5d6b7d;line-height:1.7;margin-bottom:24px;">Choisissez le créneau qui vous convient. L'échange dure 30 minutes. Pas de pitch, pas d'engagement — juste une conversation sur votre situation.</p>
+            <a href="https://calendar.app.google/hKwgaX4y8oV1bUAd6"
+               target="_blank" rel="noopener"
+               style="display:block;text-align:center;background:var(--teal);color:#fff;padding:14px 24px;border-radius:var(--radius);font-family:var(--font-display);font-weight:700;font-size:0.92rem;letter-spacing:0.03em;transition:opacity 0.2s;"
+               onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+              Choisir un créneau →
+            </a>
+          </div>
+          <div style="border-top:1px solid var(--border);padding:14px 28px;background:rgba(29,188,208,0.03);">
+            <p style="font-size:0.78rem;color:var(--muted);display:flex;align-items:center;gap:8px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Google Calendar · Google Workspace · <a href="#mentions" onclick="toggleMentions(event)" style="color:var(--teal);">Confidentialité</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENTIONS LÉGALES -->
+<section id="mentions">
+  <div class="container">
+    <div class="mentions-content">
+      <h2 style="font-family:var(--font-display);font-size:2rem;font-weight:800;color:var(--ink);margin-bottom:8px;">Mentions légales &amp; Confidentialité</h2>
+      <p style="color:var(--muted);margin-bottom:40px;font-size:0.83rem;">Dernière mise à jour : Juin 2025</p>
+
+      <h2>Éditeur du site</h2>
+      <p>
+        <strong>Smart Conseil &amp; Performance</strong><br>
+        SAS au capital de 1 000 €<br>
+        1 rue Louis Vicat, Bâtiment 1 — 81000 Albi<br>
+        SIRET : <em>[En cours d'immatriculation]</em><br>
+        RCS : <em>[À compléter après immatriculation]</em><br>
+        Email : <a href="mailto:alexandre@smartcp.fr" style="color:var(--teal);">alexandre@smartcp.fr</a><br>
+        Responsable de publication : Alexandre Brihiez
+      </p>
+
+      <h2>Hébergement</h2>
+      <p>
+        <strong>IONOS SE</strong><br>
+        Elgendorfer Str. 57 — 56410 Montabaur, Allemagne<br>
+        <a href="https://www.ionos.fr" target="_blank" rel="noopener" style="color:var(--teal);">www.ionos.fr</a>
+      </p>
+
+      <h2>Propriété intellectuelle</h2>
+      <p>L'ensemble des contenus de ce site (textes, images, visuels, logo) est la propriété exclusive de Smart Conseil &amp; Performance. Toute reproduction, même partielle, est interdite sans autorisation préalable.</p>
+
+      <h2>Données personnelles &amp; RGPD</h2>
+      <p>Les données collectées via le formulaire de contact (nom, email, message) sont traitées par Google Workspace (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlande) dans le cadre de l'abonnement professionnel de Smart Conseil &amp; Performance. Ces données sont utilisées uniquement pour répondre à votre demande. Elles ne sont ni vendues ni transmises à des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression : <a href="mailto:alexandre@smartcp.fr" style="color:var(--teal);">alexandre@smartcp.fr</a></p>
+
+      <h2>Cookies</h2>
+      <p>Ce site n'utilise pas de cookies de tracking ni de cookies tiers à des fins publicitaires. Le formulaire Google Forms peut déposer des cookies fonctionnels liés à Google. Vous pouvez les refuser en n'utilisant pas le formulaire et en écrivant directement par email.</p>
+
+      <h2>Limitation de responsabilité</h2>
+      <p>Les informations présentes sur ce site ont un caractère informatif. Smart Conseil &amp; Performance ne saurait être tenu responsable des erreurs ou omissions, ni des dommages résultant de l'utilisation de ces informations.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div style="max-width:280px;">
+        <a href="#hero" class="footer-logo">
+          <img src="logo-smart-cp.png" alt="Smart Conseil &amp; Performance" height="34">
+        </a>
+        <p class="footer-tagline">Conseil ERP &amp; Intégration Odoo<br>pour PME ambitieuses — Occitanie</p>
+      </div>
+      <div class="footer-links-col">
+        <div class="footer-col-title">Navigation</div>
+        <a href="#problemes" class="footer-link">Pourquoi agir</a>
+        <a href="#methode" class="footer-link">La méthode</a>
+        <a href="#prestations" class="footer-link">Prestations</a>
+        <a href="#alexandre" class="footer-link">Alexandre Brihiez</a>
+        <a href="#temoignages" class="footer-link">Références</a>
+      </div>
+      <div class="footer-links-col">
+        <div class="footer-col-title">Contact</div>
+        <a href="mailto:alexandre@smartcp.fr" class="footer-link">alexandre@smartcp.fr</a>
+        <a href="#contact" class="footer-link">Formulaire de contact</a>
+        <span class="footer-link">1 rue Louis Vicat · 81000 Albi</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Smart Conseil &amp; Performance — Tous droits réservés</div>
+      <div class="footer-legal">
+        <a href="#mentions" onclick="toggleMentions(event)">Mentions légales</a>
+        <a href="#mentions" onclick="toggleMentions(event)">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hamburger menu
+  const hamburger = document.getElementById('hamburger');
+  const navLinks  = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  hamburger.addEventListener('keydown', e => { if(e.key==='Enter') navLinks.classList.toggle('open'); });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // Mentions toggle
+  function toggleMentions(e) {
+    if(e) e.preventDefault();
+    const m = document.getElementById('mentions');
+    m.classList.toggle('active');
+    if(m.classList.contains('active')) setTimeout(() => m.scrollIntoView({ behavior:'smooth', block:'start' }), 60);
+  }
+
+  // Fade-up on scroll
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
+  document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+  // Active nav highlight on scroll
+  const secs    = document.querySelectorAll('section[id]');
+  const anchors = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    secs.forEach(s => { if(window.scrollY >= s.offsetTop - 90) cur = s.id; });
+    anchors.forEach(a => { a.style.color = a.getAttribute('href') === '#'+cur ? 'var(--teal)' : ''; });
+  }, { passive:true });
+</script>
+
+</body>
+</html>
