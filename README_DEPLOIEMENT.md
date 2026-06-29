@@ -274,3 +274,20 @@ Il faut utiliser l'URL de déploiement qui se termine par `/exec`.
 - Renommage du bouton “Mes liens utiles” en “Linktree · mes coordonnées”.
 - Fusion des 3 tuiles de réassurance en un seul bloc compact.
 - Version toujours compatible GitHub Pages + Google Apps Script.
+
+
+## V9.5 — Google Analytics et consentement
+
+- Ajout de Google Analytics GA4 : G-TBS9XT2XSD
+- Ajout du Consent Mode v2 avec consentement par défaut refusé.
+- Ajout d’une bannière personnalisée Accepter / Refuser.
+- Google Analytics est chargé uniquement après acceptation.
+- Ajout d’un lien “Gestion des cookies” dans le footer.
+- Mise à jour de la politique de confidentialité.
+- Formulaire Google Apps Script conservé.
+
+
+### Correctif V9.5
+
+- Injection effective de la bannière de consentement avant `script.js`.
+- Ajout effectif du bouton “Gestion des cookies” dans le footer.

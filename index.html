@@ -19,6 +19,19 @@
   <script>
     document.documentElement.classList.remove('no-js');
   </script>
+  <!-- Google Analytics — Consent Mode par défaut refusé -->
+  <script>
+    window.SMARTCP_GA_ID = "G-TBS9XT2XSD";
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+  </script>
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -633,12 +646,29 @@
         <strong>Informations</strong>
         <a href="mentions-legales.html">Mentions légales</a>
         <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        <button type="button" class="footer-cookie-link" data-cookie-reset>Gestion des cookies</button>
         <span>1 rue Louis Vicat, Bâtiment 1, 81000 Albi</span>
       </div>
     </div>
   </footer>
 
   <a class="sticky-cta" href="https://calendar.app.google/hKwgaX4y8oV1bUAd6" target="_blank" rel="noopener">Planifier un échange</a>
+
+  <div class="cookie-banner" data-cookie-banner hidden>
+    <div class="cookie-banner__content">
+      <p>
+        <strong>Mesure d’audience</strong>
+        Nous utilisons Google Analytics pour comprendre l’utilisation du site et améliorer nos contenus.
+        Vous pouvez accepter ou refuser cette mesure d’audience.
+      </p>
+      <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        <button type="button" class="footer-cookie-link" data-cookie-reset>Gestion des cookies</button>
+    </div>
+    <div class="cookie-banner__actions">
+      <button type="button" class="btn btn-secondary inverse" data-cookie-deny>Refuser</button>
+      <button type="button" class="btn btn-primary" data-cookie-accept>Accepter</button>
+    </div>
+  </div>
 
   <script src="script.js" defer></script>
 </body>

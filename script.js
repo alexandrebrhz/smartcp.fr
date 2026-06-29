@@ -194,3 +194,84 @@
     });
   }
 })();
+
+
+/* V9.5 — Google Analytics avec consentement personnalisé */
+(function () {
+  const GA_ID = window.SMARTCP_GA_ID || "G-TBS9XT2XSD";
+  const STORAGE_KEY = "smartcp_analytics_consent";
+  const banner = document.querySelector("[data-cookie-banner]");
+  const acceptBtn = document.querySelector("[data-cookie-accept]");
+  const denyBtn = document.querySelector("[data-cookie-deny]");
+  const resetBtns = document.querySelectorAll("[data-cookie-reset]");
+
+  function loadGoogleAnalytics() {
+    if (window.__smartcpGaLoaded) return;
+    window.__smartcpGaLoaded = true;
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(GA_ID);
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+
+    window.gtag("js", new Date());
+    window.gtag("consent", "update", {
+      "analytics_storage": "granted",
+      "ad_storage": "denied",
+      "ad_user_data": "denied",
+      "ad_personalization": "denied"
+    });
+    window.gtag("config", GA_ID, {
+      "anonymize_ip": true
+    });
+  }
+
+  function hideBanner() {
+    if (banner) banner.hidden = true;
+  }
+
+  function showBanner() {
+    if (banner) banner.hidden = false;
+  }
+
+  function accept() {
+    localStorage.setItem(STORAGE_KEY, "granted");
+    loadGoogleAnalytics();
+    hideBanner();
+  }
+
+  function deny() {
+    localStorage.setItem(STORAGE_KEY, "denied");
+    if (typeof window.gtag === "function") {
+      window.gtag("consent", "update", {
+        "analytics_storage": "denied",
+        "ad_storage": "denied",
+        "ad_user_data": "denied",
+        "ad_personalization": "denied"
+      });
+    }
+    hideBanner();
+  }
+
+  function resetConsent() {
+    localStorage.removeItem(STORAGE_KEY);
+    showBanner();
+  }
+
+  const saved = localStorage.getItem(STORAGE_KEY);
+
+  if (saved === "granted") {
+    loadGoogleAnalytics();
+  } else if (saved === "denied") {
+    hideBanner();
+  } else {
+    showBanner();
+  }
+
+  if (acceptBtn) acceptBtn.addEventListener("click", accept);
+  if (denyBtn) denyBtn.addEventListener("click", deny);
+  resetBtns.forEach((btn) => btn.addEventListener("click", resetConsent));
+})();
