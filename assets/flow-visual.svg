@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" fill="none">
+  <rect width="900" height="520" rx="42" fill="#071526"/>
+  <g opacity=".95">
+    <path d="M126 260C180 150 280 123 364 181C424 223 468 310 542 304C626 298 657 197 762 166" stroke="#16B7C8" stroke-width="16" stroke-linecap="round"/>
+    <path d="M744 135L805 153L779 211" stroke="#16B7C8" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g opacity=".42">
+    <circle cx="158" cy="360" r="92" fill="#16B7C8"/>
+    <circle cx="754" cy="104" r="112" fill="#16B7C8"/>
+    <circle cx="492" cy="420" r="156" fill="#20385F"/>
+  </g>
+  <g>
+    <rect x="94" y="78" width="210" height="92" rx="22" fill="white" fill-opacity=".1" stroke="white" stroke-opacity=".16"/>
+    <text x="126" y="116" fill="white" font-family="Inter, Arial" font-size="20" font-weight="700">Outils éclatés</text>
+    <text x="126" y="146" fill="#A9B7C8" font-family="Inter, Arial" font-size="16">Excel, ressaisie, silos</text>
+
+    <rect x="345" y="210" width="210" height="92" rx="22" fill="white" fill-opacity=".1" stroke="white" stroke-opacity=".16"/>
+    <text x="377" y="248" fill="white" font-family="Inter, Arial" font-size="20" font-weight="700">Flux structurés</text>
+    <text x="377" y="278" fill="#A9B7C8" font-family="Inter, Arial" font-size="16">Process, rôles, données</text>
+
+    <rect x="596" y="350" width="210" height="92" rx="22" fill="white" fill-opacity=".1" stroke="white" stroke-opacity=".16"/>
+    <text x="628" y="388" fill="white" font-family="Inter, Arial" font-size="20" font-weight="700">Pilotage clair</text>
+    <text x="628" y="418" fill="#A9B7C8" font-family="Inter, Arial" font-size="16">Odoo, reporting, ROI</text>
+  </g>
+</svg>

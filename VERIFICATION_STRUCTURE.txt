@@ -1,0 +1,31 @@
+Structure attendue pour la V5 :
+
+/index.html
+/styles.css
+/script.js
+/contact.php
+/merci.html
+/erreur.html
+/mentions-legales.html
+/politique-confidentialite.html
+/robots.txt
+/sitemap.xml
+/assets/logo-smart-cp.png
+/assets/alexandre-brihiez.jpg
+/assets/alexandre-brihiez-hero.jpg
+/assets/favicon.png
+/assets/og-image.png
+/assets/flow-visual.svg
+
+Si styles.css ou assets/ n’est pas au même niveau que index.html, le site s’affichera sans design.
+
+Le formulaire nécessite PHP actif côté IONOS.
+
+
+V9.3 GOOGLE WORKSPACE
+---------------------
+- contact.php supprimé.
+- Formulaire branché sur Google Apps Script :
+  https://script.google.com/macros/s/AKfycbzH3WC8dPqMKVTN5LrT7tvu3Ym4ML0ldmOvXth1I6VuYKkiecqiAumeT8MQb3aUHDeADA/exec
+- Compatible GitHub Pages.
+- CNAME à conserver lors de l'upload GitHub.
