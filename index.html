@@ -275,14 +275,31 @@
         </div>
 
         <div class="diagnostic-panel reveal">
-          <div class="diagnostic-copy">
-            <p>
-              L’objectif n’est pas de “faire un quiz”. Vos réponses permettent de voir ce que vous avez déjà identifié :
-              silos, dépendance à Excel, ressaisies, manque de visibilité, besoin de changement d’ERP ou intégration Odoo à reprendre.
-            </p>
-            <p>
-              Vous obtenez une lecture simple, directement exploitable pour lancer la bonne discussion dès le premier échange.
-            </p>
+          <div class="diagnostic-intro-card">
+            <div class="diagnostic-intro-copy">
+              <p>
+                L’objectif n’est pas de “faire un quiz”. Vos réponses permettent de voir ce que vous avez déjà identifié :
+                silos, dépendance à Excel, ressaisies, manque de visibilité, besoin de changement d’ERP ou intégration Odoo à reprendre.
+              </p>
+              <p>
+                Vous obtenez une lecture simple, directement exploitable pour lancer la bonne discussion dès le premier échange.
+              </p>
+            </div>
+
+            <div class="diagnostic-intro-benefits" aria-label="Ce que vous obtenez">
+              <article>
+                <strong>1er score</strong>
+                <span>Une lecture rapide de la situation.</span>
+              </article>
+              <article>
+                <strong>3 items</strong>
+                <span>Organisation, outils et pilotage.</span>
+              </article>
+              <article>
+                <strong>Synthèse</strong>
+                <span>De quoi démarrer un échange concret.</span>
+              </article>
+            </div>
 
             <div class="diagnostic-legend">
               <span><i></i> Organisation</span>
@@ -292,105 +309,108 @@
           </div>
 
           <div class="diagnostic-box smart-diagnostic" data-diagnostic>
+            <div class="diagnostic-box-grid">
+              <div class="diagnostic-checks">
+                <label data-category="organisation" data-weight="2">
+                  <input type="checkbox" value="Les services travaillent encore trop en silo">
+                  <span>
+                    <strong>Services en silo</strong>
+                    Les équipes ne partagent pas toujours les mêmes informations ou priorités.
+                  </span>
+                </label>
 
-          <div class="diagnostic-checks">
-            <label data-category="organisation" data-weight="2">
-              <input type="checkbox" value="Les services travaillent encore trop en silo">
-              <span>
-                <strong>Services en silo</strong>
-                Les équipes ne partagent pas toujours les mêmes informations ou priorités.
-              </span>
-            </label>
+                <label data-category="outils" data-weight="3">
+                  <input type="checkbox" value="Excel structure encore des processus critiques">
+                  <span>
+                    <strong>Excel comme colonne vertébrale</strong>
+                    Plusieurs fichiers Excel pilotent des processus importants.
+                  </span>
+                </label>
 
-            <label data-category="outils" data-weight="3">
-              <input type="checkbox" value="Excel structure encore des processus critiques">
-              <span>
-                <strong>Excel comme colonne vertébrale</strong>
-                Plusieurs fichiers Excel pilotent des processus importants.
-              </span>
-            </label>
+                <label data-category="outils" data-weight="3">
+                  <input type="checkbox" value="Des informations sont ressaisies dans plusieurs outils">
+                  <span>
+                    <strong>Double saisie</strong>
+                    Les mêmes données sont ressaisies dans plusieurs logiciels.
+                  </span>
+                </label>
 
-            <label data-category="outils" data-weight="3">
-              <input type="checkbox" value="Des informations sont ressaisies dans plusieurs outils">
-              <span>
-                <strong>Double saisie</strong>
-                Les mêmes données sont ressaisies dans plusieurs logiciels.
-              </span>
-            </label>
+                <label data-category="pilotage" data-weight="3">
+                  <input type="checkbox" value="Le dirigeant manque d’indicateurs fiables en temps réel">
+                  <span>
+                    <strong>Pilotage à vue</strong>
+                    Les indicateurs clés ne sont pas disponibles ou pas fiables au bon moment.
+                  </span>
+                </label>
 
-            <label data-category="pilotage" data-weight="3">
-              <input type="checkbox" value="Le dirigeant manque d’indicateurs fiables en temps réel">
-              <span>
-                <strong>Pilotage à vue</strong>
-                Les indicateurs clés ne sont pas disponibles ou pas fiables au bon moment.
-              </span>
-            </label>
+                <label data-category="organisation" data-weight="2">
+                  <input type="checkbox" value="Les processus reposent trop sur quelques personnes clés">
+                  <span>
+                    <strong>Dépendance aux personnes clés</strong>
+                    L’organisation repose trop sur les habitudes ou la mémoire de quelques collaborateurs.
+                  </span>
+                </label>
 
-            <label data-category="organisation" data-weight="2">
-              <input type="checkbox" value="Les processus reposent trop sur quelques personnes clés">
-              <span>
-                <strong>Dépendance aux personnes clés</strong>
-                L’organisation repose trop sur les habitudes ou la mémoire de quelques collaborateurs.
-              </span>
-            </label>
+                <label data-category="outils" data-weight="2">
+                  <input type="checkbox" value="Les logiciels actuels freinent l’évolution de l’entreprise">
+                  <span>
+                    <strong>Outils vieillissants</strong>
+                    Les logiciels actuels freinent l’évolution, l’automatisation ou les obligations à venir.
+                  </span>
+                </label>
 
-            <label data-category="outils" data-weight="2">
-              <input type="checkbox" value="Les logiciels actuels freinent l’évolution de l’entreprise">
-              <span>
-                <strong>Outils vieillissants</strong>
-                Les logiciels actuels freinent l’évolution, l’automatisation ou les obligations à venir.
-              </span>
-            </label>
+                <label data-category="pilotage" data-weight="2">
+                  <input type="checkbox" value="Les relances, priorités ou statuts sont difficiles à suivre">
+                  <span>
+                    <strong>Suivi difficile</strong>
+                    Les relances, statuts, priorités ou arbitrages sont difficiles à suivre proprement.
+                  </span>
+                </label>
 
-            <label data-category="pilotage" data-weight="2">
-              <input type="checkbox" value="Les relances, priorités ou statuts sont difficiles à suivre">
-              <span>
-                <strong>Suivi difficile</strong>
-                Les relances, statuts, priorités ou arbitrages sont difficiles à suivre proprement.
-              </span>
-            </label>
+                <label data-category="outils" data-weight="2">
+                  <input type="checkbox" value="L’intégration Odoo actuelle est à reprendre ou à améliorer">
+                  <span>
+                    <strong>Intégration Odoo à reprendre</strong>
+                    Odoo est déjà en place, mais l’accompagnement, le paramétrage ou l’adoption doivent être repris.
+                  </span>
+                </label>
+              </div>
 
-            <label data-category="outils" data-weight="2">
-              <input type="checkbox" value="L’intégration Odoo actuelle est à reprendre ou à améliorer">
-              <span>
-                <strong>Intégration Odoo à reprendre</strong>
-                Odoo est déjà en place, mais l’accompagnement, le paramétrage ou l’adoption doivent être repris.
-              </span>
-            </label>
-          </div>
+              <aside class="diagnostic-side">
+                <div class="score smart-score">
+                  <div class="score-ring" data-score-ring><span data-score>0</span></div>
+                  <div>
+                    <strong data-score-title>Diagnostic à lancer</strong>
+                    <p data-score-text>Cochez vos irritants pour obtenir une première lecture.</p>
+                  </div>
+                </div>
 
-          <div class="score smart-score">
-            <div class="score-ring" data-score-ring><span data-score>0</span></div>
-            <div>
-              <strong data-score-title>Diagnostic à lancer</strong>
-              <p data-score-text>Cochez vos irritants pour obtenir une première lecture.</p>
+                <div class="diagnostic-bars" aria-label="Répartition des irritants">
+                  <div>
+                    <span>Organisation</span>
+                    <progress max="100" value="0" data-bar-organisation></progress>
+                  </div>
+                  <div>
+                    <span>Outils</span>
+                    <progress max="100" value="0" data-bar-outils></progress>
+                  </div>
+                  <div>
+                    <span>Pilotage</span>
+                    <progress max="100" value="0" data-bar-pilotage></progress>
+                  </div>
+                </div>
+
+                <div class="diagnostic-recommendation" data-recommendation>
+                  <strong>Recommandation</strong>
+                  <p>Commencez par cocher les irritants qui ressemblent à votre quotidien.</p>
+                </div>
+
+                <div class="diagnostic-actions">
+                  <a class="btn btn-primary full" href="#contact" data-copy-diagnostic>Joindre ce diagnostic à ma demande</a>
+                  <a class="btn btn-secondary full" href="https://calendar.app.google/hKwgaX4y8oV1bUAd6" target="_blank" rel="noopener">Planifier directement un échange</a>
+                </div>
+              </aside>
             </div>
-          </div>
-
-          <div class="diagnostic-bars" aria-label="Répartition des irritants">
-            <div>
-              <span>Organisation</span>
-              <progress max="100" value="0" data-bar-organisation></progress>
-            </div>
-            <div>
-              <span>Outils</span>
-              <progress max="100" value="0" data-bar-outils></progress>
-            </div>
-            <div>
-              <span>Pilotage</span>
-              <progress max="100" value="0" data-bar-pilotage></progress>
-            </div>
-          </div>
-
-          <div class="diagnostic-recommendation" data-recommendation>
-            <strong>Recommandation</strong>
-            <p>Commencez par cocher les irritants qui ressemblent à votre quotidien.</p>
-          </div>
-
-          <div class="diagnostic-actions">
-            <a class="btn btn-primary full" href="#contact" data-copy-diagnostic>Joindre ce diagnostic à ma demande</a>
-            <a class="btn btn-secondary full" href="https://calendar.app.google/hKwgaX4y8oV1bUAd6" target="_blank" rel="noopener">Planifier directement un échange</a>
-          
           </div>
         </div>
       </div>
@@ -449,25 +469,33 @@
       </div>
     </section>
 
-    <section class="section odoo-section" id="odoo">
-      <div class="container odoo-grid">
-        <div class="flow-visual reveal">
-          <img src="assets/flow-visual.svg" alt="Schéma illustrant la transformation des outils éclatés en flux structurés et pilotage clair">
-        </div>
-
-        <div class="odoo-copy reveal">
+    <section class="section odoo-section odoo-section-v911" id="odoo">
+      <div class="container">
+        <div class="odoo-heading-centered reveal">
           <p class="kicker">Socle technologique</p>
           <h2>Odoo : un besoin, une application, une plateforme.</h2>
           <p>
-            Odoo permet d’avancer progressivement sans empiler les outils. Chaque brique répond à un besoin, mais l’ensemble reste connecté dans une logique de plateforme, avec une vision commune des flux et des données.
+            Odoo permet d’avancer progressivement sans empiler les outils. Chaque brique répond à un besoin,
+            mais l’ensemble reste connecté dans une logique de plateforme, avec une vision commune des flux et des données.
           </p>
           <div class="pill-cloud" aria-label="Exemples de flux">
             <span>CRM</span><span>Ventes</span><span>Achats</span><span>Stock</span><span>Projets</span><span>Support</span><span>Facturation</span><span>Reporting</span>
           </div>
-          <div class="odoo-inline-brand" aria-label="Socle Odoo">
-            <span>Socle :</span>
-            <img src="assets/odoo_logo.svg" alt="Logo Odoo">
+        </div>
+
+        <div class="odoo-visual-centered reveal">
+          <img src="assets/flow-visual.svg" alt="Schéma illustrant la transformation des outils éclatés en flux structurés et pilotage clair">
+        </div>
+
+        <div class="odoo-partner-cta odoo-partner-cta-centered reveal">
+          <div>
+            <strong>Vous souhaitez tester ou créer votre environnement Odoo&nbsp;?</strong>
+            <p>Utilisez le lien SMART C&amp;P pour démarrer depuis le bon socle, avec un accompagnement possible dès les premières étapes.</p>
           </div>
+          <a class="btn btn-primary odoo-partner-button" href="https://www.odoo.com/fr_FR?utm_campaign=partner-08e0f5fc&utm_source=partner_ref" target="_blank" rel="noopener sponsored">
+            <img src="assets/odoo_logo.svg" alt="" aria-hidden="true">
+            <span>Découvrir Odoo avec SMART C&amp;P</span>
+          </a>
         </div>
       </div>
     </section>
@@ -531,13 +559,16 @@
             je vous écoute et je vous pose des questions.
           </p>
           <p>
-            Quand le contexte est clair, je peux commencer à être utile : clarifier la situation,
+            Quand le contexte est clair, je peux commencer à travailler : clarifier la situation,
             fixer des objectifs, définir les étapes, impulser le rythme et accompagner l’avancement dans le temps.
           </p>
           <div class="profile-actions">
-            <a class="btn btn-secondary" href="https://www.linkedin.com/in/alexandre-brihiez/" target="_blank" rel="noopener">Voir mon LinkedIn</a>
-            <a class="btn btn-secondary" href="https://linktr.ee/alexandre.brihiez" target="_blank" rel="noopener">Mes liens utiles</a>
-            <a class="btn btn-primary" href="#contact">M’écrire</a>
+            <a class="btn btn-secondary profile-linkedin-btn" href="https://www.linkedin.com/in/alexandre-brihiez/" target="_blank" rel="noopener">
+              <img src="assets/linkedin-mark.svg" alt="" aria-hidden="true">
+              <span>Voir mon LinkedIn</span>
+            </a>
+            <a class="btn btn-secondary" href="https://linktr.ee/alexandre.brihiez" target="_blank" rel="noopener">Mon Linktree</a>
+            <a class="btn btn-primary" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -566,6 +597,56 @@
             <p>“Réactif, impliqué et doté d’un très bon relationnel dès le premier contact.”</p>
             <footer>Eddy A. · Négociant en outillage</footer>
           </blockquote>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section partnership-section" id="partenariat">
+      <div class="container partnership-panel reveal">
+        <div class="partnership-copy">
+          <p class="kicker">Partenariat</p>
+          <h2>Un partenariat naturel avec ADII.</h2>
+          <p>SMART C&amp;P avance aux côtés d’ADII, partenaire informatique albigeois dirigé par Antoine KHADEMI depuis 2009.</p>
+          <p>Cette complémentarité est évidente : ADII accompagne les PE et PME locales sur leur socle IT et leurs besoins informatiques du quotidien, pendant que SMART C&amp;P intervient sur la digitalisation des flux, l’ERP, Odoo, les données et le pilotage.</p>
+          <div class="partnership-logo-wrap" aria-label="Logo ADII">
+            <img src="assets/logo-adii.png" alt="Logo ADII, votre partenaire informatique">
+          </div>
+          <p class="partnership-conclusion">En entrant au capital de SMART C&amp;P, Antoine KHADEMI et Alexandre BRIHIEZ confirment une volonté commune : construire une synergie durable entre IT et digital, au service de leurs clients.</p>
+          <div class="partnership-actions">
+            <a class="btn btn-primary partnership-adii-btn" href="https://www.adii.fr/" target="_blank" rel="noopener">Découvrir ADII</a>
+            <a class="btn btn-secondary partnership-linkedin-btn" href="https://www.linkedin.com/company/smart-conseiletperformance/" target="_blank" rel="noopener">
+              <img src="assets/linkedin-mark.svg" alt="" aria-hidden="true">
+              <span>LinkedIn Smart C&amp;P</span>
+            </a>
+            <a class="btn btn-secondary partnership-linkedin-btn" href="https://www.linkedin.com/company/adii-albi/" target="_blank" rel="noopener">
+              <img src="assets/linkedin-mark.svg" alt="" aria-hidden="true">
+              <span>LinkedIn ADII</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="partnership-grid" aria-label="Domaines d’expertise ADII">
+          <article class="partnership-card">
+            <div class="partnership-icon">☁</div>
+            <h3>IT Cloud</h3>
+            <p>Hébergement, services cloud, accès, continuité et souplesse du système d’information.</p>
+          </article>
+          <article class="partnership-card">
+            <div class="partnership-icon icon-network"><img src="assets/network-icon.svg" alt="" aria-hidden="true"></div>
+            <h3>Réseau</h3>
+            <p>Connectivité, interconnexion des sites, infrastructure et stabilité du quotidien.</p>
+          </article>
+          <article class="partnership-card">
+            <div class="partnership-icon">⛨</div>
+            <h3>Cybersécurité</h3>
+            <p>Protection des accès, sauvegarde, résilience et bonnes pratiques de sécurité.</p>
+          </article>
+          <article class="partnership-card">
+            <div class="partnership-icon">🛠</div>
+            <h3>Maintenance &amp; SAV</h3>
+            <p>Accompagnement de proximité, support, maintenance et suivi opérationnel dans la durée.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -700,6 +781,7 @@
         <a href="https://calendar.app.google/hKwgaX4y8oV1bUAd6" target="_blank" rel="noopener">Planifier un échange</a>
         <a href="https://www.linkedin.com/in/alexandre-brihiez/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://linktr.ee/alexandre.brihiez" target="_blank" rel="noopener">Linktree</a>
+        <a href="https://www.odoo.com/fr_FR?utm_campaign=partner-08e0f5fc&utm_source=partner_ref" target="_blank" rel="noopener sponsored">Découvrir Odoo</a>
       </div>
       <div>
         <strong>Informations</strong>

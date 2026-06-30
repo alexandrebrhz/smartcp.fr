@@ -357,3 +357,85 @@ Il faut utiliser l'URL de déploiement qui se termine par `/exec`.
 - Ajout effectif de l’option diagnostic :
   “Intégration Odoo à reprendre”.
 - Reformulation du texte d’introduction du diagnostic dans la structure HTML réelle.
+
+
+## V9.10 — Lien partenaire Odoo
+
+- Ajout d’un bouton visible dans le bloc Odoo :
+  “Découvrir Odoo avec SMART C&P”
+- Lien partenaire intégré :
+  https://www.odoo.com/fr_FR?utm_campaign=partner-08e0f5fc&utm_source=partner_ref
+- Ajout d’un rappel discret “Découvrir Odoo” dans le footer.
+- Formulaire Google Apps Script, diagnostic, Analytics et bannière de consentement conservés.
+
+
+## V9.11 — Bloc Odoo harmonisé
+
+- Recentrage du bloc “Socle technologique”.
+- Schéma “outil éclaté / flux structuré / pilotage clair” remonté au centre.
+- CTA partenaire Odoo placé sous le schéma.
+- Suppression du cartouche “Socle : Odoo”.
+- Ajout du logo Odoo directement dans le bouton “Découvrir Odoo avec SMART C&P”.
+
+
+## V9.12 — Aération du bloc Odoo
+
+- Plus d’espace vertical dans la section Odoo.
+- H2 légèrement mieux respirant.
+- Paragraphe plus espacé sous le titre.
+- Pastilles descendues et un peu plus aérées.
+- Respiration générale améliorée sans changer la structure.
+
+
+## V9.13 — Partenariat ADII
+
+- Ajout d’un bloc “Un partenariat naturel avec ADII”.
+- Présentation de la complémentarité entre ADII (IT) et SMART C&P (ERP / digitalisation / Odoo).
+- Ajout du logo ADII.
+- Ajout de 4 tuiles : IT Cloud, Réseau, Cybersécurité, Maintenance & SAV.
+- Liens vers le site ADII et les pages LinkedIn ADII / SMART C&P.
+
+
+## V9.14 — Ajustements ADII
+
+- Bouton “Découvrir ADII” rendu plus visible.
+- Ajout du logo LinkedIn sur les boutons Smart C&P et ADII.
+- Icône “Réseau” agrandie pour une meilleure lisibilité.
+
+
+## V9.15 — Refonte du diagnostic
+
+- Bloc d’introduction du diagnostic réorganisé pour supprimer la grande zone blanche.
+- Légende et bénéfices regroupés dans une vraie carte d’introduction.
+- Outil de diagnostic remaquetté en 2 colonnes : checklist à gauche, score / synthèse / actions à droite.
+- Meilleure lecture desktop, tout en restant responsive sur mobile.
+
+
+## V9.16 — Icônes LinkedIn et Réseau
+
+- Remplacement du logo LinkedIn bitmap par un pictogramme SVG net.
+- Correction de l’affichage des boutons LinkedIn Smart C&P et LinkedIn ADII.
+- Remplacement de l’icône “Réseau” par un pictogramme d’interconnexion.
+- Ajustement CSS pour une meilleure lisibilité des icônes.
+
+
+## V9.17 — Tuiles diagnostic compactées
+
+- Tuile 1 : “Premier score” devient “1er score”.
+- Tuile 2 : “3 familles” devient “3 items”.
+- Tuile 3 : “Synthèse utile” devient “Synthèse”.
+- Objectif : compacter les titres et harmoniser visuellement les trois tuiles du bloc diagnostic.
+
+
+## V9.18 — Icône réseau harmonisée
+
+- Icône Réseau recolorisée en bleu/cyan pour être cohérente avec les autres pictogrammes du bloc ADII.
+
+
+## V9.19 — Profil boutons
+
+- Ajout du logo LinkedIn dans le bouton “Voir mon LinkedIn”.
+- Reformulation du texte profil :
+  “je peux commencer à travailler” au lieu de “je peux commencer à être utile”.
+- Renommage “Mes liens utiles” en “Mon Linktree”.
+- Renommage “M’écrire” en “Contact”.

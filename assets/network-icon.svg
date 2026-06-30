@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Réseau">
+  <g fill="none" stroke="#7CE5EE" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="32" cy="32" r="10"/>
+    <circle cx="12" cy="20" r="5"/>
+    <circle cx="52" cy="18" r="5"/>
+    <circle cx="54" cy="46" r="5"/>
+    <circle cx="13" cy="47" r="5"/>
+    <path d="M17 22l7 5M40 27l8-6M42 37l8 6M24 38l-7 6M32 22V12M32 42v10"/>
+  </g>
+</svg>
