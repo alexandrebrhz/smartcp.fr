@@ -2754,3 +2754,319 @@ body {
     width: 100%;
   }
 }
+
+
+/* V9.6 — Méthode & savoir-faire */
+.method-section-v96 {
+  position: relative;
+  overflow: hidden;
+}
+
+.method-section-v96::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(27, 184, 203, .13), transparent 34%),
+    radial-gradient(circle at 88% 62%, rgba(113, 75, 103, .11), transparent 34%);
+  pointer-events: none;
+}
+
+.method-section-v96 .container {
+  position: relative;
+  z-index: 1;
+}
+
+.method-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr);
+  gap: 28px;
+  align-items: stretch;
+  margin-bottom: 28px;
+}
+
+.method-hero h2 {
+  max-width: 980px;
+  margin-bottom: 18px;
+}
+
+.method-hero p {
+  max-width: 840px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.method-posture-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 28px;
+  border-radius: 28px;
+  background: var(--navy);
+  color: #fff;
+  box-shadow: 0 24px 60px rgba(7,21,38,.18);
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.method-posture-card strong {
+  font-size: 1.35rem;
+  line-height: 1.15;
+}
+
+.method-posture-card span {
+  color: #d9e7f5;
+  line-height: 1.55;
+}
+
+.method-steps-v96 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.method-steps-v96 article {
+  position: relative;
+  padding: 24px;
+  min-height: 270px;
+  border-radius: 28px;
+  background: rgba(255,255,255,.84);
+  border: 1px solid rgba(16, 42, 67, .08);
+  box-shadow: 0 22px 50px rgba(7,21,38,.08);
+  overflow: hidden;
+}
+
+.method-steps-v96 article::after {
+  content: "";
+  position: absolute;
+  right: -34px;
+  top: -34px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: rgba(27,184,203,.12);
+}
+
+.method-steps-v96 span {
+  display: inline-flex;
+  margin-bottom: 46px;
+  color: var(--turquoise-dark);
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: .78rem;
+}
+
+.method-steps-v96 h3 {
+  margin-bottom: 10px;
+  font-size: 1.18rem;
+}
+
+.method-steps-v96 p {
+  color: var(--muted);
+  line-height: 1.58;
+}
+
+.knowhow-panel {
+  display: grid;
+  grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr);
+  gap: 24px;
+  align-items: stretch;
+  padding: 30px;
+  border-radius: 32px;
+  background: var(--navy);
+  color: #fff;
+  box-shadow: 0 28px 70px rgba(7,21,38,.16);
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.knowhow-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.knowhow-intro .kicker {
+  color: var(--turquoise);
+}
+
+.knowhow-intro h2 {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: .98;
+  margin-bottom: 18px;
+}
+
+.knowhow-intro p {
+  color: #d7e5f3;
+  line-height: 1.68;
+}
+
+.knowhow-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.knowhow-grid article {
+  padding: 20px;
+  border-radius: 24px;
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.15);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+.knowhow-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 36px;
+  padding: 0 12px;
+  margin-bottom: 18px;
+  border-radius: 999px;
+  background: rgba(27,184,203,.16);
+  color: var(--turquoise);
+  font-weight: 950;
+  letter-spacing: .04em;
+  font-size: .8rem;
+}
+
+.knowhow-grid h3 {
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.knowhow-grid p {
+  margin: 0;
+  color: #d9e7f5;
+  line-height: 1.55;
+}
+
+@media (max-width: 1050px) {
+  .method-hero,
+  .knowhow-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .method-steps-v96 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .method-steps-v96 article {
+    min-height: 230px;
+  }
+}
+
+@media (max-width: 720px) {
+  .method-steps-v96,
+  .knowhow-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .method-posture-card,
+  .knowhow-panel {
+    border-radius: 24px;
+    padding: 22px;
+  }
+
+  .method-steps-v96 article {
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .method-steps-v96 span {
+    margin-bottom: 34px;
+  }
+}
+
+
+/* V9.7 — ajustements de fond */
+.method-posture-card strong {
+  max-width: 360px;
+}
+
+.method-posture-card span {
+  max-width: 440px;
+}
+
+.diagnostic-intent-note {
+  margin-top: 14px;
+  max-width: 780px;
+  color: var(--muted);
+  line-height: 1.7;
+  font-weight: 650;
+}
+
+.diagnostic-section .section-title,
+.diagnostic-section .diagnostic-head {
+  max-width: 980px;
+}
+
+.diagnostic-shell {
+  width: 100%;
+}
+
+.footer-cookie-link-line {
+  display: block;
+  width: fit-content;
+  margin-top: 8px;
+}
+
+.footer .footer-cookie-link-line + span,
+.footer span + .footer-cookie-link-line {
+  margin-top: 10px;
+}
+
+@media (max-width: 720px) {
+  .method-hero h2 {
+    font-size: clamp(2.5rem, 11vw, 4rem);
+  }
+
+  .diagnostic-intent-note {
+    font-size: .98rem;
+  }
+}
+
+
+/* V9.8 — Résilience SI & rôle du partenaire */
+.method-section-v96 .method-hero h2 {
+  max-width: 760px;
+}
+
+.method-section-v96 .method-hero p {
+  max-width: 900px;
+}
+
+.method-posture-card strong {
+  max-width: 420px;
+}
+
+.method-posture-card span {
+  max-width: 460px;
+}
+
+.pain-section .section-title p {
+  max-width: 980px;
+}
+
+
+/* V9.9 — Odoo, silos logiciels et diagnostic plus direct */
+.knowhow-intro h2 {
+  max-width: 560px;
+}
+
+.knowhow-intro p {
+  max-width: 620px;
+}
+
+.diagnostic-intent-note {
+  max-width: 860px;
+}
+
+.method-posture-card strong {
+  max-width: 460px;
+}

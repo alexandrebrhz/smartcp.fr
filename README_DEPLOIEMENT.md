@@ -291,3 +291,69 @@ Il faut utiliser l'URL de déploiement qui se termine par `/exec`.
 
 - Injection effective de la bannière de consentement avant `script.js`.
 - Ajout effectif du bouton “Gestion des cookies” dans le footer.
+
+
+## V9.6 — Méthode & savoir-faire
+
+- Remplacement du bloc méthode par une proposition plus forte :
+  - Écouter
+  - Clarifier
+  - Structurer
+  - Déployer
+- Ajout d’un bloc posture :
+  “Ni au-dessus, ni à la place. À vos côtés.”
+- Ajout d’un bloc savoir-faire avec 6 domaines :
+  ERP & Odoo, Commerce & CRM, Finance & pilotage, SIRH & organisation, Mobilité & terrain, IA & automatisation.
+- Diagnostic conservé.
+- Formulaire Google Apps Script conservé.
+- Google Analytics + bannière de consentement conservés.
+
+
+## V9.7 — Ajustements de fond
+
+- Repositionnement du bloc méthode autour de l’idée :
+  “Installer un ERP, c’est 10 % du projet.”
+- Mise en avant de la valeur créée avant le paramétrage :
+  compréhension des enjeux, transcription du besoin, adoption, ROI.
+- Reformulation de l’encart bleu autour du client :
+  “À vos côtés pour comprendre vos enjeux.”
+- Ajustement du bloc enjeux autour de la résilience, de la croissance et de la pérennisation.
+- Diagnostic conservé mais mieux contextualisé :
+  ce n’est pas un quiz, c’est un point de départ pour objectiver les irritants.
+- Correction du bloc profil :
+  “je vous écoute et je vous pose des questions.”
+- Correction footer : “Gestion des cookies” séparé visuellement de l’adresse.
+
+
+## V9.8 — Résilience SI & partenaire
+
+- Bloc enjeux recentré sur la question :
+  “À quel point votre système d’information est-il résilient ?”
+- Reformulation des constats :
+  effets silo, Excel rustine, pilotage à vue, coûts invisibles.
+- Ajout de la notion de fragilités identifiées, documentées, priorisées et traitées.
+- Bloc méthode simplifié :
+  “Installer un ERP, c’est 10 % du projet.”
+- Mise en avant du rôle du partenaire :
+  accompagnement, engagement, expertise métier, volonté d’aboutir.
+- Méthode ajustée autour de l’écoute, de la documentation, de la traduction du besoin et du ROI.
+
+
+## V9.9 — Odoo, silos logiciels et diagnostic
+
+- Remplacement de l’encart méthode :
+  “Le choix du partenaire engage votre réussite.”
+- Recentrage des champs d’action sur le choix d’un nouvel ERP et Odoo.
+- Suppression de la formule “pas des silos de plus”.
+- Suppression de l’idée “le besoin n’est pas toujours de changer d’outil”.
+- Diagnostic renommé :
+  “30 secondes pour analyser vos enjeux.”
+- Ajout de la notion d’intégration Odoo à reprendre / améliorer dans le diagnostic.
+- Diagnostic, formulaire Google Apps Script, Analytics et consentement conservés.
+
+
+### Correctif V9.9
+
+- Ajout effectif de l’option diagnostic :
+  “Intégration Odoo à reprendre”.
+- Reformulation du texte d’introduction du diagnostic dans la structure HTML réelle.
