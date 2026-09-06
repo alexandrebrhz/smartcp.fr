@@ -1,0 +1,60 @@
+/* V63 — Contact : harmonisation avec le header/footer validés du site */
+.contact-page .page-hero{
+  padding:48px 0 42px;
+}
+
+.contact-page .page-hero .container,
+.contact-page .section > .container{
+  width:min(1180px, calc(100% - 56px));
+}
+
+.contact-page .page-hero .breadcrumbs{
+  margin-bottom:20px;
+}
+
+.contact-page .page-hero h1{
+  font-size:46px;
+  line-height:1.08;
+  letter-spacing:-.04em;
+  margin:0 0 18px;
+  white-space:nowrap;
+}
+
+.contact-page .page-hero .lead{
+  font-size:16px;
+  line-height:1.62;
+  max-width:850px;
+}
+
+/* Le header et le footer reprennent exactement les dimensions du reste du site. */
+.contact-page .mh-header{
+  background:rgba(255,255,255,.97);
+  backdrop-filter:none;
+}
+
+.contact-page .sc-footer{
+  margin-top:24px;
+}
+
+@media(max-width:980px){
+  .contact-page .page-hero h1{
+    font-size:40px;
+    white-space:normal;
+  }
+}
+
+@media(max-width:780px){
+  .contact-page .page-hero{
+    padding:34px 0 30px;
+  }
+
+  .contact-page .page-hero .container,
+  .contact-page .section > .container{
+    width:min(100% - 28px,1180px);
+  }
+
+  .contact-page .page-hero h1{
+    font-size:34px;
+    line-height:1.12;
+  }
+}

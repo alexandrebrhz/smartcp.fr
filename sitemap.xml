@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://smartcp.fr/</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://smartcp.fr/mentions-legales.html</loc>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://smartcp.fr/politique-confidentialite.html</loc>
-    <priority>0.3</priority>
-  </url>
+  <url><loc>https://smartcp.fr/</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://smartcp.fr/decouvrir-odoo.html</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://smartcp.fr/accompagnements.html</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://smartcp.fr/methode.html</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://smartcp.fr/equipe.html</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://smartcp.fr/ia.html</loc><lastmod>2026-09-07</lastmod></url>
+  <url><loc>https://smartcp.fr/contact.html</loc><lastmod>2026-09-07</lastmod></url>
 </urlset>

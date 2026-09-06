@@ -1,0 +1,543 @@
+
+.methode-page{background:#fff}
+.me-hero{
+  padding:44px 0 14px;
+  background:
+    radial-gradient(circle at 100% 12%, rgba(105,82,179,.08), transparent 35%),
+    linear-gradient(180deg,#fff 0%,#fdfdff 100%);
+}
+.me-hero-grid{display:grid;grid-template-columns:47% 53%;gap:16px;align-items:center}
+.me-copy h1{
+  font-size:52px;line-height:1.06;letter-spacing:-.045em;margin:0 0 18px;font-weight:800;color:var(--navy)
+}
+.me-copy h1 span{color:var(--purple)}
+.me-lead{font-size:15px;line-height:1.6;color:#445168;max-width:520px;margin:0 0 12px}
+.me-hero-visual{overflow:hidden;border-radius:16px}
+.me-hero-visual img{display:block;border-radius:16px;width:calc(100% + 34px);margin-left:-34px}
+.me-mini-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.me-mini-card{
+  min-height:72px;padding:14px 12px;border:1px solid #e3e5eb;border-radius:10px;background:#fff;
+  display:flex;align-items:center;gap:12px;box-shadow:0 8px 16px rgba(19,28,58,.04)
+}
+.me-mini-icon{font-size:26px;font-weight:800;line-height:1}
+.me-mini-card div:last-child{font-size:12px;line-height:1.35;color:#2d3955}
+.me-mini-card b{font-weight:700}
+.me-steps{padding:12px 0 24px}
+.me-steps h2{text-align:center;font-size:27px;line-height:1.15;margin:0 0 4px}
+.me-subtitle{text-align:center;color:#5d6980;font-size:13px;margin:0 0 16px}
+.me-steps-line{
+  display:grid;grid-template-columns:repeat(7,1fr);gap:8px;position:relative
+}
+.me-steps-line:before{
+  content:"";position:absolute;left:6%;right:6%;top:20px;border-top:2px dotted #b9c1d0;z-index:0
+}
+.me-step{text-align:center;padding:0 8px;position:relative;z-index:1}
+.me-step-num{
+  width:40px;height:40px;margin:0 auto 10px;border-radius:50%;display:grid;place-items:center;
+  color:#fff;font-weight:800;font-size:22px;box-shadow:0 8px 16px rgba(0,0,0,.06)
+}
+.purple-bg{background:var(--purple)}
+.teal-bg{background:var(--teal)}
+.me-step-icon{font-size:30px;line-height:1;margin-bottom:8px;font-weight:800}
+.me-step h3{font-size:14px;line-height:1.2;margin:0 0 6px;color:var(--navy)}
+.me-step p{font-size:10px;line-height:1.45;margin:0;color:#566278}
+.me-agile{padding:0 0 14px}
+.me-agile-grid{
+  display:grid;grid-template-columns:52% 48%;gap:20px;padding:24px;border:1px solid #e3e6ed;border-radius:14px;background:#fff;
+  box-shadow:0 10px 20px rgba(21,31,58,.04)
+}
+.me-agile-copy h2{font-size:25px;line-height:1.15;margin:0 0 14px}
+.me-agile-copy h2 span{color:var(--purple)}
+.me-agile-copy p{font-size:14px;line-height:1.62;color:#4b5770;max-width:480px;margin:0 0 18px}
+.me-checks{list-style:none;margin:0;padding:0}
+.me-checks li{
+  position:relative;padding-left:34px;margin:0 0 14px;font-size:13px;color:#2f3955
+}
+.me-checks li:before{
+  content:"✓";position:absolute;left:0;top:-1px;width:22px;height:22px;border-radius:50%;
+  display:grid;place-items:center;background:var(--purple);color:#fff;font-weight:800;font-size:13px
+}
+.me-agile-visual{overflow:hidden;border-radius:12px}
+.me-agile-visual img{width:100%;display:block;border-radius:12px}
+.me-contexts{padding:14px 0 18px}
+.me-contexts-grid{display:grid;grid-template-columns:56% 44%;gap:16px}
+.me-panel{
+  border:1px solid #e2e5eb;border-radius:14px;padding:22px;background:#fff;box-shadow:0 8px 18px rgba(19,29,58,.04)
+}
+.me-panel h2{font-size:22px;line-height:1.15;margin:0 0 18px}
+.me-panel h2 span{color:var(--purple)}
+.me-context-list{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.me-context-item{display:flex;gap:12px;padding-right:10px;border-right:1px solid #eceef3}
+.me-context-item:last-child{border-right:0}
+.me-context-icon{font-size:28px;font-weight:800;line-height:1}
+.me-context-item h3{font-size:14px;margin:0 0 6px}
+.me-context-item p{font-size:11px;line-height:1.55;color:#566278;margin:0}
+.me-profiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;height:100%}
+.me-profile{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+  gap:12px;padding:10px 8px;border-right:1px solid #eceef3;min-height:160px
+}
+.me-profile:last-child{border-right:0}
+.me-profile-icon{font-size:34px;font-weight:800;line-height:1}
+.me-profile strong{font-size:12px;line-height:1.35;color:var(--navy)}
+.me-footer-banner{padding:0 0 34px}
+.me-footer-banner .mh-container{position:relative}
+.me-footer-banner img{width:100%;display:block;border-radius:14px}
+.me-footer-overlay{
+  position:absolute;inset:0;display:flex;align-items:center;padding:28px;border-radius:14px;
+  background:linear-gradient(90deg, rgba(86,18,111,.86) 0%, rgba(76,34,115,.70) 24%, rgba(0,0,0,0) 60%)
+}
+.me-footer-copy{max-width:470px;color:#fff}
+.mh-kicker.light{color:#fff;opacity:.95}
+.me-footer-copy h2{font-size:23px;line-height:1.18;margin:0 0 12px;color:#fff}
+.me-footer-copy p:not(.mh-kicker){font-size:13px;line-height:1.6;color:rgba(255,255,255,.92);margin:0 0 18px}
+.me-banner-btn{
+  display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 22px;border-radius:10px;
+  background:#fff;color:var(--navy);text-decoration:none;font-weight:700;font-size:14px
+}
+@media(max-width:980px){
+  .me-steps-line{grid-template-columns:repeat(4,1fr)}
+  .me-steps-line:before{display:none}
+  .me-context-list{grid-template-columns:1fr}
+  .me-context-item{border-right:0;border-bottom:1px solid #eceef3;padding-bottom:12px}
+  .me-context-item:last-child{border-bottom:0;padding-bottom:0}
+  .me-profiles{grid-template-columns:repeat(2,1fr)}
+  .me-profile:nth-child(2){border-right:0}
+}
+@media(max-width:780px){
+  .me-hero-grid,.me-agile-grid,.me-contexts-grid{grid-template-columns:1fr}
+  .me-copy h1{font-size:40px}
+  .me-mini-cards{grid-template-columns:1fr}
+  .me-steps-line{grid-template-columns:1fr 1fr}
+  .me-step{
+    border:1px solid #e4e7ee;border-radius:10px;padding:12px 10px;background:#fff
+  }
+  .me-profiles{grid-template-columns:1fr 1fr}
+  .me-profile{border-right:0;border-bottom:1px solid #eceef3;min-height:120px}
+  .me-profile:nth-last-child(-n+2){border-bottom:0}
+  .me-footer-overlay{
+    position:static;background:linear-gradient(180deg,#5f1a75 0%,#117f9f 100%);margin-top:-8px;border-radius:0 0 14px 14px
+  }
+}
+
+
+/* Footer visual fix: the mockup image already contains the text and button visuals. */
+.me-footer-visual-only{position:relative}
+.me-footer-hotspot{
+  position:absolute;
+  left:30px;
+  bottom:28px;
+  width:230px;
+  height:58px;
+  border-radius:12px;
+  text-indent:-9999px;
+  overflow:hidden;
+  z-index:3;
+}
+.me-footer-mobile-cta-wrap{display:none}
+@media(max-width:780px){
+  .me-footer-hotspot{display:none}
+  .me-footer-mobile-cta-wrap{display:block;padding-top:12px}
+  .me-footer-mobile-cta{width:100%;justify-content:center}
+}
+
+/* V55 — Bloc 1 Notre méthode uniquement */
+.me-hero-grid{
+  grid-template-columns:49% 51%;
+  gap:18px;
+}
+.me-copy h1{
+  font-size:45px;
+  line-height:1.08;
+  letter-spacing:-.042em;
+  margin-bottom:18px;
+}
+.me-copy h1 .me-title-line{
+  display:block;
+  white-space:nowrap;
+  color:var(--navy);
+}
+.me-copy h1 .me-title-line em{
+  color:var(--purple);
+  font-style:normal;
+}
+.me-mini-icon{
+  width:38px;
+  height:38px;
+  min-width:38px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0;
+}
+.me-mini-icon img{
+  display:block;
+  width:auto;
+  height:34px;
+  max-width:38px;
+  object-fit:contain;
+}
+.me-hero-visual{
+  overflow:hidden;
+  border-radius:18px;
+}
+.me-hero-visual img{
+  width:100%;
+  margin-left:0;
+  border-radius:18px;
+  display:block;
+}
+@media(max-width:980px){
+  .me-copy h1{font-size:40px;}
+}
+@media(max-width:780px){
+  .me-copy h1{font-size:34px;}
+  .me-copy h1 .me-title-line{white-space:normal;}
+}
+
+/* V56 — Notre méthode : bloc 1 et bloc 2, icônes à 50 px */
+/* Bloc 1 : trois tuiles */
+.me-mini-icon{
+  width:auto;
+  height:56px;
+  min-width:58px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+}
+.me-mini-icon img{
+  display:block;
+  width:auto;
+  height:50px;
+  max-width:none;
+  object-fit:contain;
+}
+
+/* Bloc 2 : icônes 1 à 7 sous les pastilles, au-dessus des titres */
+.me-step-icon{
+  height:58px;
+  margin:0 auto 8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0;
+  line-height:0;
+}
+.me-step-icon img{
+  display:block;
+  width:auto;
+  height:50px;
+  max-width:100%;
+  object-fit:contain;
+}
+
+@media(max-width:780px){
+  .me-mini-icon img,
+  .me-step-icon img{
+    height:50px;
+  }
+}
+
+/* V57 — Notre méthode : harmonisation optique des icônes + tuiles bloc 1 plus larges */
+/* La roue crantée violette du bloc 1 reste la référence visuelle. Les fichiers V57 sont recadrés
+   autour du pictogramme et tous les pictogrammes sont affichés à la même hauteur visuelle. */
+:root{ --me-icon-visual-height:34px; }
+
+/* Bloc 1 : trois tuiles strictement identiques, plus larges, avec débordement léger sur l'image */
+.me-copy{position:relative;z-index:3;}
+.me-mini-cards{
+  width:calc(100% + 150px);
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  position:relative;
+  z-index:4;
+}
+.me-mini-card{
+  height:92px;
+  min-height:92px;
+  box-sizing:border-box;
+  padding:12px 10px;
+  gap:10px;
+}
+.me-mini-card div:last-child{
+  white-space:nowrap;
+  font-size:12px;
+  line-height:1.35;
+}
+.me-mini-icon{
+  width:46px;
+  height:50px;
+  min-width:46px;
+  flex:0 0 46px;
+}
+.me-mini-icon img{
+  width:auto !important;
+  height:var(--me-icon-visual-height) !important;
+  max-width:46px !important;
+  object-fit:contain;
+}
+
+/* Bloc 2 : même hauteur visuelle que la roue violette de référence */
+.me-step-icon{
+  height:50px;
+  margin:0 auto 8px;
+}
+.me-step-icon img{
+  width:auto !important;
+  height:var(--me-icon-visual-height) !important;
+  max-width:58px !important;
+  object-fit:contain;
+}
+
+/* Bloc 4 : vraies icônes fournies par le client, toutes à la même hauteur visuelle */
+.me-context-icon,
+.me-profile-icon{
+  width:44px;
+  min-width:44px;
+  height:44px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0;
+  line-height:0;
+  flex:0 0 44px;
+}
+.me-context-icon img,
+.me-profile-icon img{
+  display:block;
+  width:auto;
+  height:var(--me-icon-visual-height);
+  max-width:44px;
+  object-fit:contain;
+}
+.me-profile{gap:10px;}
+
+@media(max-width:980px){
+  .me-mini-cards{width:100%;}
+  .me-mini-card div:last-child{white-space:normal;}
+}
+@media(max-width:780px){
+  .me-mini-card{height:auto;min-height:82px;}
+  .me-mini-icon img,
+  .me-step-icon img,
+  .me-context-icon img,
+  .me-profile-icon img{height:var(--me-icon-visual-height) !important;}
+}
+
+/* V58 — Notre méthode : bloc 3/4/5 + alignement global des largeurs */
+/* Toutes les sections principales restent strictement dans la largeur standard du site. */
+.me-agile-grid,
+.me-contexts-grid,
+.me-footer-visual-only{
+  width:100%;
+  max-width:100%;
+  box-sizing:border-box;
+}
+
+/* Le gap du bloc 4 est désormais inclus dans les 100% : aucun débordement à droite. */
+.me-contexts-grid{
+  grid-template-columns:minmax(0,56fr) minmax(0,44fr);
+  gap:16px;
+}
+
+/* Bloc 3 : nouveau visuel propre de l'approche agile. */
+.me-agile-visual img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:12px;
+}
+
+/* Bloc 4 — partie gauche : icône + titre sur une ligne, texte sous l'ensemble. */
+.me-context-item{
+  display:block;
+  padding-right:18px;
+}
+.me-context-head{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:8px;
+}
+.me-context-head .me-context-icon{
+  flex:0 0 44px;
+}
+.me-context-item h3{
+  margin:0;
+  font-size:14px;
+  line-height:1.25;
+}
+.me-context-item > p{
+  margin:0;
+  font-size:12px;
+  line-height:1.55;
+  color:#566278;
+}
+
+/* Bloc 5 : nouveau bandeau. */
+.me-footer-visual-only img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:14px;
+}
+/* Le bouton est intégré au visuel : hotspot repositionné sur le nouveau bouton. */
+.me-footer-hotspot{
+  left:2.7%;
+  top:60.2%;
+  bottom:auto;
+  width:21.5%;
+  height:14.2%;
+}
+
+@media(max-width:980px){
+  .me-context-item{padding-right:0;}
+}
+@media(max-width:780px){
+  .me-contexts-grid{grid-template-columns:1fr;}
+  .me-context-head{margin-bottom:6px;}
+  .me-context-item > p{font-size:12px;}
+}
+
+/* V59 — Notre méthode : correction bloc 3/4/5 et largeur commune de page */
+/* Une seule largeur de référence pour tous les blocs de la page Notre méthode. */
+.methode-page main .me-hero-grid,
+.methode-page main .me-steps > .mh-container,
+.methode-page main .me-agile-grid,
+.methode-page main .me-contexts-grid,
+.methode-page main .me-footer-visual-only,
+.methode-page main .me-footer-mobile-cta-wrap{
+  width:min(1180px, calc(100% - 56px)) !important;
+  max-width:none !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  box-sizing:border-box !important;
+}
+
+/* Bloc 3 : le nouveau visuel remplace intégralement l'ancien cycle. */
+.me-agile-visual{
+  overflow:hidden;
+  border-radius:12px;
+}
+.me-agile-visual img{
+  width:100% !important;
+  height:auto !important;
+  display:block;
+  object-fit:contain;
+  border-radius:12px;
+}
+
+/* Bloc 4 — partie gauche : icône + titre sur la même ligne, texte ensuite sur toute la largeur. */
+.me-context-list{
+  align-items:stretch;
+}
+.me-context-item{
+  display:block !important;
+  padding-right:18px;
+  box-sizing:border-box;
+}
+.me-context-head{
+  display:flex !important;
+  align-items:center !important;
+  gap:10px;
+  margin:0 0 9px 0;
+}
+.me-context-head .me-context-icon{
+  flex:0 0 44px;
+}
+.me-context-head h3{
+  margin:0 !important;
+  font-size:14px;
+  line-height:1.25;
+  font-weight:800;
+}
+.me-context-item > p{
+  display:block;
+  width:100%;
+  margin:0 !important;
+  padding:0;
+  font-size:12px !important; /* +1 px par rapport à la version initiale */
+  line-height:1.55;
+  color:#566278;
+}
+
+/* Bloc 5 : nouveau visuel propre, aligné sur la même largeur que les blocs 3 et 4. */
+.me-footer-visual-only{
+  position:relative;
+}
+.me-footer-visual-only img{
+  width:100% !important;
+  height:auto !important;
+  display:block;
+  border-radius:14px;
+}
+.me-footer-hotspot{
+  left:2.7%;
+  top:60.2%;
+  bottom:auto;
+  width:21.5%;
+  height:14.2%;
+}
+
+@media(max-width:780px){
+  .methode-page main .me-hero-grid,
+  .methode-page main .me-steps > .mh-container,
+  .methode-page main .me-agile-grid,
+  .methode-page main .me-contexts-grid,
+  .methode-page main .me-footer-visual-only,
+  .methode-page main .me-footer-mobile-cta-wrap{
+    width:min(100% - 28px, 1180px) !important;
+  }
+  .me-context-item{padding-right:0;}
+}
+
+
+/* V60 — Notre méthode : bloc 3, meilleur équilibre entre le texte et le visuel */
+.methode-page main .me-agile-grid{
+  align-items:center;
+}
+.methode-page main .me-agile-copy p{
+  line-height:1.68;
+  margin:0 0 18px;
+}
+.methode-page main .me-checks li{
+  margin:0 0 13px;
+}
+.methode-page main .me-checks li:last-child{
+  margin-bottom:0;
+}
+.methode-page main .me-agile-visual{
+  display:flex;
+  align-items:center;
+}
+.methode-page main .me-agile-visual img{
+  width:100% !important;
+  height:310px !important;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  border-radius:12px;
+}
+
+@media(max-width:980px){
+  .methode-page main .me-agile-visual img{
+    height:286px !important;
+  }
+}
+
+@media(max-width:780px){
+  .methode-page main .me-agile-grid{
+    align-items:stretch;
+  }
+  .methode-page main .me-agile-copy p{
+    line-height:1.62;
+  }
+  .methode-page main .me-checks li{
+    margin:0 0 14px;
+  }
+  .methode-page main .me-agile-visual img{
+    height:auto !important;
+    object-fit:contain;
+  }
+}

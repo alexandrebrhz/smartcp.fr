@@ -1,0 +1,482 @@
+
+.accompagnements-page{background:#fff}
+.ac-hero{
+  padding:48px 0 24px;
+  background:
+    radial-gradient(circle at 100% 15%, rgba(105,82,179,.08), transparent 35%),
+    linear-gradient(180deg,#fff 0%,#fdfdff 100%);
+}
+.ac-hero-grid{display:grid;grid-template-columns:46% 54%;align-items:center;gap:22px}
+.ac-copy h1{font-size:47px;line-height:1.08;letter-spacing:-.045em;margin:0 0 18px;font-weight:800}
+.ac-copy h1 span{color:var(--purple)}
+.ac-lead{font-size:15px;line-height:1.6;color:#445169;max-width:535px;margin:0}
+.ac-hero-visual img{width:100%;display:block;border-radius:18px}
+.ac-value-strip{padding:18px 0}
+.ac-domains{padding:22px 0 30px}
+.ac-subtitle{text-align:center;color:#647087;font-size:13px;margin:-9px auto 20px;max-width:720px}
+.ac-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ac-card{
+  position:relative;border:1px solid #e1e3e9;border-radius:12px;padding:20px 18px 17px;
+  min-height:165px;background:#fff;box-shadow:0 8px 18px rgba(23,33,60,.045);
+  display:flex;flex-direction:column
+}
+.ac-icon{font-size:30px;line-height:1;color:var(--purple);font-weight:800;margin-bottom:8px}
+.ac-card h3{font-size:14px;margin:0 0 8px;line-height:1.2}
+.ac-card p{font-size:11.5px;line-height:1.52;color:#536078;margin:0 0 13px}
+.ac-card a{margin-top:auto;color:var(--teal);text-decoration:none;font-weight:700;font-size:11.5px}
+.ac-commitment{
+  background:linear-gradient(135deg,#fbf3ff 0%,#edfaff 100%);
+}
+.ac-commitment ul{list-style:none;padding:0;margin:0;font-size:11.5px;color:#46546d}
+.ac-commitment li{position:relative;padding-left:19px;margin:0 0 7px}
+.ac-commitment li:before{content:"✓";position:absolute;left:0;top:-1px;color:var(--purple);font-weight:800}
+.ac-why{border-top:1px solid var(--line);padding:0 0 32px}
+.ac-why-grid{display:grid;grid-template-columns:50% 50%;align-items:center}
+.ac-office img{width:100%;display:block}
+.ac-why-copy{padding:34px 0 22px 34px}
+.ac-why-copy h2{font-size:31px;line-height:1.1;letter-spacing:-.03em;margin:0 0 14px}
+.ac-why-copy h2 span{color:var(--purple)}
+.ac-why-copy p:not(.mh-kicker){font-size:13px;line-height:1.6;color:#4c5870;margin:0;max-width:500px}
+.ac-proof-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-18px;position:relative;z-index:3
+}
+.ac-proof{
+  min-height:108px;border:1px solid #e1e3e9;background:#fff;border-radius:11px;
+  box-shadow:0 9px 19px rgba(24,34,60,.06);
+  display:flex;align-items:center;gap:17px;padding:18px
+}
+.ac-proof-icon{font-size:32px;color:var(--purple)}
+.ac-proof strong{display:block;font-size:17px;margin-bottom:3px}
+.ac-proof span{display:block;font-size:11px;color:#536078;line-height:1.4}
+@media(max-width:980px){
+  .ac-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:780px){
+  .ac-hero-grid,.ac-why-grid{grid-template-columns:1fr}
+  .ac-copy h1{font-size:38px}
+  .ac-hero-visual{margin-top:22px}
+  .ac-grid,.ac-proof-grid{grid-template-columns:1fr}
+  .ac-why-copy{padding:24px 0}
+  .ac-proof-grid{margin-top:0}
+}
+
+/* V48 - bloc 1 & bloc 2 ajustements */
+.ac-hero-visual img{
+  border-radius:22px;
+  box-shadow:0 10px 28px rgba(30,41,74,.06);
+}
+.ac-value-strip{
+  padding:12px 0;
+}
+.ac-value-grid{
+  grid-template-columns:repeat(4,1fr);
+}
+.ac-value-card{
+  min-height:132px;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  padding:18px 18px 20px;
+  text-align:center;
+  line-height:1.34;
+  font-size:13px;
+}
+.ac-value-card .mh-value-icon{
+  width:58px;
+  height:58px;
+  min-width:58px;
+  margin:0;
+}
+.ac-value-card .mh-value-icon img{
+  width:46px;
+  height:46px;
+  object-fit:contain;
+}
+.ac-value-card div:last-child{
+  max-width:240px;
+  color:var(--navy);
+}
+.ac-value-card b{
+  font-weight:800;
+}
+@media(max-width:780px){
+  .ac-value-card{
+    min-height:118px;
+    padding:18px 12px;
+  }
+}
+
+/* V49 - bloc 2 and zone 3 icon refinements */
+.ac-value-card .mh-value-icon{
+  width:68px;
+  height:68px;
+  min-width:68px;
+}
+.ac-value-card .mh-value-icon img{
+  width:56px;
+  height:56px;
+}
+
+.ac-grid{
+  gap:14px;
+}
+.ac-card{
+  min-height:186px;
+  padding:20px 18px 17px;
+}
+.ac-card-main{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  margin-bottom:14px;
+}
+.ac-icon{
+  width:50px;
+  height:50px;
+  min-width:50px;
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 50px;
+}
+.ac-icon img{
+  width:50px;
+  height:50px;
+  object-fit:contain;
+  display:block;
+}
+.ac-card-body{
+  flex:1;
+  min-width:0;
+}
+.ac-card h3{
+  font-size:14px;
+  margin:2px 0 8px;
+  line-height:1.22;
+}
+.ac-card p{
+  margin:0;
+}
+.ac-card a{
+  margin-top:auto;
+  margin-left:64px;
+}
+.ac-commitment ul{
+  margin:0;
+}
+.ac-commitment li{
+  margin:0 0 8px;
+}
+@media(max-width:780px){
+  .ac-value-card .mh-value-icon{
+    width:62px;
+    height:62px;
+    min-width:62px;
+  }
+  .ac-value-card .mh-value-icon img{
+    width:52px;
+    height:52px;
+  }
+}
+
+/* V50 - bloc 3 & bloc 4 refinements */
+.ac-commitment{
+  padding:18px 16px 16px;
+  justify-content:flex-start;
+}
+.ac-commitment .ac-commitment-head{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:10px;
+}
+.ac-commitment .ac-commitment-head .ac-icon{
+  width:28px;
+  height:28px;
+  min-width:28px;
+  flex:0 0 28px;
+}
+.ac-commitment .ac-commitment-head .ac-icon img{
+  width:28px;
+  height:28px;
+}
+.ac-commitment .ac-commitment-head h3{
+  margin:0;
+  font-size:14px;
+  line-height:1.2;
+  font-weight:800;
+}
+.ac-commitment ul{
+  margin:0 0 0 38px;
+  width:calc(100% - 38px);
+}
+.ac-commitment li{
+  margin:0 0 8px;
+  padding-left:18px;
+  font-size:10.8px;
+  line-height:1.45;
+  white-space:nowrap;
+}
+.ac-commitment li:last-child{
+  margin-bottom:0;
+}
+.ac-commitment li:before{
+  top:0;
+}
+
+.ac-office img{
+  border-radius:18px;
+  box-shadow:0 10px 26px rgba(24,34,60,.08);
+}
+.ac-proof{
+  gap:14px;
+  padding:18px 16px;
+  min-height:112px;
+}
+.ac-proof-icon{
+  width:42px;
+  height:42px;
+  min-width:42px;
+  flex:0 0 42px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0;
+}
+.ac-proof-icon img{
+  width:42px;
+  height:42px;
+  object-fit:contain;
+  display:block;
+}
+.ac-proof strong{
+  display:block;
+  font-size:15px;
+  line-height:1.22;
+  margin-bottom:4px;
+  font-weight:800;
+}
+.ac-proof span{
+  display:block;
+  font-size:13px;
+  line-height:1.4;
+  color:#536078;
+}
+@media(max-width:780px){
+  .ac-commitment li{
+    white-space:normal;
+  }
+}
+
+/* V51 — harmonisation tailles d’icônes et structure des tuiles */
+/* Bloc 2 : même hauteur de référence que Découvrir Odoo */
+.ac-value-card .mh-value-icon{
+  width:74px;
+  height:74px;
+  min-width:74px;
+}
+.ac-value-card .mh-value-icon img{
+  width:auto;
+  height:62px;
+  max-width:68px;
+  object-fit:contain;
+}
+
+/* Bloc 3 : 12 tuiles — icône + titre sur une ligne, texte en dessous sur toute la largeur */
+.ac-card-main{
+  display:grid;
+  grid-template-columns:50px minmax(0,1fr);
+  column-gap:14px;
+  row-gap:10px;
+  align-items:center;
+  margin-bottom:12px;
+}
+.ac-card-main .ac-icon{
+  grid-column:1;
+  grid-row:1;
+  width:50px;
+  height:50px;
+  min-width:50px;
+  flex:0 0 50px;
+}
+.ac-card-main .ac-icon img{
+  width:auto;
+  height:50px;
+  max-width:50px;
+  object-fit:contain;
+}
+.ac-card-main .ac-card-body{
+  display:contents;
+}
+.ac-card-main .ac-card-body h3{
+  grid-column:2;
+  grid-row:1;
+  align-self:center;
+  margin:0;
+}
+.ac-card-main .ac-card-body p{
+  grid-column:1 / -1;
+  grid-row:2;
+  margin:0;
+}
+.ac-card a{
+  margin-left:0;
+}
+
+/* Tuile 12 : trophée à 50 px, titre aligné, liste sous l’ensemble */
+.ac-commitment .ac-commitment-head{
+  display:grid;
+  grid-template-columns:50px minmax(0,1fr);
+  gap:14px;
+  align-items:center;
+  margin-bottom:10px;
+}
+.ac-commitment .ac-commitment-head .ac-icon{
+  width:50px;
+  height:50px;
+  min-width:50px;
+  flex:0 0 50px;
+}
+.ac-commitment .ac-commitment-head .ac-icon img{
+  width:auto;
+  height:50px;
+  max-width:50px;
+  object-fit:contain;
+}
+.ac-commitment .ac-commitment-head h3{
+  margin:0;
+  align-self:center;
+}
+.ac-commitment ul{
+  margin:0;
+  width:100%;
+}
+.ac-commitment li{
+  white-space:nowrap;
+}
+
+/* Bloc 4 : quatre tuiles — icônes à 50 px de haut */
+.ac-proof-icon{
+  width:50px;
+  height:50px;
+  min-width:50px;
+  flex:0 0 50px;
+}
+.ac-proof-icon img{
+  width:auto;
+  height:50px;
+  max-width:50px;
+  object-fit:contain;
+}
+
+@media(max-width:780px){
+  .ac-value-card .mh-value-icon{
+    width:70px;
+    height:70px;
+    min-width:70px;
+  }
+  .ac-value-card .mh-value-icon img{
+    height:62px;
+    max-width:68px;
+  }
+  .ac-commitment li{
+    white-space:normal;
+  }
+}
+
+/* V52 — Bloc 2 : icônes à 70 px de hauteur, largeur automatique */
+.ac-value-card .mh-value-icon{
+  width:auto;
+  height:82px;
+  min-width:82px;
+}
+.ac-value-card .mh-value-icon img{
+  width:auto;
+  height:70px;
+  max-width:none;
+  object-fit:contain;
+}
+@media(max-width:780px){
+  .ac-value-card .mh-value-icon{
+    width:auto;
+    height:82px;
+    min-width:82px;
+  }
+  .ac-value-card .mh-value-icon img{
+    width:auto;
+    height:70px;
+    max-width:none;
+  }
+}
+
+/* V53 — Bloc 2 (Nos accompagnements) : icônes visuellement à 62 px, padding transparent supprimé */
+.ac-value-card .mh-value-icon{
+  width:auto;
+  height:74px;
+  min-width:74px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.ac-value-card .mh-value-icon img{
+  width:auto;
+  height:62px;
+  max-width:none;
+  object-fit:contain;
+  display:block;
+}
+@media(max-width:780px){
+  .ac-value-card .mh-value-icon{
+    width:auto;
+    height:74px;
+    min-width:74px;
+  }
+  .ac-value-card .mh-value-icon img{
+    width:auto;
+    height:62px;
+    max-width:none;
+  }
+}
+
+/* V54 — Bloc 2 (Nos accompagnements) : égalisation optique sur la hauteur de la poignée de main */
+.ac-value-strip .ac-value-card .mh-value-icon{
+  width:auto !important;
+  min-width:86px !important;
+  height:86px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+/* référence visuelle = poignée de main */
+.ac-value-strip .ac-value-card:nth-child(1) .mh-value-icon img{
+  height:68px !important;
+  width:auto !important;
+  max-width:none !important;
+}
+.ac-value-strip .ac-value-card:nth-child(2) .mh-value-icon img{
+  height:62px !important;
+  width:auto !important;
+  max-width:none !important;
+}
+.ac-value-strip .ac-value-card:nth-child(3) .mh-value-icon img{
+  height:56px !important;
+  width:auto !important;
+  max-width:none !important;
+}
+.ac-value-strip .ac-value-card:nth-child(4) .mh-value-icon img{
+  height:70px !important;
+  width:auto !important;
+  max-width:none !important;
+}
+@media(max-width:780px){
+  .ac-value-strip .ac-value-card .mh-value-icon{
+    min-width:82px !important;
+    height:82px !important;
+  }
+  .ac-value-strip .ac-value-card:nth-child(1) .mh-value-icon img{height:66px !important;}
+  .ac-value-strip .ac-value-card:nth-child(2) .mh-value-icon img{height:60px !important;}
+  .ac-value-strip .ac-value-card:nth-child(3) .mh-value-icon img{height:54px !important;}
+  .ac-value-strip .ac-value-card:nth-child(4) .mh-value-icon img{height:68px !important;}
+}

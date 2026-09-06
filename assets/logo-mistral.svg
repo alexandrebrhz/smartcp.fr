@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210" height="48" viewBox="0 0 210 48" fill="none">
+  <g transform="translate(8 7)">
+    <rect x="0" y="0" width="8" height="8" fill="#F4A019"/><rect x="9" y="0" width="8" height="8" fill="#FFD15A"/><rect x="18" y="0" width="8" height="8" fill="#F4A019"/>
+    <rect x="0" y="9" width="8" height="8" fill="#F4A019"/><rect x="18" y="9" width="8" height="8" fill="#F4A019"/>
+    <rect x="0" y="18" width="8" height="8" fill="#D84B2A"/><rect x="9" y="18" width="8" height="8" fill="#F4A019"/><rect x="18" y="18" width="8" height="8" fill="#FFD15A"/>
+  </g>
+  <text x="48" y="31" font-family="Manrope, Arial, sans-serif" font-size="22" font-weight="700" fill="#1B2753">Mistral AI</text>
+</svg>

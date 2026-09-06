@@ -1,0 +1,538 @@
+
+.discover-page{background:#fff}
+.do-hero{
+  padding:52px 0 30px;
+  background:
+    radial-gradient(circle at 100% 8%, rgba(105,82,179,.08), transparent 35%),
+    linear-gradient(180deg,#fff 0%,#fdfdff 100%);
+}
+.do-hero-grid{display:grid;grid-template-columns:45% 55%;gap:20px;align-items:center}
+.do-copy h1{font-size:46px;line-height:1.12;letter-spacing:-.04em;margin:0 0 18px;font-weight:800}
+.do-copy h1 span{color:var(--purple)}
+.do-lead{font-size:15px;line-height:1.62;color:#43506a;max-width:510px;margin:0 0 12px}
+.do-mini-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;max-width:470px;margin-top:30px}
+.do-mini{
+  min-height:58px;border:1px solid #e1e3ea;border-radius:8px;display:flex;align-items:center;gap:10px;
+  padding:9px 10px;background:#fff;font-size:10px;line-height:1.25;color:#33405a
+}
+.do-mini-icon{font-size:25px;color:var(--purple);font-weight:700}
+.do-video-area{position:relative;padding:6px 8px 34px 20px}
+.do-laptop{width:100%;position:relative}
+.do-laptop-screen{
+  position:relative;background:#0a0b12;border:9px solid #0d0e14;border-bottom-width:13px;
+  border-radius:18px 18px 7px 7px;overflow:hidden;aspect-ratio:16/10;
+  box-shadow:0 20px 38px rgba(11,16,35,.16)
+}
+.do-laptop-screen video{width:100%;height:100%;display:block;object-fit:cover;background:#fff}
+.do-laptop-base{
+  width:108%;height:18px;margin-left:-4%;margin-top:-2px;border-radius:3px 3px 20px 20px;
+  background:linear-gradient(180deg,#e6e7e9,#bfc1c5 55%,#eeeeef);box-shadow:0 9px 15px rgba(0,0,0,.13)
+}
+.do-handnote{
+  text-align:center;margin-top:12px;font-family:"Caveat",cursive;font-style:normal;font-weight:700;
+  font-size:17px;line-height:1.15;color:#111b38;transform:rotate(-2deg)
+}
+.do-handnote span{color:var(--teal);font-size:34px;margin-left:12px}
+.do-value-strip{padding:17px 0}
+.do-platform,.do-ai{padding:34px 0;border-bottom:1px solid var(--line)}
+.do-two-col{display:grid;grid-template-columns:45% 55%;align-items:center;gap:40px}
+.do-text h2{font-size:31px;line-height:1.13;letter-spacing:-.035em;margin:0 0 16px}
+.do-text h2 span{color:var(--purple)}
+.do-text p{font-size:14px;line-height:1.65;color:#42506a;margin:0 0 13px;max-width:510px}
+.do-inline-btn{width:max-content;margin-top:7px;min-height:47px;padding:0 18px}
+.do-apps-visual img,.do-ai-visual img{width:100%;display:block;border-radius:14px}
+.do-ai-grid{grid-template-columns:55% 45%}
+.do-ai{background:linear-gradient(180deg,#fff,#fdfcff)}
+.do-deploy{padding:28px 0 34px}
+.do-deploy h2{text-align:center;font-size:27px;line-height:1.15;margin:0 0 6px}
+.do-deploy h2 span{color:var(--purple)}
+.do-deploy-intro{text-align:center;font-size:12px;color:#5a667c;margin:0 auto 20px;max-width:850px}
+.do-deploy-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.do-deploy-cards article{
+  border:1px solid #e1e3e9;border-radius:11px;min-height:128px;padding:20px;
+  display:flex;gap:17px;align-items:flex-start;box-shadow:0 8px 17px rgba(25,35,60,.05)
+}
+.deploy-icon{font-size:38px;color:var(--teal);line-height:1}
+.do-deploy-cards h3{font-size:15px;margin:0 0 7px}
+.do-deploy-cards p{font-size:11px;line-height:1.5;color:#526077;margin:0}
+.do-growth{padding:0 0 34px}
+.do-growth-bar{
+  border-radius:14px;padding:23px 30px;color:#fff;display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;
+  background:linear-gradient(100deg,#78166f 0%,#67256e 35%,#087b9a 73%,#05a7b2 100%);
+  box-shadow:0 12px 25px rgba(27,57,100,.11)
+}
+.do-growth-icon{font-size:48px}
+.do-growth-copy h2{font-size:22px;margin:0 0 4px}
+.do-growth-copy p{font-size:12px;margin:0;opacity:.95}
+.do-white-btn{background:#fff;color:var(--navy);text-decoration:none;font-weight:700;white-space:nowrap}
+@media(max-width:780px){
+  .do-hero-grid,.do-two-col,.do-ai-grid{grid-template-columns:1fr}
+  .do-copy h1{font-size:38px}
+  .do-video-area{padding:10px 0 20px}
+  .do-mini-stats{grid-template-columns:1fr}
+  .do-deploy-cards{grid-template-columns:1fr}
+  .do-growth-bar{grid-template-columns:1fr;text-align:left}
+  .do-white-btn{width:100%}
+}
+
+
+/* V39 — icônes validées sur Découvrir Odoo */
+.do-mini{
+  min-height:74px;
+  gap:12px;
+  padding:11px 12px;
+  font-size:11px;
+  line-height:1.26;
+}
+.do-mini-icon{
+  width:34px;
+  height:34px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 34px;
+}
+.do-mini-icon img{
+  display:block;
+  width:auto;
+  height:28px;
+  max-width:34px;
+  object-fit:contain;
+}
+.do-mini b{font-size:inherit;line-height:inherit}
+
+.do-handnote{
+  margin-top:10px;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  gap:10px;
+  font-size:20px;
+  line-height:1.02;
+  transform:rotate(-3deg);
+}
+.do-handnote-copy{display:block}
+.do-handnote-arrow{
+  display:block;
+  width:48px;
+  height:auto;
+  margin-top:6px;
+}
+
+.do-value-strip .mh-value{
+  min-height:138px;
+  gap:12px;
+}
+.do-value-strip .mh-value-icon{
+  width:64px;
+  height:64px;
+  min-width:64px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.do-value-strip .mh-value-icon img{
+  display:block;
+  width:auto;
+  height:46px;
+  max-width:58px;
+  object-fit:contain;
+}
+.do-value-strip .mh-value > div:last-child{
+  font-size:14px;
+  line-height:1.4;
+  font-weight:800;
+}
+
+@media(max-width:980px){
+  .do-mini-stats{max-width:100%}
+  .do-handnote{font-size:18px;gap:8px}
+  .do-handnote-arrow{width:42px}
+}
+@media(max-width:780px){
+  .do-mini{min-height:68px;font-size:12px}
+  .do-mini-icon{width:36px;height:36px;flex-basis:36px}
+  .do-mini-icon img{height:30px;max-width:36px}
+  .do-handnote{font-size:18px;line-height:1.04}
+  .do-handnote-arrow{width:42px;margin-top:4px}
+  .do-value-strip .mh-value{min-height:128px}
+}
+
+
+/* V41 — finitions du bloc 1 Découvrir Odoo */
+.do-copy h1 .do-title-and{
+  color:var(--navy);
+  font:inherit;
+}
+
+.do-mini-stats{
+  max-width:510px;
+  gap:10px;
+}
+.do-mini{
+  min-height:82px;
+  padding:11px 12px;
+  gap:11px;
+}
+.do-mini-icon{
+  width:70px;
+  height:46px;
+  flex:0 0 70px;
+}
+.do-mini-icon img{
+  display:block;
+  width:auto;
+  height:40px;
+  max-width:68px;
+  object-fit:contain;
+}
+
+.do-handnote{
+  margin-top:9px;
+  gap:12px;
+  color:#111;
+  transform:rotate(-3deg);
+}
+.do-handnote .do-handnote-copy{
+  display:block;
+  margin:0;
+  color:#111;
+  font-size:21px;
+  line-height:.98;
+}
+.do-handnote-arrow{
+  width:58px;
+  height:auto;
+  margin-top:-2px;
+  transform:rotate(-11deg);
+  transform-origin:center center;
+}
+
+@media(max-width:980px){
+  .do-mini-icon{width:64px;height:44px;flex-basis:64px}
+  .do-mini-icon img{height:38px;max-width:62px}
+  .do-handnote .do-handnote-copy{font-size:19px}
+  .do-handnote-arrow{width:52px}
+}
+@media(max-width:780px){
+  .do-mini-icon{width:66px;height:46px;flex-basis:66px}
+  .do-mini-icon img{height:40px;max-width:64px}
+  .do-handnote .do-handnote-copy{font-size:18px}
+  .do-handnote-arrow{width:48px}
+}
+
+
+/* V42 — finitions blocs 1, 2 et 3 Découvrir Odoo */
+/* Bloc 1 : trois tuiles strictement identiques et pictogrammes alignés */
+.do-mini-stats{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  max-width:510px;
+  gap:10px;
+}
+.do-mini{
+  width:100%;
+  height:86px;
+  min-height:86px;
+  min-width:0;
+  padding:10px 10px 10px 3px;
+  gap:9px;
+  overflow:hidden;
+}
+.do-mini > div:last-child{
+  min-width:0;
+  font-size:11px;
+  line-height:1.25;
+}
+.do-mini-icon{
+  width:72px;
+  height:58px;
+  flex:0 0 72px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0;
+}
+.do-mini-icon img{
+  display:block;
+  width:auto;
+  height:54px;
+  max-width:70px;
+  object-fit:contain;
+}
+
+/* Bloc 2 : +1/3 environ, même hauteur visuelle pour les quatre icônes */
+.do-value-strip .mh-value-icon{
+  width:78px;
+  height:74px;
+  min-width:78px;
+}
+.do-value-strip .mh-value-icon img{
+  display:block;
+  width:auto;
+  height:62px;
+  max-width:76px;
+  object-fit:contain;
+}
+
+/* Bloc 3 : nouvelle image applications Odoo */
+.do-apps-visual img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:14px;
+}
+
+@media(max-width:980px){
+  .do-mini{height:82px;min-height:82px;padding-left:3px}
+  .do-mini-icon{width:66px;height:54px;flex-basis:66px}
+  .do-mini-icon img{height:50px;max-width:64px}
+  .do-value-strip .mh-value-icon{width:72px;height:68px;min-width:72px}
+  .do-value-strip .mh-value-icon img{height:58px;max-width:70px}
+}
+@media(max-width:780px){
+  .do-mini-stats{grid-template-columns:1fr}
+  .do-mini{height:82px;min-height:82px;padding-left:3px}
+  .do-mini-icon{width:72px;height:58px;flex-basis:72px}
+  .do-mini-icon img{height:54px;max-width:70px}
+  .do-value-strip .mh-value-icon{width:74px;height:70px;min-width:74px}
+  .do-value-strip .mh-value-icon img{height:60px;max-width:72px}
+}
+
+
+/* V43 — ajustements blocs 1, 4 et 6 Découvrir Odoo */
+/* Bloc 1 : la base visuelle est l'icône Plateforme complète */
+.do-mini:nth-child(1) .do-mini-icon img{
+  height:54px;
+  max-width:70px;
+}
+.do-mini:nth-child(2) .do-mini-icon img{
+  height:48px;
+  max-width:62px;
+}
+.do-mini:nth-child(3) .do-mini-icon img{
+  height:48px;
+  max-width:62px;
+}
+
+/* Bloc 4 : nouvelle illustration IA native */
+.do-ai-visual{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.do-ai-visual img{
+  width:100%;
+  height:auto;
+  display:block;
+  object-fit:contain;
+  border-radius:0;
+}
+
+/* Bloc 6 : fusée blanche à la place de la flèche */
+.do-growth-icon{
+  width:76px;
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0;
+}
+.do-growth-icon img{
+  display:block;
+  width:66px;
+  height:66px;
+  object-fit:contain;
+}
+
+@media(max-width:980px){
+  .do-mini:nth-child(1) .do-mini-icon img{height:50px;max-width:64px}
+  .do-mini:nth-child(2) .do-mini-icon img,
+  .do-mini:nth-child(3) .do-mini-icon img{height:45px;max-width:58px}
+  .do-growth-icon{width:68px;height:68px}
+  .do-growth-icon img{width:60px;height:60px}
+}
+@media(max-width:780px){
+  .do-mini:nth-child(1) .do-mini-icon img{height:54px;max-width:70px}
+  .do-mini:nth-child(2) .do-mini-icon img,
+  .do-mini:nth-child(3) .do-mini-icon img{height:48px;max-width:62px}
+}
+
+
+/* V44 — ajustements blocs 1, 4, 5 et 6 Découvrir Odoo */
+/* Bloc 1 : légère réduction de l’icône centrale et meilleure respiration du texte */
+.do-mini > div:last-child{
+  font-size:10px;
+  line-height:1.18;
+}
+.do-mini:nth-child(2) .do-mini-icon img{
+  height:46px;
+  max-width:60px;
+}
+.do-mini:nth-child(2) > div:last-child{
+  font-size:9.7px;
+  line-height:1.15;
+}
+.do-mini:nth-child(3) .do-mini-icon img{
+  height:46px;
+  max-width:60px;
+}
+
+/* Bloc 4 : image IA un peu plus présente et CTA harmonisé */
+.do-ai-grid{
+  grid-template-columns:58% 42%;
+  gap:28px;
+}
+.do-ai-visual img{
+  width:104%;
+  max-width:none;
+  margin-left:-2%;
+}
+
+/* Bloc 5 : nouvelles icônes, même hauteur visuelle, plus grandes */
+.do-deploy-cards article{
+  min-height:138px;
+  padding:21px 22px;
+  gap:18px;
+}
+.deploy-icon{
+  width:64px;
+  height:64px;
+  flex:0 0 64px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0;
+  line-height:0;
+}
+.deploy-icon img{
+  display:block;
+  width:auto;
+  height:52px;
+  max-width:60px;
+  object-fit:contain;
+}
+.do-deploy-cards article:nth-child(1) .deploy-icon img,
+.do-deploy-cards article:nth-child(2) .deploy-icon img,
+.do-deploy-cards article:nth-child(3) .deploy-icon img{
+  height:52px;
+}
+.do-deploy-cards h3{
+  font-size:15px;
+  margin:0 0 8px;
+}
+.do-deploy-cards p{
+  font-size:11px;
+  line-height:1.53;
+}
+
+/* Bloc 6 : fusée un peu plus petite, textes légèrement plus grands */
+.do-growth-icon{
+  width:66px;
+  height:66px;
+  flex:0 0 66px;
+}
+.do-growth-icon img{
+  width:56px;
+  height:56px;
+}
+.do-growth-copy h2{
+  font-size:23px;
+}
+.do-growth-copy p{
+  font-size:13px;
+}
+
+@media(max-width:980px){
+  .do-mini > div:last-child{font-size:9.8px}
+  .do-mini:nth-child(2) .do-mini-icon img,
+  .do-mini:nth-child(3) .do-mini-icon img{height:44px;max-width:58px}
+  .do-ai-grid{grid-template-columns:56% 44%;gap:24px}
+  .do-ai-visual img{width:102%;margin-left:-1%}
+  .deploy-icon{width:58px;height:58px;flex-basis:58px}
+  .deploy-icon img{height:48px;max-width:56px}
+  .do-growth-icon{width:60px;height:60px;flex-basis:60px}
+  .do-growth-icon img{width:50px;height:50px}
+}
+@media(max-width:780px){
+  .do-mini > div:last-child,
+  .do-mini:nth-child(2) > div:last-child{font-size:10px;line-height:1.2}
+  .do-mini:nth-child(2) .do-mini-icon img,
+  .do-mini:nth-child(3) .do-mini-icon img{height:46px;max-width:60px}
+  .do-ai-grid{grid-template-columns:1fr;gap:20px}
+  .do-ai-visual img{width:100%;margin-left:0}
+  .deploy-icon{width:60px;height:60px;flex-basis:60px}
+  .deploy-icon img{height:50px;max-width:58px}
+  .do-growth-icon{width:58px;height:58px;flex-basis:58px}
+  .do-growth-icon img{width:48px;height:48px}
+}
+
+
+/* V66 — Découvrir Odoo : finitions bloc 1 */
+.do-mini-stats{
+  grid-template-columns:minmax(0,.94fr) minmax(0,1.18fr) minmax(0,.94fr);
+  max-width:525px;
+  gap:10px;
+}
+.do-mini{
+  padding:10px 9px;
+  gap:8px;
+  overflow:visible;
+}
+.do-mini-icon,
+.do-mini:nth-child(1) .do-mini-icon,
+.do-mini:nth-child(2) .do-mini-icon,
+.do-mini:nth-child(3) .do-mini-icon{
+  width:54px;
+  height:50px;
+  flex:0 0 54px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.do-mini-icon img,
+.do-mini:nth-child(1) .do-mini-icon img,
+.do-mini:nth-child(2) .do-mini-icon img,
+.do-mini:nth-child(3) .do-mini-icon img{
+  width:auto;
+  height:40px;
+  max-width:50px;
+  object-fit:contain;
+}
+.do-mini > div:last-child{
+  font-size:10px;
+  line-height:1.18;
+  min-width:0;
+}
+.do-mini:nth-child(2) > div:last-child{
+  font-size:9.8px;
+  line-height:1.18;
+}
+.do-community-label{
+  white-space:nowrap;
+}
+
+@media(max-width:980px){
+  .do-mini-stats{
+    grid-template-columns:minmax(0,.94fr) minmax(0,1.18fr) minmax(0,.94fr);
+  }
+  .do-mini-icon,
+  .do-mini:nth-child(1) .do-mini-icon,
+  .do-mini:nth-child(2) .do-mini-icon,
+  .do-mini:nth-child(3) .do-mini-icon{
+    width:50px;
+    height:48px;
+    flex-basis:50px;
+  }
+  .do-mini-icon img,
+  .do-mini:nth-child(1) .do-mini-icon img,
+  .do-mini:nth-child(2) .do-mini-icon img,
+  .do-mini:nth-child(3) .do-mini-icon img{
+    height:40px;
+    max-width:48px;
+  }
+}
+
+@media(max-width:780px){
+  .do-mini-stats{grid-template-columns:1fr;}
+  .do-community-label{white-space:normal;}
+}

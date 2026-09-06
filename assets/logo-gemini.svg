@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210" height="48" viewBox="0 0 210 48" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6AA9FF"/><stop offset="50%" stop-color="#8F63FF"/><stop offset="100%" stop-color="#FF66B0"/>
+    </linearGradient>
+  </defs>
+  <path d="M25 7l2.6 7 7 2.6-7 2.6-2.6 7-2.6-7-7-2.6 7-2.6 2.6-7z" fill="url(#g)"/>
+  <text x="48" y="31" font-family="Manrope, Arial, sans-serif" font-size="22" font-weight="700" fill="url(#g)">Gemini</text>
+</svg>

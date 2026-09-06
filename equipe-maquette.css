@@ -1,0 +1,567 @@
+
+.equipe-page{background:#fff}
+.eq-hero{
+  padding:46px 0 10px;
+  background:
+    radial-gradient(circle at 100% 10%, rgba(105,82,179,.08), transparent 35%),
+    linear-gradient(180deg,#fff 0%,#fdfdff 100%);
+}
+.eq-hero-grid{display:grid;grid-template-columns:48% 52%;gap:22px;align-items:center}
+.eq-copy h1{font-size:50px;line-height:1.06;letter-spacing:-.045em;margin:0 0 16px}
+.eq-copy h1 span{color:var(--purple)}
+.eq-lead{font-size:15px;line-height:1.6;color:#46536c;max-width:520px}
+.eq-hero-visual img{width:100%;display:block;border-radius:14px}
+.eq-mini-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:20px}
+.eq-mini-card{
+  min-height:64px;border:1px solid #e3e5eb;border-radius:9px;background:#fff;padding:11px 10px;
+  display:flex;align-items:center;gap:10px;font-size:10.5px;line-height:1.3;box-shadow:0 7px 14px rgba(21,30,57,.04)
+}
+.eq-mini-icon{font-size:26px;color:var(--purple);font-weight:800}
+.eq-team{padding:18px 0 12px}
+.eq-subtitle{text-align:center;font-size:13px;color:#657187;margin:-10px 0 18px}
+.eq-team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.eq-profile{
+  border:1px solid #e1e3e9;border-radius:12px;background:#fff;padding:10px 10px 16px;
+  box-shadow:0 8px 18px rgba(21,31,58,.045)
+}
+.eq-profile img{width:100%;aspect-ratio:1.45/1;object-fit:cover;object-position:center top;border-radius:10px;background:#f4f4f7}
+.eq-profile h3{font-size:17px;margin:10px 0 2px;color:var(--navy)}
+.eq-role{font-size:12px;color:#273454;line-height:1.35;margin:0 0 8px}
+.eq-profile p:not(.eq-role){font-size:11.5px;line-height:1.5;color:#536078;margin:0}
+.eq-linkedin{
+  display:grid;place-items:center;width:28px;height:28px;border-radius:4px;background:#0a8ec3;color:#fff;
+  text-decoration:none;font-weight:800;margin-top:10px
+}
+.eq-values{padding:4px 0 20px}
+.eq-values-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #e3e5eb;border-radius:12px;background:#fbfbfd
+}
+.eq-values-grid div{min-height:105px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border-right:1px solid #e6e8ee}
+.eq-values-grid div:last-child{border-right:0}
+.eq-values-grid span{font-size:34px;color:var(--purple);line-height:1;margin-bottom:10px}
+.eq-values-grid b{font-size:12px;line-height:1.4}
+.eq-partners{padding:10px 0 18px}
+.eq-partners h2{text-align:center;font-size:24px;margin:0 0 4px}
+.eq-partners h2 span{color:var(--purple)}
+.eq-partner-intro{text-align:center;font-size:12px;color:#647087;margin:0 auto 16px;max-width:700px}
+.eq-partner-card{
+  display:grid;grid-template-columns:22% 1fr 23%;gap:20px;align-items:center;border:1px solid #e1e3e9;border-radius:12px;
+  padding:18px;background:#fff;box-shadow:0 8px 17px rgba(22,32,59,.04)
+}
+.eq-partner-logo img{width:100%;max-height:135px;object-fit:contain}
+.eq-partner-copy{padding:0 18px;border-left:1px solid #e6e8ee;border-right:1px solid #e6e8ee}
+.eq-partner-copy h3{font-size:16px;margin:0 0 7px}
+.eq-partner-copy h3 span{color:var(--purple)}
+.eq-partner-copy p{font-size:11.5px;line-height:1.52;color:#556178;margin:0 0 9px}
+.eq-partner-copy a{font-size:11.5px;font-weight:700;color:var(--teal);text-decoration:none}
+.eq-partner-skills{display:grid;gap:11px}
+.eq-partner-skills div{display:flex;gap:10px;align-items:center;color:var(--purple);font-size:20px}
+.eq-partner-skills span{font-size:11.5px;color:var(--navy)}
+.eq-cta{padding:0 0 34px}
+.eq-cta-bar{
+  border-radius:14px;padding:24px 30px;color:#fff;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;
+  background:linear-gradient(100deg,#72196e 0%,#63256e 33%,#087d9b 72%,#05a8b2 100%)
+}
+.eq-cta-icon{font-size:44px}
+.eq-cta-bar h2{font-size:22px;margin:0 0 4px}
+.eq-cta-bar p{font-size:12px;margin:0;opacity:.95}
+.eq-cta-btn{background:#fff;color:var(--navy);text-decoration:none;font-weight:700;padding:14px 20px;border-radius:8px;white-space:nowrap}
+
+/* Navigation states on the entire site */
+.mh-menu a:not(.mh-contact){
+  position:relative;
+  transition:color .18s ease;
+}
+.mh-menu a:not(.mh-contact)::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-19px;
+  height:2px;
+  background:var(--purple);
+  transform:scaleX(0);
+  transform-origin:left center;
+  transition:transform .18s ease;
+}
+.mh-menu a:not(.mh-contact):hover,
+.mh-menu a:not(.mh-contact):focus-visible,
+.mh-menu a:not(.mh-contact).active{
+  color:var(--purple);
+}
+.mh-menu a:not(.mh-contact):hover::after,
+.mh-menu a:not(.mh-contact):focus-visible::after,
+.mh-menu a:not(.mh-contact).active::after{
+  transform:scaleX(1);
+}
+
+@media(max-width:980px){
+  .eq-team-grid{grid-template-columns:repeat(2,1fr)}
+  .eq-partner-card{grid-template-columns:1fr}
+  .eq-partner-copy{border:0;padding:0}
+}
+@media(max-width:780px){
+  .eq-hero-grid{grid-template-columns:1fr}
+  .eq-copy h1{font-size:40px}
+  .eq-mini-cards{grid-template-columns:1fr 1fr}
+  .eq-team-grid{grid-template-columns:1fr}
+  .eq-values-grid{grid-template-columns:1fr 1fr}
+  .eq-values-grid div:nth-child(2){border-right:0}
+  .eq-values-grid div{border-bottom:1px solid #e6e8ee}
+  .eq-values-grid div:nth-last-child(-n+2){border-bottom:0}
+  .eq-cta-bar{grid-template-columns:1fr}
+  .eq-cta-btn{width:100%;text-align:center}
+  .mh-menu a:not(.mh-contact)::after{display:none}
+}
+
+
+/* V61 — L'équipe : nouveau visuel hero + tuiles icônes utilisateur */
+.eq-hero-grid{
+  grid-template-columns:46.5% 53.5%;
+  gap:18px;
+  align-items:center;
+}
+
+.eq-lead{
+  font-size:16px;
+  line-height:1.62;
+  color:#5a6781;
+  max-width:540px;
+  margin:0;
+}
+
+.eq-mini-cards{
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.22fr);
+  gap:10px;
+  margin-top:22px;
+  width:calc(100% + 34px);
+  margin-right:-34px;
+  position:relative;
+  z-index:2;
+}
+
+.eq-mini-card{
+  min-height:66px;
+  padding:11px 12px;
+  gap:10px;
+  font-size:11px;
+  line-height:1.28;
+}
+
+.eq-mini-card-wide{
+  padding-right:14px;
+}
+
+.eq-mini-card div{
+  color:#2c3956;
+}
+
+.eq-mini-icon{
+  width:26px;
+  height:26px;
+  flex:0 0 26px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0;
+}
+
+.eq-mini-icon img{
+  display:block;
+  width:auto;
+  height:auto;
+  max-width:100%;
+  max-height:100%;
+}
+
+.eq-hero-visual{
+  display:flex;
+  align-items:stretch;
+  min-height:100%;
+  overflow:hidden;
+  border-radius:14px;
+}
+
+.eq-hero-visual img{
+  width:100%;
+  height:100%;
+  display:block;
+  border-radius:14px;
+  object-fit:cover;
+  object-position:center;
+}
+
+@media(max-width:980px){
+  .eq-hero-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+  }
+
+  .eq-mini-cards{
+    width:100%;
+    margin-right:0;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .eq-mini-card-wide{
+    padding-right:12px;
+  }
+}
+
+@media(max-width:780px){
+  .eq-lead{
+    font-size:15px;
+    line-height:1.58;
+  }
+
+  .eq-mini-cards{
+    margin-top:18px;
+    grid-template-columns:1fr 1fr;
+  }
+
+  .eq-mini-card{
+    min-height:72px;
+  }
+
+  .eq-hero-visual{
+    margin-top:4px;
+  }
+}
+
+
+/* V62 — Ajustements L'équipe : tuiles hero, profils, icônes, ADII et CTA */
+.eq-hero-actions{
+  gap:12px;
+  flex-wrap:nowrap;
+}
+
+.eq-copy .mh-btn{
+  padding:0 18px;
+  font-size:13px;
+  white-space:nowrap;
+}
+
+.eq-copy .mh-btn.secondary{
+  padding-inline:17px;
+}
+
+.eq-mini-cards{
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1.24fr);
+  gap:8px;
+  width:calc(100% + 78px);
+  margin-right:-78px;
+}
+
+.eq-mini-card{
+  min-height:86px;
+  padding:12px 12px;
+  gap:12px;
+}
+
+.eq-mini-icon{
+  width:50px;
+  height:50px;
+  flex:0 0 50px;
+}
+
+.eq-mini-icon img{
+  width:auto;
+  max-width:100%;
+  height:50px;
+  max-height:50px;
+}
+
+.eq-mini-card div{
+  font-size:10.6px;
+  line-height:1.14;
+  color:#2c3956;
+}
+
+.eq-mini-line{
+  display:block;
+  white-space:nowrap;
+}
+
+.eq-mini-line b{
+  display:inline-block;
+  white-space:nowrap;
+}
+
+.eq-profile img{
+  background:#fff;
+}
+
+.eq-profile-alexandre img{
+  object-position:center 18%;
+}
+
+.eq-role{
+  font-size:12.5px;
+}
+
+.eq-profile p:not(.eq-role){
+  font-size:12.5px;
+  line-height:1.52;
+}
+
+.eq-linkedin{
+  width:34px;
+  height:34px;
+  border-radius:8px;
+  background:transparent;
+  padding:0;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.eq-linkedin img{
+  width:34px;
+  height:34px;
+  display:block;
+}
+
+.eq-values-grid div{
+  min-height:118px;
+  padding:12px 8px;
+}
+
+.eq-values-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:50px;
+  margin-bottom:12px;
+}
+
+.eq-values-icon img{
+  display:block;
+  width:auto;
+  height:50px;
+  max-width:58px;
+}
+
+.eq-values-grid b{
+  font-size:12.5px;
+  line-height:1.36;
+}
+
+.eq-partner-copy p{
+  font-size:12.5px;
+  line-height:1.6;
+  max-width:610px;
+}
+
+.eq-partner-skills div{
+  gap:12px;
+  align-items:center;
+  font-size:0;
+}
+
+.eq-partner-skills img{
+  width:auto;
+  height:28px;
+  display:block;
+  flex:0 0 auto;
+}
+
+.eq-partner-skills span{
+  font-size:12.5px;
+  color:var(--navy);
+}
+
+.eq-cta-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.eq-cta-icon img{
+  width:auto;
+  height:64px;
+  display:block;
+}
+
+.eq-cta-copy p,
+.eq-cta-bar p{
+  font-size:13.5px;
+  line-height:1.55;
+  max-width:540px;
+}
+
+@media(max-width:1080px){
+  .eq-mini-cards{
+    width:calc(100% + 36px);
+    margin-right:-36px;
+  }
+
+  .eq-copy .mh-btn{
+    font-size:12.5px;
+    padding:0 16px;
+  }
+}
+
+@media(max-width:980px){
+  .eq-hero-actions{
+    flex-wrap:wrap;
+  }
+
+  .eq-mini-cards{
+    width:100%;
+    margin-right:0;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .eq-mini-card{
+    min-height:84px;
+  }
+}
+
+@media(max-width:780px){
+  .eq-copy .mh-btn{
+    width:100%;
+    font-size:13px;
+  }
+
+  .eq-mini-cards{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .eq-mini-card{
+    min-height:88px;
+  }
+
+  .eq-partner-skills img{
+    height:26px;
+  }
+
+  .eq-values-icon img{
+    height:44px;
+  }
+
+  .eq-cta-icon img{
+    height:54px;
+  }
+}
+
+
+/* V64 — L'équipe : finitions bloc 1, LinkedIn, ADII et CTA final */
+/* Bloc 1 : pictogrammes réduits pour libérer la largeur du texte et garder 2 lignes par tuile. */
+.eq-mini-card{
+  min-height:80px;
+  padding:10px 11px;
+  gap:10px;
+}
+
+.eq-mini-icon{
+  width:40px;
+  height:40px;
+  flex:0 0 40px;
+}
+
+.eq-mini-icon img{
+  width:auto;
+  height:40px;
+  max-width:40px;
+  max-height:40px;
+  object-fit:contain;
+}
+
+.eq-mini-card div{
+  min-width:0;
+  font-size:10.5px;
+  line-height:1.16;
+}
+
+.eq-mini-line,
+.eq-mini-line b{
+  white-space:nowrap;
+}
+
+/* Profil Alexandre : utiliser exactement le nouveau logo LinkedIn fourni. */
+.eq-linkedin{
+  width:34px;
+  height:34px;
+  border-radius:6px;
+  overflow:hidden;
+}
+
+.eq-linkedin img{
+  width:34px;
+  height:34px;
+  object-fit:contain;
+  display:block;
+}
+
+/* Bloc ADII : colonne icône fixe et centrée + départ du texte parfaitement aligné. */
+.eq-partner-skills{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+  align-content:center;
+}
+
+.eq-partner-skills div{
+  display:grid;
+  grid-template-columns:36px minmax(0,1fr);
+  column-gap:12px;
+  align-items:center;
+  min-height:30px;
+  padding:0;
+}
+
+.eq-partner-skills img{
+  width:auto;
+  height:27px;
+  max-width:32px;
+  display:block;
+  object-fit:contain;
+  justify-self:center;
+}
+
+.eq-partner-skills span{
+  display:block;
+  margin:0;
+  padding:0;
+  text-align:left;
+  font-size:12.5px;
+  line-height:1.25;
+}
+
+/* Dernier bandeau : titre un peu plus aéré et retour à la ligne demandé après “conseiller”. */
+.eq-cta-copy h2{
+  letter-spacing:.018em;
+}
+
+.eq-cta-copy p{
+  letter-spacing:.004em;
+}
+
+@media(max-width:980px){
+  .eq-mini-card{
+    min-height:78px;
+  }
+}
+
+@media(max-width:780px){
+  .eq-mini-icon{
+    width:38px;
+    height:38px;
+    flex-basis:38px;
+  }
+
+  .eq-mini-icon img{
+    height:38px;
+    max-width:38px;
+    max-height:38px;
+  }
+
+  .eq-partner-skills div{
+    grid-template-columns:34px minmax(0,1fr);
+  }
+
+  .eq-partner-skills img{
+    height:25px;
+    max-width:30px;
+  }
+}
