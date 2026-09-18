@@ -46,22 +46,27 @@
   <div class="simple-card">
     <p class="mh-kicker">COOKIES & TRACEURS</p>
     <h1>Gestion des <span>cookies</span></h1>
-    <p><strong>SMART Conseil & Performance n'active actuellement aucun cookie publicitaire ni traceur de mesure d'audience.</strong></p>
-    <p>Le site utilise uniquement les mécanismes strictement nécessaires à son fonctionnement. Lorsque vous fermez le bandeau d'information, votre navigateur mémorise ce choix localement afin de ne pas vous afficher le même message à chaque page.</p>
+    <p><strong>SMART Conseil & Performance utilise Google Analytics 4 uniquement avec votre accord afin de mesurer l'audience de smartcp.fr et les interactions utiles au pilotage du site.</strong></p>
+    <p>Vous pouvez accepter ou refuser cette mesure d'audience avec la même simplicité. Vous pouvez également modifier votre choix à tout moment. En cas de refus, les balises Google de mesure restent bloquées dans la configuration V72 du site.</p>
 
-    <h2>Traceur actuellement utilisé</h2>
-    <p><strong>smartcp_cookie_notice_v1</strong> — mémorisation locale de l'affichage du bandeau d'information. Finalité : conserver votre préférence d'interface. Durée maximale : environ 6 mois. Ce choix n'est ni utilisé à des fins publicitaires, ni transmis à un tiers par SMART C&P.</p>
+    <h2>Préférence de consentement</h2>
+    <p><strong>smartcp_cookie_consent_v2</strong> — préférence enregistrée localement dans votre navigateur pour mémoriser votre choix. Finalité : ne pas vous redemander votre préférence à chaque page. Durée maximale : environ 6 mois.</p>
 
-    <h2>Mesure d'audience et publicité</h2>
-    <p>À ce jour, aucun outil de mesure d'audience publicitaire, de profilage ou de remarketing n'est installé sur le site. Si de tels outils sont ajoutés ultérieurement, ils seront bloqués avant consentement lorsqu'un consentement est requis et cette page sera mise à jour.</p>
+    <h2>Google Tag Manager et Google Analytics 4</h2>
+    <p>Le site est préparé avec Google Tag Manager (<strong>GTM-MN2VW4BK</strong>) et Google Analytics 4 (<strong>G-TBS9XT2XSD</strong>). Google Analytics est utilisé pour mesurer notamment les pages consultées et, lorsque vous avez accepté la mesure d'audience, certaines interactions telles que les clics sur le téléphone, l'email, la prise de rendez-vous, les liens Odoo et LinkedIn, ainsi que le démarrage et l'envoi du formulaire de contact.</p>
+    <p>Lorsque Google Analytics est activé après votre consentement, il peut utiliser des cookies propriétaires tels que <strong>_ga</strong> et <strong>_ga_&lt;identifiant&gt;</strong>. Leur durée d'expiration par défaut peut aller jusqu'à 2 ans selon la configuration et les limites appliquées par votre navigateur.</p>
+    <p>La V72 n'active aucun cookie publicitaire ni fonctionnalité de remarketing via le site. Les consentements liés à la publicité restent configurés sur « refusé ».</p>
+
+    <h2>Données de mesure</h2>
+    <p>Google Analytics peut traiter des informations de navigation telles que les pages consultées, les statistiques de session, une géolocalisation approximative et des informations relatives au navigateur ou à l'appareil. Ces données servent à comprendre la fréquentation et l'utilisation du site, et non à vendre vos données personnelles.</p>
 
     <h2>Ressources externes</h2>
-    <p>Le site peut charger des ressources techniques depuis des services tiers, notamment les polices Google Fonts et une vidéo de présentation hébergée par Odoo. SMART C&P ne met pas en œuvre ces ressources dans le but de réaliser un profilage publicitaire des visiteurs.</p>
+    <p>Le site peut également charger des ressources techniques depuis des services tiers, notamment des polices Google Fonts et une vidéo de présentation hébergée par Odoo.</p>
 
     <h2>Modifier votre choix</h2>
-    <p>Vous pouvez effacer la préférence mémorisée par ce site et réafficher le bandeau d'information à tout moment.</p>
+    <p>Vous pouvez rouvrir le panneau de préférences à tout moment depuis le lien « Gérer mes cookies » du pied de page.</p>
     <div class="simple-actions">
-      <button class="mh-btn secondary cookie-reset-button" type="button" data-cookie-reset>Réafficher le bandeau cookies</button>
+      <button class="mh-btn secondary cookie-reset-button" type="button" data-cookie-manage>Gérer mes préférences</button>
       <a class="mh-btn primary" href="politique-confidentialite.html">Politique de confidentialité <span>→</span></a>
     </div>
   </div>
@@ -125,7 +130,7 @@
         <a href="mentions-legales.html">Mentions légales</a>
         <a href="politique-confidentialite.html">Politique de confidentialité</a>
         <a href="cgv.html">Conditions générales de vente</a>
-        <a href="gestion-cookies.html">Gestion des cookies</a>
+        <a href="gestion-cookies.html" data-cookie-manage>Gérer mes cookies</a>
       </div>
     </div>
 
