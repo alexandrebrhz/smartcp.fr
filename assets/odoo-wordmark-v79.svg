@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="52" viewBox="0 0 180 52" role="img" aria-labelledby="title desc">
+<title id="title">Odoo</title><desc id="desc">Wordmark Odoo</desc>
+<rect x="0" y="0" width="180" height="52" rx="26" fill="#ffffff" fill-opacity="0"/>
+<g fill="#7B5A8E">
+  <circle cx="26" cy="26" r="13" fill="none" stroke="#7B5A8E" stroke-width="6"/>
+  <circle cx="58" cy="26" r="13" fill="none" stroke="#7B5A8E" stroke-width="6"/>
+  <circle cx="122" cy="26" r="13" fill="none" stroke="#7B5A8E" stroke-width="6"/>
+  <circle cx="154" cy="26" r="13" fill="none" stroke="#7B5A8E" stroke-width="6"/>
+  <path d="M83 13h10.5c10.2 0 17.5 5.5 17.5 13s-7.3 13-17.5 13H83V13Zm10.2 20.1c4.8 0 8.2-2.8 8.2-7.1s-3.4-7.1-8.2-7.1h-1.4v14.2h1.4Z"/>
+</g></svg>

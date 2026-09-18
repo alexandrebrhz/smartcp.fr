@@ -1,0 +1,239 @@
+/* V73 — Landing page acquisition Toulouse & Haute-Garonne */
+.toulouse-page{background:#fff}
+.tl-main{overflow:hidden}
+.tl-container{width:min(1180px,calc(100% - 56px));margin:0 auto}
+.tl-section{padding:66px 0}
+.tl-section--soft{background:linear-gradient(180deg,#fbfcff 0%,#f6f8fc 100%);border-block:1px solid #eef0f5}
+.tl-kicker{margin:0 0 12px;color:var(--purple);font-size:13px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.tl-section-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:28px}
+.tl-section-head h2{margin:0;font-size:clamp(28px,3vw,38px);line-height:1.12;letter-spacing:-.035em;color:var(--navy)}
+.tl-section-head p{margin:0;max-width:420px;color:var(--muted);font-size:14px;line-height:1.55;text-align:right}
+
+.tl-breadcrumb{padding:18px 0 0;font-size:12px;color:#778096}
+.tl-breadcrumb a{color:#6a7287;text-decoration:none}.tl-breadcrumb a:hover{text-decoration:underline}
+.tl-breadcrumb span{margin:0 7px;color:#b0b5c1}
+
+.tl-hero{padding:18px 0 34px;background:radial-gradient(circle at 78% 28%,rgba(122,35,126,.08),transparent 30%),linear-gradient(180deg,#fff,#fcfcff)}
+.tl-hero-grid{display:grid;grid-template-columns:45% 55%;align-items:center;gap:18px;min-height:540px}
+.tl-hero-copy{padding:26px 0}
+.tl-hero h1{margin:0;color:var(--navy);font-size:clamp(46px,5.3vw,68px);line-height:1.02;letter-spacing:-.055em;font-weight:800;max-width:610px}
+.tl-hero h1 strong{color:var(--purple);font-weight:800}
+.tl-lead{margin:22px 0 0;max-width:620px;color:#34405a;font-size:16px;line-height:1.68}
+.tl-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.tl-btn{min-height:52px;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:0 20px;border-radius:8px;text-decoration:none;font-size:14px;font-weight:800;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.tl-btn:hover{transform:translateY(-1px)}
+.tl-btn--primary{background:linear-gradient(90deg,#762375,#932a8c);color:#fff;box-shadow:0 12px 28px rgba(122,35,126,.2)}
+.tl-btn--secondary{background:#fff;color:var(--purple);border:1px solid #b971b9;box-shadow:0 8px 20px rgba(15,25,56,.05)}
+.tl-btn svg{width:18px;height:18px;flex:0 0 18px}
+.tl-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px;max-width:640px}
+.tl-trust-item{display:flex;align-items:center;gap:10px;min-height:66px;padding:10px 12px;border:1px solid #e3e5ec;border-radius:10px;background:#fff;box-shadow:0 7px 20px rgba(15,25,56,.035)}
+.tl-trust-item img{width:35px;height:35px;object-fit:contain;flex:0 0 35px}
+.tl-trust-item span{font-size:12px;line-height:1.35;font-weight:700;color:#25314c}
+.tl-hero-visual{position:relative;display:flex;align-items:center;justify-content:center;min-height:520px}
+.tl-hero-visual::before{content:"";position:absolute;width:82%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(105,85,188,.11),rgba(105,85,188,0) 68%)}
+.tl-hero-visual img{position:relative;z-index:1;width:112%;max-width:none;height:auto;display:block;filter:drop-shadow(0 20px 34px rgba(20,25,55,.08))}
+
+.tl-grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.tl-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tl-card{background:#fff;border:1px solid #e5e8ef;border-radius:12px;padding:24px;box-shadow:0 10px 26px rgba(15,25,56,.045);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.tl-card:hover{transform:translateY(-2px);border-color:#dadce6;box-shadow:0 14px 32px rgba(15,25,56,.07)}
+.tl-card-icon{width:46px;height:46px;display:flex;align-items:center;justify-content:center;margin-bottom:13px}
+.tl-card-icon img{display:block;max-width:100%;max-height:100%;object-fit:contain}
+.tl-card h3{margin:0 0 9px;font-size:17px;line-height:1.3;color:var(--navy)}
+.tl-card p{margin:0;color:#5a6579;font-size:13px;line-height:1.58}
+.tl-card a{display:inline-flex;margin-top:15px;color:var(--purple);text-decoration:none;font-size:12px;font-weight:800}
+.tl-card a:hover{text-decoration:underline}
+
+.tl-services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tl-service-card{min-height:190px}
+.tl-service-card .tl-card-icon{width:44px;height:44px}
+
+.tl-method{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:8px}
+.tl-step{position:relative;padding:4px 28px 0 0}
+.tl-step:not(:last-child)::after{content:"";position:absolute;top:21px;left:48px;right:12px;height:1px;background:#cfd7e4}
+.tl-step-num{position:relative;z-index:2;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#742273,#992e91);color:#fff;font-weight:800;font-size:15px;box-shadow:0 8px 18px rgba(122,35,126,.18);margin-bottom:16px}
+.tl-step h3{margin:0 0 7px;font-size:15px;color:var(--navy)}
+.tl-step p{margin:0;color:#5d687c;font-size:12px;line-height:1.55;max-width:230px}
+
+.tl-context-card{padding:21px 20px}.tl-context-card .tl-card-icon{width:40px;height:40px;margin-bottom:10px}
+
+.tl-intervention{display:grid;grid-template-columns:1fr .95fr;gap:56px;align-items:center}
+.tl-intervention h2{margin:0 0 14px;font-size:clamp(28px,3vw,38px);line-height:1.12;letter-spacing:-.035em}
+.tl-intervention p{margin:0 0 20px;color:#4f5c73;line-height:1.65;font-size:14px;max-width:580px}
+.tl-checks{display:grid;gap:11px;margin:0;padding:0;list-style:none}
+.tl-checks li{display:flex;align-items:center;gap:10px;color:#34405a;font-size:14px}
+.tl-check{width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:#0caeb9;color:#fff;font-size:12px;font-weight:900;flex:0 0 20px}
+.tl-route{position:relative;min-height:300px;border:1px solid #e6e8ef;border-radius:24px;background:linear-gradient(145deg,#f5f7fb,#eef5f7);overflow:hidden;box-shadow:0 15px 35px rgba(15,25,56,.055)}
+.tl-route::before{content:"";position:absolute;inset:42px 64px;background:radial-gradient(circle at 35% 35%,rgba(122,35,126,.08),transparent 25%),radial-gradient(circle at 65% 70%,rgba(6,157,176,.1),transparent 24%);border-radius:45% 55% 51% 49% / 48% 42% 58% 52%;border:1px solid rgba(122,35,126,.08)}
+.tl-route-line{position:absolute;left:34%;top:39%;width:36%;height:32%;border-left:2px dashed #8f2a87;border-bottom:2px dashed #8f2a87;border-radius:0 0 0 80%;transform:rotate(-18deg)}
+.tl-city{position:absolute;display:flex;align-items:center;gap:9px;font-weight:800;color:var(--navy);font-size:14px}
+.tl-city::before{content:"";width:12px;height:12px;border-radius:50%;box-shadow:0 0 0 5px #fff}
+.tl-city--albi{left:62%;top:24%}.tl-city--albi::before{background:#8f2a87}
+.tl-city--toulouse{left:30%;bottom:24%}.tl-city--toulouse::before{background:#0aa8b5}
+.tl-route-badge{position:absolute;right:22px;bottom:22px;padding:12px 15px;border-radius:12px;background:#fff;border:1px solid #e3e5ec;box-shadow:0 10px 24px rgba(15,25,56,.08);font-size:12px;font-weight:700;color:#34405a;max-width:190px}
+.tl-route-note{position:absolute;right:28px;top:25px;color:var(--purple);font-size:18px;font-weight:700;font-style:italic;transform:rotate(-4deg)}
+
+.tl-faq{display:grid;gap:9px}
+.tl-faq details{background:#fff;border:1px solid #e5e8ef;border-radius:10px;box-shadow:0 7px 18px rgba(15,25,56,.035);overflow:hidden}
+.tl-faq summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:17px 20px;color:var(--navy);font-size:14px;font-weight:800}
+.tl-faq summary::-webkit-details-marker{display:none}
+.tl-faq summary::after{content:"+";width:25px;height:25px;border-radius:50%;display:grid;place-items:center;background:#f3edf5;color:var(--purple);font-size:17px;flex:0 0 25px}
+.tl-faq details[open] summary::after{content:"–"}
+.tl-faq details p{margin:0;padding:0 20px 18px 20px;color:#5a6579;font-size:13px;line-height:1.65}
+
+.tl-cta{padding:34px 0 54px}
+.tl-cta-box{position:relative;overflow:hidden;border-radius:14px;padding:28px 32px;background:linear-gradient(102deg,#73206f 0%,#852078 52%,#5f1f7a 100%);display:flex;align-items:center;justify-content:space-between;gap:28px;color:#fff;box-shadow:0 18px 38px rgba(94,29,105,.18)}
+.tl-cta-box::after{content:"";position:absolute;right:-70px;top:-90px;width:270px;height:270px;border:24px solid rgba(15,192,200,.24);border-radius:50%}
+.tl-cta-copy,.tl-cta-actions{position:relative;z-index:2}
+.tl-cta-copy h2{margin:0 0 6px;font-size:24px;letter-spacing:-.025em}.tl-cta-copy p{margin:0;color:rgba(255,255,255,.9);font-size:13px}
+.tl-cta-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.tl-cta-actions .tl-btn{min-height:46px;padding:0 16px;font-size:12px}
+.tl-cta-actions .tl-btn--primary{background:#fff;color:var(--purple);box-shadow:none}.tl-cta-actions .tl-btn--secondary{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+
+.tl-local-links{padding-top:0}.tl-local-links-wrap{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:18px 0;border-top:1px solid #edf0f4;color:#687389;font-size:12px}.tl-local-links a{color:var(--purple);font-weight:700;text-decoration:none}.tl-local-links a:hover{text-decoration:underline}
+
+@media(max-width:1050px){
+  .tl-hero-grid{grid-template-columns:1fr;min-height:auto}.tl-hero-copy{padding-bottom:0}.tl-hero-visual{min-height:390px}.tl-hero-visual img{width:min(790px,100%)}
+  .tl-grid-4{grid-template-columns:repeat(2,1fr)}.tl-services{grid-template-columns:repeat(2,1fr)}.tl-method{grid-template-columns:repeat(2,1fr);gap:30px 16px}.tl-step:nth-child(2)::after{display:none}
+  .tl-intervention{grid-template-columns:1fr;gap:28px}.tl-route{min-height:290px}
+}
+@media(max-width:780px){
+  .tl-container{width:min(100% - 28px,1180px)}.tl-section{padding:48px 0}.tl-section-head{align-items:flex-start;flex-direction:column;gap:10px}.tl-section-head p{text-align:left}
+  .tl-breadcrumb{padding-top:12px}.tl-hero{padding-top:10px}.tl-hero h1{font-size:clamp(40px,12vw,56px)}.tl-lead{font-size:15px}
+  .tl-trust{grid-template-columns:1fr}.tl-trust-item{min-height:58px}.tl-hero-visual{min-height:320px;margin-top:4px}
+  .tl-grid-4,.tl-grid-3,.tl-services{grid-template-columns:1fr}.tl-method{grid-template-columns:1fr;gap:22px}.tl-step{padding-right:0}.tl-step::after{display:none!important}
+  .tl-route-note{font-size:15px}.tl-cta-box{align-items:flex-start;flex-direction:column;padding:25px 22px}.tl-cta-actions{justify-content:flex-start}.tl-local-links-wrap{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:520px){
+  .tl-actions{display:grid;grid-template-columns:1fr}.tl-btn{width:100%}.tl-hero-visual{min-height:250px}.tl-hero-visual img{width:108%;max-width:108%}
+  .tl-card{padding:20px}.tl-route{min-height:260px}.tl-city--albi{left:58%;top:21%}.tl-city--toulouse{left:19%;bottom:26%}.tl-route-badge{right:14px;bottom:14px;max-width:160px}.tl-route-note{right:18px;top:18px}
+}
+
+
+/* ===== V74 — fidélité maquette hero / liaison Albi-Toulouse ===== */
+@media(min-width:1051px){
+  .tl-hero-grid{grid-template-columns:50% 50%;gap:10px}
+  .tl-hero-copy{position:relative;z-index:3}
+  .tl-actions{display:grid;grid-template-columns:minmax(270px,1.12fr) minmax(205px,.88fr);gap:14px;max-width:560px;align-items:stretch}
+  .tl-actions .tl-btn{width:100%;padding-left:17px;padding-right:17px}
+  .tl-trust{max-width:650px;gap:12px;margin-top:22px}
+  .tl-trust-item{padding:11px 13px;min-height:74px}
+  .tl-trust-item img{width:38px;height:38px;flex-basis:38px}
+  .tl-trust-item span{font-size:12.5px}
+  .tl-hero-visual{min-height:540px}
+  .tl-hero-visual img{width:118%;transform:translateX(3%)}
+}
+.tl-btn-call-copy{display:flex;flex-direction:column;align-items:flex-start;line-height:1.08;text-align:left}
+.tl-btn-call-copy>span{font-weight:800}.tl-btn-call-copy small{font-size:11px;font-weight:700;margin-top:3px;color:inherit}
+.tl-hero-city-note,.tl-hero-business-note{position:absolute;z-index:3;color:var(--purple);font-family:"Caveat",cursive;font-weight:700;pointer-events:none;text-shadow:0 2px 12px rgba(255,255,255,.9)}
+.tl-hero-city-note{left:17%;top:25%;font-size:clamp(28px,2.6vw,42px);transform:rotate(-4deg)}
+.tl-hero-business-note{right:1%;top:6%;font-size:clamp(20px,1.9vw,30px);line-height:.95;transform:rotate(-5deg);text-align:left}
+
+.tl-route{background:linear-gradient(145deg,#f6f8fb,#edf4f6)}
+.tl-route::before{inset:52px 62px;border:1px solid rgba(122,35,126,.10);background:radial-gradient(circle at 70% 25%,rgba(122,35,126,.07),transparent 24%),radial-gradient(circle at 30% 72%,rgba(6,157,176,.10),transparent 24%)}
+.tl-route-line{display:none}
+.tl-route-svg{position:absolute;inset:0;width:100%;height:100%;z-index:1;overflow:visible}
+.tl-city,.tl-route-note,.tl-route-badge{z-index:3}
+.tl-city--albi{left:69%;top:38%}
+.tl-city--toulouse{left:29%;bottom:23%}
+.tl-route-note{right:25px;top:22px;font-family:"Caveat",cursive;font-style:normal;font-size:22px;line-height:1.0;transform:rotate(-3deg)}
+.tl-route-badge{right:22px;bottom:18px}
+.tl-local-links-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;justify-content:flex-end}
+
+@media(max-width:1050px){
+  .tl-hero-city-note{left:18%;top:24%;font-size:34px}.tl-hero-business-note{right:8%;top:4%;font-size:24px}
+}
+@media(max-width:780px){
+  .tl-hero-city-note{left:14%;top:25%;font-size:30px}.tl-hero-business-note{right:2%;top:3%;font-size:20px}
+  .tl-route-note{font-size:18px}.tl-local-links-actions{justify-content:flex-start}
+}
+@media(max-width:520px){
+  .tl-hero-city-note{left:11%;top:25%;font-size:25px}.tl-hero-business-note{display:none}
+  .tl-route-svg path{stroke-width:4}.tl-route-note{font-size:16px;right:14px;top:14px}
+}
+
+/* ===== V75 — harmonisation CTA et tuiles hero Toulouse / Occitanie ===== */
+@media(min-width:1051px){
+  .tl-actions{grid-template-columns:305px 242px;gap:14px;max-width:none;width:561px}
+  .tl-actions .tl-btn{min-height:62px}
+  .tl-btn-call-copy{gap:4px;line-height:1.02}
+  .tl-btn-call-copy>span{font-size:13.5px;line-height:1.1;font-weight:800}
+  .tl-btn-call-copy small{font-size:16px;line-height:1.05;font-weight:800;margin-top:0;letter-spacing:.01em}
+  .tl-trust{grid-template-columns:repeat(3,1fr);width:668px;max-width:none;gap:12px;margin-top:22px;position:relative;z-index:5}
+  .tl-trust-item{min-width:0;min-height:76px;padding:12px 16px;gap:13px}
+  .tl-trust-item img{width:38px;height:38px;flex:0 0 38px}
+  .tl-trust-item span{font-size:13px;line-height:1.28;white-space:nowrap}
+}
+@media(max-width:1050px){
+  .tl-btn-call-copy{gap:3px}
+  .tl-btn-call-copy>span{font-size:13px}
+  .tl-btn-call-copy small{font-size:15px;font-weight:800;margin-top:0}
+  .tl-trust-item span{white-space:normal}
+}
+
+/* ===== V76 — CTA plus lisibles et tuiles hero harmonisées ===== */
+@media(min-width:1051px){
+  .tl-actions{grid-template-columns:305px 242px;gap:14px;width:561px}
+  .tl-actions .tl-btn{min-height:66px;gap:13px}
+  .tl-actions .tl-btn svg{width:26px;height:26px;flex:0 0 26px}
+  .tl-btn-call-copy{gap:7px;line-height:1.12}
+  .tl-btn-call-copy>span{font-size:13.5px;line-height:1.15;font-weight:800}
+  .tl-btn-call-copy small{font-size:17.5px;line-height:1.05;font-weight:800;margin-top:0;letter-spacing:.01em}
+  .tl-trust{grid-template-columns:1.18fr 1fr 1.08fr;width:724px;max-width:none;gap:12px;margin-top:24px;position:relative;z-index:5}
+  .tl-trust-item{min-width:0;min-height:82px;padding:13px 17px;gap:14px}
+  .tl-trust-item img{width:40px;height:40px;flex:0 0 40px}
+  .tl-trust-item span{font-size:13px;line-height:1.52;white-space:normal}
+}
+@media(max-width:1050px){
+  .tl-actions .tl-btn svg{width:24px;height:24px;flex:0 0 24px}
+  .tl-btn-call-copy{gap:6px;line-height:1.12}
+  .tl-btn-call-copy small{font-size:16px}
+  .tl-trust-item span{line-height:1.48}
+}
+
+/* ===== V76.1 — 2 lignes garanties et CTA sans retour parasite ===== */
+.tl-btn-secondary-copy{white-space:nowrap;line-height:1.1}
+.tl-trust-copy{display:grid;gap:5px;font-size:13px;line-height:1.18;font-weight:700;color:#25314c}
+.tl-trust-copy>span{white-space:nowrap}
+@media(min-width:1051px){
+  .tl-actions{grid-template-columns:320px 270px;width:604px}
+  .tl-trust{grid-template-columns:1.23fr 1fr 1.08fr;width:758px}
+  .tl-trust-item{padding-left:18px;padding-right:18px}
+}
+@media(max-width:1050px){
+  .tl-trust-copy>span{white-space:normal}
+}
+
+/* ===== V76.2 — emphase CTA ===== */
+@media(min-width:1051px){
+  .tl-actions .tl-btn{min-height:68px}
+  .tl-actions .tl-btn svg{width:30px;height:30px;flex:0 0 30px}
+  .tl-btn-call-copy{gap:8px}
+  .tl-btn-call-copy>span{font-size:13.5px!important;line-height:1.12!important}
+  .tl-btn-call-copy small{font-size:18px!important;line-height:1!important;font-weight:800!important;margin-top:0!important}
+}
+.tl-btn--primary svg{color:#fff}
+.tl-btn--secondary svg{color:var(--purple)}
+
+/* ===== V76.3 — hiérarchie numéro / icônes CTA ===== */
+.tl-call-number{display:block;font-size:18px!important;line-height:1!important;font-weight:800!important;letter-spacing:.01em}
+.tl-btn--primary>svg path{fill:#fff!important;stroke:#fff!important}
+.tl-btn--secondary>svg path{stroke:var(--purple)!important}
+
+
+/* ===== V79 — pages locales Occitanie + logo Odoo inline ===== */
+.tl-title-line{display:block}
+.tl-odoo-inline{display:inline-block;height:.86em;width:auto;vertical-align:-0.08em;margin:0 .12em 0 .03em}
+.tl-hero-grid--local{grid-template-columns:46% 54%}
+.tl-hero-visual--clean::before,.tl-hero-visual--clean::after{display:none!important}
+.tl-hero-visual--clean img{width:110%;max-width:none;transform:translateX(1%)}
+@media(min-width:1051px){
+  .tl-hero-grid--local .tl-hero-copy{padding-top:10px}
+}
+@media(max-width:1050px){
+  .tl-hero-grid--local{grid-template-columns:1fr}
+  .tl-hero-visual--clean img{width:min(780px,100%);transform:none}
+}
+@media(max-width:780px){
+  .tl-odoo-inline{height:.8em;width:auto;vertical-align:-0.06em}
+}
