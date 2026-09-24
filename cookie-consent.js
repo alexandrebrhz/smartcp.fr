@@ -67,6 +67,15 @@
       ad_personalization: 'denied'
     });
 
+    // Initialisation officielle du conteneur GTM. L'événement gtm.js est
+    // nécessaire pour que les déclencheurs Initialization / Page View du
+    // conteneur s'exécutent correctement lorsque GTM est chargé dynamiquement
+    // après l'acceptation du consentement.
+    window.dataLayer.push({
+      'gtm.start': Date.now(),
+      event: 'gtm.js'
+    });
+
     window.dataLayer.push({
       event: 'smartcp_consent_granted',
       smartcp_consent_analytics: true,
