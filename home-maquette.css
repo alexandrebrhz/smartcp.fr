@@ -1046,3 +1046,26 @@ body.mockup-home{
 .tl-local-note h3{margin:0 0 8px;color:var(--navy);font-size:18px}
 .tl-local-note p{margin:0 0 8px;color:var(--muted)}
 .tl-local-note a{color:var(--purple);font-weight:700;text-decoration:none}
+
+/* V93 — page Site web avec Odoo */
+.sw-head{max-width:760px;margin:0 0 28px}
+.sw-head h2{color:var(--navy);margin:0 0 8px}
+.sw-head p{color:var(--muted);margin:0}
+.sw-soft{background:var(--soft)}
+.sw-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.sw-step{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 18px}
+.sw-num{display:inline-flex;width:34px;height:34px;border-radius:50%;align-items:center;justify-content:center;background:var(--purple);color:#fff;font-weight:800;margin-bottom:10px}
+.sw-step h3{font-size:16px;margin:0 0 6px;color:var(--navy)}
+.sw-step p{font-size:14px;color:var(--muted);margin:0}
+.sw-ai{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.sw-ai h2{color:var(--navy);margin:0 0 14px}
+.sw-list{padding-left:20px;line-height:1.6}
+.sw-chat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 14px 30px rgba(20,33,61,.08)}
+.sw-bubble{padding:12px 16px;border-radius:14px;margin:0 0 12px;font-size:14.5px;line-height:1.5}
+.sw-user{background:var(--soft);margin-left:40px}
+.sw-bot{background:rgba(122,35,126,.1);margin-right:40px}
+.sw-note{font-size:12px;color:var(--muted);margin:0;text-align:right}
+.tl-faq details{border-bottom:1px solid var(--line);padding:14px 0}
+.tl-faq summary{cursor:pointer;font-weight:700;color:var(--navy)}
+@media(max-width:980px){.sw-steps{grid-template-columns:1fr 1fr}.sw-ai{grid-template-columns:1fr}}
+@media(max-width:600px){.sw-steps{grid-template-columns:1fr}}
