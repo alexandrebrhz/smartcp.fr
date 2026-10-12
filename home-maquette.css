@@ -1023,3 +1023,20 @@ body.mockup-home{
   .mh-stat-icon img,.mh-stat:nth-child(2) .mh-stat-icon img,.mh-stat:nth-child(3) .mh-stat-icon img{width:34px;height:34px}
   .mh-stat-copy{font-size:12px;line-height:1.25;align-items:center}
 }
+
+/* V89 — page Projets */
+.pj-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.pj-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 24px;box-shadow:0 10px 24px rgba(20,33,61,.05);display:flex;flex-direction:column}
+.pj-tag{font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--teal);margin:0 0 10px}
+.pj-card h2{font-size:21px;line-height:1.25;margin:0 0 10px;color:var(--navy)}
+.pj-ctx{color:var(--muted);font-size:15px;margin:0 0 14px}
+.pj-card h3{font-size:14px;margin:14px 0 6px;color:var(--purple)}
+.pj-card ul{margin:0;padding-left:18px;font-size:14.5px;line-height:1.5}
+.pj-card li{margin:3px 0}
+.pj-stat{margin:auto 0 0;padding-top:16px;font-size:13px;font-weight:700;color:var(--navy)}
+.pj-cta{margin-top:44px;text-align:center}
+.pj-cta h2{color:var(--navy);margin:0 0 8px}.pj-cta p{color:var(--muted);margin:0 0 18px}
+.pj-cta .mh-btn{display:inline-flex;margin:4px}
+@media(max-width:980px){.pj-grid{grid-template-columns:1fr}}
+
+.pj-card h2{color:var(--purple)}
