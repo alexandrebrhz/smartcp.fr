@@ -1014,3 +1014,12 @@ body.mockup-home{
   body{padding-bottom:72px}
 }
 .contact-details a.contact-phone{font-size:1.25rem;font-weight:800}
+
+/* V87 — tuiles de l'accueil lisibles sur mobile */
+@media(max-width:600px){
+  .mh-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .mh-stat{flex-direction:column;align-items:center;text-align:center;min-height:0;padding:12px 6px;gap:6px}
+  .mh-stat-icon{width:40px;height:40px;flex-basis:auto}
+  .mh-stat-icon img,.mh-stat:nth-child(2) .mh-stat-icon img,.mh-stat:nth-child(3) .mh-stat-icon img{width:34px;height:34px}
+  .mh-stat-copy{font-size:12px;line-height:1.25;align-items:center}
+}
