@@ -1078,3 +1078,21 @@ body.mockup-home{
 .sc-eventbar-cta{font-weight:800;text-decoration:underline;white-space:nowrap}
 .sc-eventbar a:hover .sc-eventbar-cta{color:#bdf2f6}
 @media(max-width:780px){.sc-eventbar{font-size:13px}.sc-eventbar-date{display:block;margin:2px 0}}
+
+/* V96 : panier et compte de la boutique Odoo */
+.mh-menu a.mh-icon{display:inline-grid;place-items:center;width:38px;height:38px;border:1px solid var(--line);border-radius:10px;color:var(--navy)}
+.mh-menu a.mh-icon::after{display:none!important}
+.mh-menu a.mh-icon:hover,.mh-menu a.mh-icon:focus-visible{color:var(--purple);border-color:var(--purple)}
+.mh-icon-txt{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(max-width:980px){.mh-menu a.mh-icon{display:inline-flex;align-items:center;gap:10px;width:auto;height:auto;border:0;border-radius:0}.mh-menu .mh-icon-txt{position:static;width:auto;height:auto;clip:auto}}/* V97 : logo à taille fixe, en-tête élargi, menu ☰ sous 1200 px */
+.mh-logo{flex:0 0 auto}
+@media(min-width:1200px){.mh-header .mh-container.mh-nav{width:min(1320px,calc(100% - 40px));max-width:none}.mh-menu{gap:16px}}
+@media(min-width:1200px) and (max-width:1399px){.mh-menu a.mh-phone-desk .mh-phone-txt{display:none}}
+@media(min-width:981px) and (max-width:1199px){
+  .mh-burger{display:block}
+  .mh-menu{display:none;position:absolute;left:0;right:0;top:76px;background:#fff;padding:16px 22px 22px;flex-direction:column;align-items:flex-start;gap:18px;border-bottom:1px solid var(--line);box-shadow:0 14px 24px rgba(0,0,0,.08)}
+  .mh-menu.open{display:flex}
+  .mh-menu a:not(.mh-contact)::after{display:none}
+  .mh-menu a.mh-icon{display:inline-flex;align-items:center;gap:10px;width:auto;height:auto;border:0;border-radius:0}
+  .mh-menu .mh-icon-txt{position:static;width:auto;height:auto;clip:auto}
+}
