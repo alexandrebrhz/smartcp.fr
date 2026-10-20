@@ -1,0 +1,60 @@
+# SMART Conseil & Performance (SMART C&P)
+
+> SMART Conseil & Performance est un intégrateur Odoo basé à Albi (Tarn), partenaire Odoo Ready, qui accompagne les TPE, PME, indépendants et organisations publiques d'Occitanie dans la mise en place d'Odoo (ERP, CRM, comptabilité, stock, site web) et l'intégration de l'intelligence artificielle dans leurs processus. Interventions sur site en Occitanie (Toulouse, Albi, Montpellier, Rodez, Perpignan…) et à distance partout en France.
+
+Informations clés :
+
+- Nom : SMART Conseil & Performance (aussi « SMART C&P », « SMART CP »), SAS, SIREN 107 042 822
+- Adresse : Bâtiment 1, 1 rue Louis Vicat, 81000 Albi, France
+- Contact : Alexandre Brihiez, alexandre@smartcp.fr, 06 32 34 48 69 (+33 6 32 34 48 69)
+- Premier pas : diagnostic de 30 minutes offert, par téléphone ou visio
+- Équipe : 5 consultants (4 consultants Odoo, 1 consultant IA), 20 ans d'expérience ERP et métier
+- Statut : partenaire Odoo Ready
+- Clients : indépendants, TPE, PME en croissance, collectivités et secteur public
+- Zone : les 13 départements d'Occitanie en présentiel, toute la France à distance
+
+## Offres et services
+
+- [Nos accompagnements](https://smartcp.fr/accompagnements.html) : audit et conseil, chefferie de projet, paramétrage, développement spécifique, migration et reprise de données (Sage, EBP, Excel…), formation, conduite du changement, support et TMA, Success Packs
+- [Boutique des Starter Packs](https://smart-conseil-et-performance.odoo.com/shop) : offres packagées à périmètre et budget maîtrisés, pour démarrer vite avec Odoo
+- [Odoo et IA](https://smartcp.fr/ia.html) : automatisation des processus, assistants métiers, connexion d'Odoo à ChatGPT, Claude, Gemini, Mistral et Copilot
+- [Site web et e-commerce avec Odoo](https://smartcp.fr/site-web-odoo.html) : site vitrine, boutique en ligne, portail client, catalogue et parcours d'achat reliés à la gestion
+- [Découvrir Odoo](https://smartcp.fr/decouvrir-odoo.html) : présentation de l'ERP tout-en-un (CRM, ventes, achats, stock, projets, facturation, comptabilité, IA)
+
+## Méthode et références
+
+- [Notre méthode](https://smartcp.fr/methode.html) : 7 étapes (découvrir, qualifier, configurer, tester, former, déployer, accompagner), démarche agile avec ateliers métiers et déploiement progressif
+- [Projets](https://smartcp.fr/projets.html) : exemples de projets Odoo accompagnés (PME de services par abonnement, société de services informatiques, enseigne retail omnicanale)
+- [L'équipe](https://smartcp.fr/equipe.html) : consultants Odoo, pilotage de projet et IA, avec un réseau de partenaires
+
+## Facture électronique
+
+SMART C&P prépare les entreprises à la réforme de la facturation électronique en France avec Odoo : réception des factures électroniques obligatoire pour toutes les entreprises à partir de septembre 2026, émission obligatoire pour les PME et TPE à partir de septembre 2027. Le sujet est détaillé sur les pages locales ci-dessous.
+
+## Intégrateur Odoo en Occitanie (pages locales)
+
+- [Occitanie](https://smartcp.fr/integrateur-odoo-occitanie.html)
+- [Toulouse et Haute-Garonne (31)](https://smartcp.fr/integrateur-odoo-toulouse-haute-garonne.html)
+- [Albi et Tarn (81)](https://smartcp.fr/integrateur-odoo-tarn.html)
+- [Montauban et Tarn-et-Garonne (82)](https://smartcp.fr/integrateur-odoo-tarn-et-garonne.html)
+- [Rodez et Aveyron (12)](https://smartcp.fr/integrateur-odoo-aveyron.html)
+- [Montpellier et Hérault (34)](https://smartcp.fr/integrateur-odoo-herault.html)
+- [Nîmes et Gard (30)](https://smartcp.fr/integrateur-odoo-gard.html)
+- [Carcassonne et Aude (11)](https://smartcp.fr/integrateur-odoo-aude.html)
+- [Perpignan et Pyrénées-Orientales (66)](https://smartcp.fr/integrateur-odoo-pyrenees-orientales.html)
+- [Cahors et Lot (46)](https://smartcp.fr/integrateur-odoo-lot.html)
+- [Auch et Gers (32)](https://smartcp.fr/integrateur-odoo-gers.html)
+- [Foix et Ariège (09)](https://smartcp.fr/integrateur-odoo-ariege.html)
+- [Tarbes et Hautes-Pyrénées (65)](https://smartcp.fr/integrateur-odoo-hautes-pyrenees.html)
+- [Mende et Lozère (48)](https://smartcp.fr/integrateur-odoo-lozere.html)
+
+## Contact
+
+- [Contact et prise de rendez-vous](https://smartcp.fr/contact.html) : diagnostic de 30 minutes offert, réponse rapide
+- [LinkedIn d'Alexandre Brihiez](https://www.linkedin.com/in/alexandre-brihiez/)
+
+## Optional
+
+- [Plan du site](https://smartcp.fr/plan-du-site.html)
+- [Mentions légales](https://smartcp.fr/mentions-legales.html)
+- [Conditions générales de vente](https://smartcp.fr/cgv.html)
