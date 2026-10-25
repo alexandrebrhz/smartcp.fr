@@ -18,6 +18,7 @@ Informations clés :
 - [Nos accompagnements](https://smartcp.fr/accompagnements.html) : audit et conseil, chefferie de projet, paramétrage, développement spécifique, migration et reprise de données (Sage, EBP, Excel…), formation, conduite du changement, support et TMA, Success Packs
 - [Boutique des Starter Packs](https://smart-conseil-et-performance.odoo.com/shop) : offres packagées à périmètre et budget maîtrisés, pour démarrer vite avec Odoo
 - [Odoo et IA](https://smartcp.fr/ia.html) : automatisation des processus, assistants métiers, connexion d'Odoo à ChatGPT, Claude, Gemini, Mistral et Copilot
+- [Facture électronique avec Odoo](https://smartcp.fr/facture-electronique.html) : calendrier 2026-2027, ce qui change, accompagnement en 4 étapes, diagnostic gratuit de 45 min
 - [Site web et e-commerce avec Odoo](https://smartcp.fr/site-web-odoo.html) : site vitrine, boutique en ligne, portail client, catalogue et parcours d'achat reliés à la gestion
 - [Découvrir Odoo](https://smartcp.fr/decouvrir-odoo.html) : présentation de l'ERP tout-en-un (CRM, ventes, achats, stock, projets, facturation, comptabilité, IA)
 
