@@ -7,7 +7,7 @@ Informations clés :
 - Nom : SMART Conseil & Performance (aussi « SMART C&P », « SMART CP »), SAS, SIREN 107 042 822
 - Adresse : Bâtiment 1, 1 rue Louis Vicat, 81000 Albi, France
 - Contact : Alexandre Brihiez, alexandre@smartcp.fr, 06 32 34 48 69 (+33 6 32 34 48 69)
-- Premier pas : diagnostic de 30 minutes offert, par téléphone ou visio
+- Premier pas : diagnostic gratuit de 45 minutes, par téléphone ou visio (réservation : https://smart-conseil-et-performance.odoo.com/appointment/5)
 - Équipe : 5 consultants (4 consultants Odoo, 1 consultant IA), 20 ans d'expérience ERP et métier
 - Statut : partenaire Odoo Ready
 - Clients : indépendants, TPE, PME en croissance, collectivités et secteur public
@@ -51,7 +51,7 @@ SMART C&P prépare les entreprises à la réforme de la facturation électroniqu
 
 ## Contact
 
-- [Contact et prise de rendez-vous](https://smartcp.fr/contact.html) : diagnostic de 30 minutes offert, réponse rapide
+- [Contact et prise de rendez-vous](https://smartcp.fr/contact.html) : diagnostic gratuit de 45 minutes, réponse rapide
 - [LinkedIn d'Alexandre Brihiez](https://www.linkedin.com/in/alexandre-brihiez/)
 
 ## Optional
