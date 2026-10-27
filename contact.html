@@ -1,4 +1,4 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact intégrateur Odoo &amp; IA à Albi | SMART C&amp;P</title><meta name="description" content="Parlez-nous de votre projet Odoo ou IA : nouveau déploiement, migration, reprise, audit, support ou automatisation. SMART C&amp;P, intégrateur Odoo Ready à Albi."><link rel="icon" href="assets/favicon.png"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="home-maquette.css?v=98"><link rel="stylesheet" href="contact-maquette.css">
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact intégrateur Odoo &amp; IA à Albi | SMART C&amp;P</title><meta name="description" content="Parlez-nous de votre projet Odoo ou IA : nouveau déploiement, migration, reprise, audit, support ou automatisation. SMART C&amp;P, intégrateur Odoo Ready à Albi."><link rel="icon" href="assets/favicon.png"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="home-maquette.css?v=98">
   <link rel="canonical" href="https://smartcp.fr/contact.html">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="theme-color" content="#0f1938">
@@ -14,58 +14,96 @@
   <meta name="twitter:description" content="Parlez-nous de votre projet Odoo ou IA : nouveau déploiement, migration, reprise, audit, support ou automatisation. SMART C&amp;P, intégrateur Odoo Ready à Albi.">
   <meta name="twitter:image" content="https://smartcp.fr/assets/office-smart-clean-v2-user.png">
   <link rel="stylesheet" href="cookie-consent.css">
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-
+<style>
+/* V110 — Contact : branding SMART (marine #0f1938, turquoise #0fb8ce du logo) */
+.contact-v2{--c-navy:#0f1938;--c-ink:#373643;--c-teal:#0fb8ce;--c-teal-d:#0a8fa1;--c-soft:#f3f8fa;--c-line:#dfe8ec;--c-muted:#5a6475;background:#fff}
+.contact-v2 .cv-wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.cv-hero{background:radial-gradient(1200px 400px at 85% -10%,rgba(15,184,206,.35),transparent 60%),linear-gradient(160deg,#0f1938 0%,#13234d 100%);color:#fff;padding:72px 0 120px}
+.cv-crumb{font-size:.85rem;color:#a9b6cc;margin-bottom:18px}.cv-crumb a{color:#a9b6cc}.contact-v2 .cv-form a,.contact-v2 .cv-consent a{color:#087f90}
+.cv-eyebrow{display:inline-block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--c-teal);font-weight:700;margin-bottom:14px}
+.cv-hero h1{font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.08;margin:0 0 16px;color:#fff;max-width:760px}
+.cv-hero h1 span{color:var(--c-teal)}
+.cv-hero p{font-size:1.12rem;color:#d3dbe8;max-width:640px;margin:0}
+.cv-quick{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:-72px;position:relative}
+.cv-card{background:#fff;border:1px solid var(--c-line);border-radius:16px;padding:22px;box-shadow:0 14px 34px rgba(15,25,56,.10);text-decoration:none;color:var(--c-navy);display:flex;gap:14px;align-items:flex-start;transition:transform .15s,border-color .15s}
+.cv-card:hover{transform:translateY(-2px);border-color:var(--c-teal)}
+.cv-ico{flex:0 0 44px;height:44px;border-radius:12px;background:rgba(15,184,206,.12);color:var(--c-teal-d);display:grid;place-items:center;font-size:1.25rem}
+.cv-card b{display:block;font-size:1.02rem;margin-bottom:3px}.cv-card small{color:var(--c-muted);font-size:.9rem;line-height:1.4}
+.cv-main{display:grid;grid-template-columns:1.55fr 1fr;gap:28px;padding:48px 0 72px;align-items:start}
+.cv-form{background:#fff;border:1px solid var(--c-line);border-radius:18px;padding:30px}
+.cv-form h2{font-size:1.6rem;color:var(--c-navy);margin:0 0 6px}.cv-form>p{color:var(--c-muted);margin:0 0 22px}
+.cv-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.cv-full{grid-column:1/-1}
+.cv-field label{display:block;font-weight:600;font-size:.9rem;color:var(--c-ink);margin-bottom:6px}
+.cv-field input,.cv-field select,.cv-field textarea{width:100%;box-sizing:border-box;border:1.5px solid var(--c-line);border-radius:10px;padding:12px 14px;font:inherit;color:var(--c-navy);background:#fbfdfe}
+.cv-field textarea{min-height:140px;resize:vertical}
+.cv-field input:focus,.cv-field select:focus,.cv-field textarea:focus{outline:none;border-color:var(--c-teal);box-shadow:0 0 0 3px rgba(15,184,206,.18);background:#fff}
+.cv-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.cv-consent{display:flex;gap:10px;align-items:flex-start;font-size:.88rem;color:var(--c-muted);line-height:1.45}.cv-consent input{margin-top:3px;accent-color:var(--c-teal)}
+.cv-consent a{color:var(--c-teal-d)}
+.cv-btn{display:inline-flex;align-items:center;gap:10px;background:var(--c-teal);color:var(--c-navy);border:0;border-radius:999px;padding:14px 26px;font-weight:700;font-size:1rem;cursor:pointer;transition:background .15s}
+.cv-btn:hover{background:#0a9fb3}.cv-btn[disabled]{opacity:.7;cursor:wait}
+.cv-note{font-size:.82rem;color:var(--c-muted);margin-top:12px}
+.cv-side{background:var(--c-soft);border-radius:18px;padding:28px;position:sticky;top:110px}
+.cv-side h3{color:var(--c-navy);font-size:1.2rem;margin:0 0 18px}
+.cv-steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.cv-steps li{counter-increment:s;position:relative;padding:0 0 18px 48px;color:var(--c-muted);font-size:.95rem;line-height:1.5}
+.cv-steps li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--c-navy);color:#fff;font-weight:700;display:grid;place-items:center;font-size:.9rem}
+.cv-steps b{display:block;color:var(--c-navy)}
+.cv-side hr{border:0;border-top:1px solid var(--c-line);margin:8px 0 18px}
+.cv-side .cv-who{display:flex;gap:12px;align-items:center;color:var(--c-ink);font-size:.92rem}
+.cv-side .cv-who strong{color:var(--c-navy)}
+.contact-v2 .mh-cta,.contact-v2 .btn-primary{background:var(--c-teal)!important;border-color:var(--c-teal)!important}
+@media (max-width:900px){.cv-quick{grid-template-columns:1fr;margin-top:-56px}.cv-main{grid-template-columns:1fr}.cv-side{position:static}.cv-hero{padding:48px 0 96px}}
+@media (max-width:560px){.cv-grid{grid-template-columns:1fr}.cv-form{padding:22px}}
+</style>
 <script>
-// V70 — Interception du formulaire définie dans le <head> pour être active avant toute interaction.
+// V110 — Formulaire de contact -> piste dans Odoo (CRM). Anti-spam : champ piège + délai minimum.
+window.SMARTCP_FORM_START = Date.now();
 window.smartcpSubmitContact = function(form, event) {
   if (event) event.preventDefault();
+  if (!form.checkValidity()) { form.reportValidity(); return false; }
 
-  if (!form.checkValidity()) {
-    form.reportValidity();
-    return false;
-  }
-
-  // V108 — Anti-spam Cloudflare Turnstile : pas d'envoi sans vérification
-  const captcha = form.querySelector('[name="cf-turnstile-response"]');
-  if (!captcha || !captcha.value) {
-    alert('Merci de patienter quelques secondes : la vérification anti-spam se termine.');
+  // Champ piège invisible rempli, ou envoi en moins de 3 s : robot -> on fait semblant d'avoir envoyé.
+  if (form.website_url.value || Date.now() - window.SMARTCP_FORM_START < 3000) {
+    window.location.replace('merci.html');
     return false;
   }
 
   const button = form.querySelector('button[type="submit"]');
-  if (button) {
-    button.disabled = true;
-    button.setAttribute('aria-busy', 'true');
-    button.textContent = 'Envoi en cours…';
-  }
+  if (button) { button.disabled = true; button.textContent = 'Envoi en cours…'; }
+  if (window.SmartTracking) { window.SmartTracking.populateForm(form); window.SmartTracking.markLeadPending(); }
 
-  if (window.SmartTracking) {
-    window.SmartTracking.populateForm(form);
-    window.SmartTracking.markLeadPending();
-  }
+  const f = new FormData(form);
+  const val = function(k) { return (f.get(k) || '').toString().trim(); };
+  const suivi = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','landing_page','referrer','page_url']
+    .filter(function(k) { return val(k); }).map(function(k) { return k + ' : ' + val(k); });
+  const description = [
+    val('message'), '',
+    'Taille : ' + (val('employees') || 'non précisée'),
+    'Sujet : ' + (val('topic') || 'non précisé'),
+    'Consentement : oui'
+  ].concat(suivi.length ? ['', 'Suivi :'].concat(suivi) : []).join('\n');
 
-  const payload = new FormData(form);
-
-  fetch(form.action, {
-    method: 'POST',
-    body: payload,
-    mode: 'no-cors',
-    cache: 'no-store',
-    credentials: 'omit',
-    keepalive: true
-  }).then(function() {
-    window.location.replace('https://smartcp.fr/merci.html');
-  }).catch(function(error) {
-    if (window.SmartTracking) window.SmartTracking.clearLeadPending();
-    console.error('Erreur envoi formulaire :', error);
-    window.location.replace('https://smartcp.fr/erreur.html');
+  const lead = new URLSearchParams({
+    name: 'Site smartcp.fr – ' + (val('topic') || 'Demande de contact') + (val('company') ? ' – ' + val('company') : ''),
+    contact_name: val('name'),
+    partner_name: val('company'),
+    email_from: val('email'),
+    phone: val('phone'),
+    description: description
   });
 
+  fetch(form.action, { method: 'POST', body: lead, mode: 'no-cors', credentials: 'omit', keepalive: true })
+    .then(function() { window.location.replace('merci.html'); })
+    .catch(function(error) {
+      if (window.SmartTracking) window.SmartTracking.clearLeadPending();
+      console.error('Erreur envoi formulaire :', error);
+      window.location.replace('erreur.html');
+    });
   return false;
 };
 </script>
-</head><body class="mockup-home contact-page"><header class="mh-header">
+</head><body class="mockup-home contact-v2"><header class="mh-header">
   <div class="mh-container mh-nav">
     <a class="mh-logo" href="index.html" aria-label="SMART Conseil & Performance">
       <img src="assets/logo-smart-cp.png" alt="SMART Conseil & Performance">
@@ -88,9 +126,52 @@ window.smartcpSubmitContact = function(form, event) {
     </nav>
   </div>
 </header>
-<main><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">Accueil</a> / Contact</div><p class="eyebrow">Contact</p><h1>Parlons de votre projet Odoo ou IA.</h1><p class="lead">Quelques éléments suffisent pour préparer un premier échange : votre organisation, vos outils actuels, vos irritants et ce que vous souhaitez obtenir.</p></div></section>
-<section class="section"><div class="container contact-grid"><div class="contact-card"><p class="eyebrow" style="color:#d8b9dc">Échange direct</p><h2>Choisissez le format le plus simple.</h2><p>Le plus rapide : un appel. Pour un projet déjà identifié, le calendrier permet de réserver directement un créneau. Pour une demande plus exploratoire, utilisez le formulaire.</p><div class="contact-details"><a class="contact-phone" href="tel:+33632344869">📞 06 32 34 48 69 — appelez-nous directement</a><a href="https://smart-conseil-et-performance.odoo.com/appointment/5" target="_blank" rel="noopener">📅 Planifier un échange</a><a href="mailto:alexandre@smartcp.fr">✉ alexandre@smartcp.fr</a><a href="https://www.linkedin.com/in/alexandre-brihiez/" target="_blank" rel="noopener">in LinkedIn — Alexandre Brihiez</a></div><p class="muted" style="color:#bfc8d8">SMART Conseil & Performance · Albi · Interventions en France</p></div>
-<form id="contactForm" class="form-card" action="https://script.google.com/macros/s/AKfycbzH3WC8dPqMKVTN5LrT7tvu3Ym4ML0ldmOvXth1I6VuYKkiecqiAumeT8MQb3aUHDeADA/exec" method="post" target="smartcp_lead_sink" onsubmit="return window.smartcpSubmitContact ? window.smartcpSubmitContact(this,event) : true;"><h2 style="font-size:2rem">Décrivez votre besoin</h2><div class="form-grid"><div class="field"><label for="name">Nom *</label><input id="name" name="name" required></div><div class="field"><label for="company">Société</label><input id="company" name="company"></div><div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required></div><div class="field"><label for="phone">Téléphone</label><input id="phone" name="phone"></div><div class="field"><label for="employees">Taille de l'organisation</label><select id="employees" name="employees"><option value="">Sélectionner</option><option>Indépendant / 1 personne</option><option>2 à 10 personnes</option><option>11 à 50 personnes</option><option>51 à 150 personnes</option><option>Plus de 150 personnes</option></select></div><div class="field"><label for="topic">Sujet principal</label><select id="topic" name="topic"><option value="">Sélectionner</option><option>Essai / découverte Odoo</option><option>Nouveau projet Odoo</option><option>Reprise / refonte Odoo</option><option>CRM / ventes / devis</option><option>Achats / stock / logistique</option><option>Fabrication</option><option>Projets / service client</option><option>Facturation / comptabilité</option><option>Site / eCommerce / POS</option><option>Documents / signature</option><option>IA / automatisation</option><option>Autre sujet</option></select></div><div class="field full"><label for="message">Votre projet *</label><textarea id="message" name="message" required placeholder="Décrivez brièvement votre contexte, vos outils actuels et le résultat attendu."></textarea></div><div class="form-hp"><label>Website<input name="website" tabindex="-1" autocomplete="off"></label></div><label class="consent full"><input type="checkbox" name="consent" required> <span>J'accepte que SMART Conseil & Performance utilise ces informations pour répondre à ma demande. Voir la <a href="politique-confidentialite.html" style="text-decoration:underline">politique de confidentialité</a>.</span></label><div class="field full"><div class="cf-turnstile" data-sitekey="0x4AAAAAAFoOH6J4JMU9W_0M" data-language="fr"></div></div><div class="field full"><button class="btn btn-primary" type="submit">Envoyer ma demande →</button></div></div></form><iframe name="smartcp_lead_sink" id="smartcpLeadSink" title="Envoi du formulaire" style="display:none"></iframe></div></section></main>
+<main>
+<section class="cv-hero"><div class="cv-wrap">
+  <div class="cv-crumb"><a href="index.html">Accueil</a> / Contact</div>
+  <span class="cv-eyebrow">Contact</span>
+  <h1>Parlons de votre projet <span>Odoo ou IA</span>.</h1>
+  <p>Quelques lignes suffisent : votre activité, vos outils actuels et ce que vous voulez améliorer. Nous revenons vers vous sous 24 h ouvrées.</p>
+</div></section>
+
+<div class="cv-wrap">
+  <div class="cv-quick">
+    <a class="cv-card" href="tel:+33632344869"><span class="cv-ico" aria-hidden="true">📞</span><span><b>06 32 34 48 69</b><small>Le plus rapide : un appel, du lundi au vendredi.</small></span></a>
+    <a class="cv-card" href="https://smart-conseil-et-performance.odoo.com/appointment/5" target="_blank" rel="noopener"><span class="cv-ico" aria-hidden="true">📅</span><span><b>Diagnostic gratuit · 45 min</b><small>Réservez directement un créneau en visio.</small></span></a>
+    <a class="cv-card" href="mailto:alexandre@smartcp.fr"><span class="cv-ico" aria-hidden="true">✉</span><span><b>alexandre@smartcp.fr</b><small>Pour un document ou une question précise.</small></span></a>
+  </div>
+
+  <div class="cv-main">
+    <form id="contactForm" class="cv-form" action="https://smart-conseil-et-performance.odoo.com/website/form/crm.lead" method="post" onsubmit="return window.smartcpSubmitContact(this,event);" novalidate>
+      <h2>Décrivez votre besoin</h2>
+      <p>Les champs marqués d'un * sont obligatoires.</p>
+      <div class="cv-grid">
+        <div class="cv-field"><label for="name">Nom *</label><input id="name" name="name" autocomplete="name" required></div>
+        <div class="cv-field"><label for="company">Société</label><input id="company" name="company" autocomplete="organization"></div>
+        <div class="cv-field"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="cv-field"><label for="phone">Téléphone</label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="cv-field"><label for="employees">Taille de l'entreprise</label><select id="employees" name="employees"><option value="">Sélectionner</option><option>Indépendant / 1 personne</option><option>2 à 10 personnes</option><option>11 à 50 personnes</option><option>51 à 150 personnes</option><option>Plus de 150 personnes</option></select></div>
+        <div class="cv-field"><label for="topic">Sujet principal</label><select id="topic" name="topic"><option value="">Sélectionner</option><option>Découverte Odoo</option><option>Nouveau projet Odoo</option><option>Reprise / refonte Odoo</option><option>CRM / ventes / devis</option><option>Achats / stock / logistique</option><option>Facturation / comptabilité</option><option>Facture électronique</option><option>Site web / e-commerce / caisse</option><option>IA / automatisation</option><option>Formation</option><option>Autre sujet</option></select></div>
+        <div class="cv-field cv-full"><label for="message">Votre projet *</label><textarea id="message" name="message" required placeholder="Votre activité, vos outils actuels, ce que vous voulez améliorer."></textarea></div>
+        <div class="cv-hp" aria-hidden="true"><label for="website_url">Ne pas remplir</label><input id="website_url" name="website_url" tabindex="-1" autocomplete="off"></div>
+        <label class="cv-consent cv-full"><input type="checkbox" name="consent" required> <span>J'accepte que SMART Conseil &amp; Performance utilise ces informations pour répondre à ma demande. Voir la <a href="politique-confidentialite.html">politique de confidentialité</a>.</span></label>
+        <div class="cv-full"><button class="cv-btn" type="submit">Envoyer ma demande →</button><p class="cv-note">Réponse sous 24 h ouvrées. Vos informations ne sont jamais revendues.</p></div>
+      </div>
+    </form>
+
+    <aside class="cv-side">
+      <h3>Après votre message</h3>
+      <ol class="cv-steps">
+        <li><b>Nous vous rappelons</b>sous 24 h ouvrées pour comprendre votre contexte.</li>
+        <li><b>Diagnostic gratuit de 45 min</b>vos flux, vos outils, vos priorités.</li>
+        <li><b>Une proposition claire</b>un plan d'action, un planning et un prix ferme par étape.</li>
+      </ol>
+      <hr>
+      <div class="cv-who"><span><strong>SMART Conseil &amp; Performance</strong><br>Intégrateur Odoo à Albi, partout en France</span></div>
+    </aside>
+  </div>
+</div>
+</main>
 <footer class="sc-footer">
   <div class="sc-footer-wrap">
     <div class="sc-footer-grid">
